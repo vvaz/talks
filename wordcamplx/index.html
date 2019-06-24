@@ -1,0 +1,366 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>WordPress</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<h1>WordCamp Lisboa 2017</h1>
+					<p>Wifi: </p>
+					<p>Password: </p>
+				</section>
+
+				<section>
+					Bem vindos!
+				</section>
+
+				<section>
+					<h1>O que vamos fazer?</h1>
+					<ul>
+						<li>O que é o WordPress?</li>
+						<li>Ver as suas opções e primeiros passos</li>
+						<li>O que são Artigos e Páginas?</li>
+						<li>O que são Temas e Plugins?</li>
+						<li>Escrever o primeiro artigo e página</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>De tarde vamos falar de WooCommerce</h1>
+				</section>
+
+				<section>
+					Valério Vaz
+					<br /><br />
+					@vvaz | valerio@WPBox.io
+				</section>
+
+				<section>
+					Pedro Fonseca
+					<br /><br />
+					valerio@WPBox.io
+				</section>
+
+				<section data-background-image="img/wp-logo.png"></section>
+
+				<section>
+					b2/cafelog<br />
+					Matt Mullenweg<br />
+					Oper Source<br />
+					Licença GPLv2
+				</section>
+
+				<section>
+					<h2>WordPress.org</h2>
+					<p>É o centro de uma comunidade mundial utilizada por milhões de pessoas, que disponibiliza o WordPress, uma ferramenta de publicação online, o software que podes transferir para criar o teu site.</p>
+				</section>
+
+				<section data-background-image="img/wp_005.jpg">
+                    <h1 style="color: #000">Só para blogs?</h1><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        </section>
+
+        <section data-background-image="img/wp_006.jpg">
+        	se souber PHP, HTML, JS e CSS o céu é o limite
+        </section>
+
+         <section>
+         	<h1>Quem usa?</h1>
+         </section>
+
+                <section>
+                    <ul>
+                        <li>Observador</li>
+                        <li>Eco.pt</li>
+                        <li>Katy Perry</li>
+                        <li>Usain Bolt</li>
+                    </ul>
+                </section>
+
+				<section>
+					<ul>
+						<li>É um software open-source e é o resultado do contributo de milhares de pessoas;</li>
+						<li>Permite total personalização;</li>
+						<li>Permite instalar temas;</li>
+						<li>Permite instalar plugins;</li>
+						<li>As atualizações podem ser manuais ou automáticas;</li>
+						<li>Possibilita a otimização para motores de busca (SEO);</li>
+						<li>Permite o controlo total do site.</li>
+					</ul>
+				</section>
+
+
+
+				<section>
+					<h1>ARQUITETURA DE INFORMAÇÃO</h1>
+				</section>
+
+				<section>
+					"Arquitetura de informação é a categorização de informação numa estrutura coerente, preferencialmente uma que o utilizador compreenda rapidamente (ou até intuitivamente)"
+				</section>
+
+				<section>
+					<h1>Artigos</h1>
+				</section>
+
+				<section>
+					<p>Têm um editor visual, titulo e podem ter imagens</p>
+					<p>Têm categorias e/ou tags.</p>
+				</section>
+
+				<section data-background-image="img/img7.png">
+				</section>
+
+				<section>
+					<h1>Páginas</h1>
+				</section>
+
+				<section>
+					<p>Podem ter hierarquia.</p>
+					<p>Ao contrário dos artigos, as páginas não têm categorias ou tags.</p>
+				</section>
+
+				<section data-background-image="img/img8.png">
+				</section>
+
+				<section>
+					<h1>Páginas e Artigos</h1>
+				</section>
+
+				<section>
+					<p>Ambos têm um editor de conteúdo, podemos definir uma imagem de destaque e podem ter comentários.</p>
+				</section>
+
+				<section data-background-image="img/img9.png"></section>
+
+
+				<section>
+					<p>A nossa Home Page pode ser uma listagem dos últimos artigos ou uma página estática.</p>
+				</section>
+
+				<section data-background-image="img/img10.png"></section>
+
+
+				<section>
+					<h1>Taxonomias</h1>
+					<h4>Categorias e Tags</h4>
+				</section>
+
+				<section>
+					<h2>Categorias</h2>
+				</section>
+
+				<section>
+					<p>São excelentes para organizar conteúdo, podem ter hierarquia e são obrigatórias.</p>
+				</section>
+
+				<section data-background-image="img/img11.png"></section>
+
+
+				<section>
+					<h2>Tags</h2>
+				</section>
+
+				<section>
+					<p>São utilizadas para descrever conteúdo, são lineares (ou seja, não têm hierarquia) e são opcionais.</p>
+				</section>
+
+				<section data-background-image="img/img12.png"></section>
+
+
+				<section>
+					<h2>Menus</h2>
+				</section>
+
+				<section>
+					<p>Suportam todo o tipo de contúdo desde categorias, tags ou links personalizados.</p>
+					<p>Têm um estrutura hierárquica que podemos modificar através de um sistema "Drag-and-Drop".</p>
+					<p>Estão dependentes do tema que se usa.</p>
+				</section>
+
+				<section data-background-image="img/img13.png"></section>
+
+
+				<section>
+					<h2>Permalinks</h2>
+				</section>
+
+				<section>
+					<p>É a estrutura de URL's do site.</p>
+					<p>Permitem a criação de uma estrutura de URL's personalizada.</p>
+					<p>Muito importante para SEO.</p>
+				</section>
+
+				<section data-background-image="img/img14.png"></section>
+
+
+				<section>
+					<h1>Área de administração</h1>
+					site.com/wp-admin/
+				</section>
+
+				<section>
+					<h2>Opções</h2>
+				</section>
+
+				</section>
+
+				<section data-background-image="img/img-2.jpg"></section>
+
+				<section>
+					<h2>Perfis de Utilizadores</h2>
+					<p>Esta é uma secção importante que deve ser gerida com cuidado. De raiz temos 5 tipos de utilizadores:</p>
+				</section>
+
+				<section>
+					<ul>
+						<li><b>Administrador:</b> Tem acesso a todas as funcionalidades e opcções.</li>
+						<li><b>Editor:</b> Pode criar e eliminar páginas, gerir e publicar artigos e carregar imagens e outros ficheiros. Pode ainda rever e publicar artigos submetidos por outros.</li>
+						<li><b>Autor:</b> Pode escrever e publicar os seus artigos, incluindo carregar e inserir imagens.</li>
+						<li><b>Colaborador:</b> Pode escrever artigos, mas não os pode publicar. Têm de ser submetidos para revisão.</li>
+						<li><b>Subscritor:</b> Pode gerir o seu perfil, ler o que publicam e deixar comentários.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Escrita</h2>
+				</section>
+
+				<section>
+					<h2>Leitura</h2>
+				</section>
+
+				<section data-background-image="img/img-3.jpg">
+				</section>
+
+
+
+				<section>
+					<h2>Discussão</h2>
+				</section>
+
+								<section data-background-image="img/img-4.jpg">
+
+				</section>
+
+				<section>
+					<h2>Opções de multimédia</h2>
+				</section>
+
+				<section data-background-image="img/img-5.jpg">
+
+				</section>
+
+				<section>
+					<h2>Ligações permanentes do WordPress</h2>
+				</section>
+
+								<section data-background-image="img/img-6.jpg"></section>
+
+
+				<section>
+				  <h1>Temas</h1>
+				</section>
+
+				<section>
+				  <p>Os temas de WordPress vivem num subdirectorio muito especifico que não pode ser movido (wp-content/themes/). O subdirectório do tema contém todos os ficheiros de estilo, ficheiros template,ficheiro de funções(functions.php), imagens e ficheiros JavaScript</p>
+				  <p>Por exemplo, um tema chamado "teste" iria estar no directório wp-content/themes/teste/.</p>
+				  <p>O WordPress traz sempre um tema default em cada instalação. Um bom exercício é analisar os ficheiros deste tema para ter uma melhor ideia da estrutura.</p>
+				</section>
+
+				<section>
+				  <p>Os temas de WordPress são constituidos, normalmente, por três ficheiros principais em adição a imagens e ficheiros de JavaScript.</p>
+				  <ol>
+				    <li>O ficheiro de estilos chamado style.css, que controla a apresentação (design e layout) das páginas do site.</li>
+				    <li>WordPress template files que controlam a forma como as páginas do site geram a informação contida na base de dados para ser apresentada no site.</li>
+				    <li>O ficheiro opcional de funções(functions.php).</li>
+				  </ol>
+				</section>
+
+				<section>
+				  <img src="img/ficheiros-tema.png" alt="">
+				</section>
+
+				<section>
+				  <p>No minimo um tema de WordPress é constituido por dois ficheiros:</p>
+				  <ul>
+				    <li>style.css</li>
+				    <li>index.php</li>
+				  </ul>
+				</section>
+
+			
+
+				<section> 
+				<img src="img/basic-template-structure.png" alt="">
+				</section>
+
+
+				<section>
+				  <h1>Plugins</h1>
+				  <p>Os Plugins possibilitam a fácil modificação, costumização e melhoramento de um site WordPress.</p>
+				</section>
+
+				<section>
+					<h1>Dicas para escolher plugins</h1>
+					Vejam o número de classificações <br />
+					Número de instalações activas<br />
+					Última actualização quando foi?
+				</section>
+
+				<section>
+				  <p>Para pesquisar plugins basta ir ao dashboard do WordPress, no ecrã Plugins > Add New.</p>
+				  <img src="img/Install-new-plugin.png" alt="">
+				</section>
+
+				<section>
+					Não esquecer:<br />
+					Mantenha sempre o seu WordPress actualizado!
+				</section>
+
+				<section>
+					Perguntas? // break?
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

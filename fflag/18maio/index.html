@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>WooCommerce - criando uma loja online</title>
+
+    <meta name="description" content="Woocommerce">
+    <meta name="author" content="Jorge Marques">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+
+<section>
+http://valeriovaz.com/talks/flag/18maio/
+</section>
+
+<section>
+wpaveiro
+</section>
+        <section data-background-color="#96588a">
+          <h1>Deployment de um site</h1>
+        </section>
+
+        <section>
+          <p>Instalar e Activar o plugin "Duplicator" no site desenvolvido localmente</p>
+          <img src="img/img1.png" alt="">
+        </section>
+
+        <section>
+          <p>Criar um novo package no plugin e seguir os passos</p>
+          <img src="img/img2.png" alt="">
+        </section>
+
+        <section>
+          <p>Fazer download dos ficheiros criados (Ficheiros do site e Base de Dados)</p>
+          <img src="img/img3.png" alt="">
+        </section>
+
+        <section>
+          <p>Aceder ao cPanel e selecionar o Administrador de Ficheiros</p>
+          <img src="img/img13.png" alt="">
+        </section>
+
+        <section>
+          <p>Fazer upload dos ficheiros do site</p>
+          <img src="img/img14.png" alt="">
+        </section>
+
+        <section>
+          <p>No cPanel ir ao phpMyAdmin</p>
+          <img src="img/img15.png" alt="">
+        </section>
+
+        <section>
+          <p>Na tabela "options" alterar os URL's</p>
+          <img src="img/img16.png" alt="">
+        </section>
+
+        <section>
+          <p>Adicionar novo site na Cloudflare</p>
+          <img src="img/img4.png" alt="">
+        </section>
+
+        <section>
+          <p>Adicionar DNS's para o novo site</p>
+          <img src="img/img5.png" alt="">
+        </section>
+
+        <section>
+          <p>Para colocar HTTPS na Cloudflare é necessário adicionar uma "Page Rule"</p>
+          <img src="img/img17.png" alt="">
+        </section>
+
+        <section>
+          <p>No novo site, adicionar o plugin "Search & Replace" para subsituirmos todos os url's</p>
+          <img src="img/img6.png" alt="">
+        </section>
+
+        <section>
+          <img src="img/img7.png" alt="">
+        </section>
+
+        <section>
+          <p>Executar uma pesquisa na base de dados a subsituir o antigo URL pelo novo</p>
+          <img src="img/img8.png" alt="">
+        </section>
+
+        <section data-background-color="#96588a">
+          <h2>Uma lista que todos deviamos correr quando colocamos um site online</h2>
+          <p>http://wpsecuritychecklist.org/br/items/</p>
+        </section>
+
+        <section data-background-color="#96588a">
+          <h1>Criação de um produto digital</h1>
+        </section>
+
+<section>
+<ul>
+<li>Loja Online com WooCommerce</li>
+<li>Moeda: Euro</li>
+<li>Só produtos digitais</li>
+<li>Limitar a 100 downloads</li>
+<li>Fazer um coupon de desconto 100%</li>
+<li>https://themeisle.com/themes/shop-isle/</li>
+</section>
+
+        <section>
+          <p>Neste exemplo usou-se um tema para acelerar o processo</p>
+          <p>(Shopisle : https://themeisle.com/themes/shop-isle/)</p>
+        </section>
+
+        <section>
+          <p>Após instalar o Woocommerce, criar um produto novo</p>
+          <p>Neste exemplo iremos vender uma imagem</p>
+          <img src="img/img10.png" alt="">
+        </section>
+
+        <section>
+          <p>Preencher os dados (Preço), adicionar "Product Image" e adicionar ficheiro (este será o produto digital que estaremos a vender)</p>
+          <p>Não esquecer de fazer check em "Virtual" e "Downloadable"</p>
+          <img src="img/img11.png" alt="">
+        </section>
+
+        <section>
+          <p>O nosso produto irá ser exibido automaticamente na página da loja e, após fazer o pagamento, o utilizador pode fazer download da imagem.</p>
+          <img src="img/img12.png" alt="">
+        </section>
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>

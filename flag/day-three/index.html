@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WooCommerce - criando uma loja online</title>
+  <meta name="description" content="Woocommerce">
+  <meta name="author" content="Valério Vaz and Álvaro Góis dos Santos">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/woocommerce.css" id="theme">
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <!-- Printing and PDF exports -->
+  <script>
+  var link = document.createElement( 'link' );
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+  document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <section data-background-color="#96588a">
+        <h1>WooCommerce</h1>
+        <h3>Como criar uma loja online</h3>
+      </section>
+      
+      <section>
+        <h4>O que vamos fazer hoje? Vamos…</h4>
+        <ul>
+          <li>descobrir se o WooCommerce é uma boa opção</li>
+          <li>aprender a <strong>configurar</strong> o WooCommerce</li>
+          <li>abordar algumas <strong>extensões</strong> que podem ser úteis</li>
+          <li>ver algumas notas sobre <strong>legislação</strong></li>
+          <li>conhecer <strong>Métodos de Pagamento</strong> e de <strong>Expedição</strong></li>
+          <li>instalar <strong>Temas</strong> específicos</li>
+          <li>configurar <strong>Produtos, Preços e Promoções</strong></li>
+        </ul>
+      </section>
+
+     
+
+      <section>
+        <h4>E-commerce? Porquê?</h4>
+        <ul>
+          <li>43% dos utilizadores da internet em Portugal já fizeram compras online</li>
+          <li>3.1M de compradores em Portugal</li>
+          <li>€3.3MM em Portugal</li>
+        </ul>
+        <small>dados ACEPI/IDC</small>
+      </section>
+      <section>
+        <h4>Internacional:</h4>
+        €455MM e-commerce (B2C & B2B)
+      </section>
+      <section>
+        <h4>Que plugins existem?</h4>
+        <ul>
+          <li>WP eCommerce - 50.000 instalações</li>
+          <li>Jigoshop - 10.000 instalações</li>
+          <li>WooCommerce - + de 1.000.000 instalações</li>
+          <li>MarketPress - WPMU</li>
+          <li>Easy Digital Downloads - 50.000 instalações</li>
+        </ul>
+        <aside class="notes">
+          O WooCommerce é um fork do Jigoshop
+        </aside>
+      </section>
+      <section style="text-align: left;">
+        <h3>WooCommerce</h3>
+        Plugin gratuito<br />
+        Há funcionalidades extra pagas e algumas gratuitas<br />
+        Completo<br />
+        Comunidade<br />
+      </section>
+      <section>
+        <ul>
+          <li>Criado em 2011, a partir de um <em>fork</em> do Jigoshop</li>
+          <li>16+ Milhões de downloads</li>
+          <li>400+ plugins/extensões</li>
+          <li>Suporta mais de 25 línguas, entre elas o Português</li>
+        </ul>
+      </section>
+      <section data-background-image="img/11_popular.png" data-background-size="contain" data-background-color="#fff"></section>
+      <section>
+        <h2>Quem utiliza?</h2>
+        <a href="https://woocommerce.com/showcase/" target="_blank">WooCommerce Showcase</a>
+        <br />
+        <a href="https://allblackshop.com/" target="_blank">All Blacks</a>
+        <br />
+        <a href="https://www.vinha.pt/" target="_blank">Vinha.pt</a>
+      </section>
+
+      <section>
+        <h2>Brasil vs Portugal</h2>
+        <ul>
+          <li>Há mais pessoas a contribuir</li>
+          <li>Há muitos mais sistemas de pagamento</li>
+          <li>Os Correios (BR) têm uma API para calcular custos de envio</li>
+        </ul>
+        <aside class="notes">
+          15 pessoas que contribuem com plugins;
+          Há pelo menos 14 sistemas de pagamento, aqui temos o MBNet e o MBWay;
+        </aside>
+      </section>
+      <section>
+        <h2>Legislação</h2>
+        <p><small><strong><span class="cyellow">Decreto Lei 7/2004</span></strong> - Lei do comércio eletrónico</small>
+        <small><a href="https://dre.pt/application/dir/pdf1sdip/2004/01/005A00/00700078.pdf">link</a></small></p>
+        <p><small><strong><span class="cyellow">Lei 46/2012</span></strong> - Relativa à proteção de dados e à privacidade nas comunicações eletrónicas</small>
+        <small><a href="http://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=1788&tabela=leis">link</a></small></p>
+        <p><small><strong><span class="cyellow">Decreto Lei 63/1985</span></strong> - conhecido por código do direito de autor</small>
+        <small><a href="http://viginti.datajuris.pt/pdfs/codigos/dirautconx_t.pdf">link</a></small></p>
+        <p><small><strong><span class="cyellow">Decreto lei 330/1990</span></strong> - conhecido por código da publicidade</small>
+        <small><a href="http://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=390&tabela=leis">link</a></small></p>
+      </section>
+      <section>
+        <p><small><strong><span class="cyellow">Decreto lei 138/1990</span></strong> - conhecido por lei dos preços ao consumidor</small>
+        <small><a href="http://www.dgpj.mj.pt/sections/leis-da-justica/livro-iii-leis-civis-e/pdf1614/dl-138-1990/">link</a></small></p>
+        <p><small><strong><span class="cyellow">Lei 24/1996</span></strong> - conhecido por lei do consumidor</small>
+        <small><a href="http://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=726&tabela=leis">link</a></small></p>
+        <p><small><strong><span class="cyellow">Lei 67/1998</span></strong> - conhecida por lei da proteção de dados pessoais</small>
+        <small><a href="https://www.cnpd.pt/bin/legis/nacional/LPD.pdf">link</a></small></p>
+        <p><small><strong><span class="cyellow">Decreto Lei 143/2001</span></strong> - conhecido por lei dos contratos à distância</small>
+        <small><a href="http://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?nid=179&tabela=leis">link</a></small></p>
+        <p><small><strong><span class="cyellow">Decreto Lei 70/2007</span></strong> - conhecido por lei das reduções de preço</small>
+        <small><a href="http://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?artigo_id=1069A0019&nid=1069&tabela=leis&pagina=1&ficha=1&nversao=">link</a></small></p>
+      </section>      
+
+      <section>
+        <h3>RGPD - Regulamento Geral de Protecção de Dados</h3>
+        <p>O Regulamento Geral de Proteção de Dados vem introduzir novas obrigações a quem faz processamento de dados pessoais. As obrigações estão dependentes de tipo de dados que sejam recolhidos e como.</p>
+        <small>
+          
+        </small>
+      </section>
+
+      <section>
+        <h2>Requisitos WooCommerce</h2>
+        <ul>
+          <li>PHP 5.6 ou superior (recomendado)</li>
+          <li>MySQL 5.6 ou superior (recomendado)</li>
+          <li>Limite de memória no WordPress de 64mb ou superior. 128mb são preferiveis.</li>
+        </ul>
+        <p><strong>NÃO USEM VERSÕES DESATUALIZADAS</strong></p>
+      </section>
+
+      <section>
+        Usem sempre <strong>SSL!</strong>
+      </section>
+
+      <section>
+        <h2>SSL - Certificados Digitais</h2>
+        <ul>
+          <li>Previne roubos de dados, pois são transferidos encriptados</li>
+          <li>Confiança ao cliente</li>
+          <li>Exigido por entidades de cartão de crédito</li>
+          <li>Let’s encrypt - certificados SSL gratuitos, renovados a cada 90 dias.</li>
+        </ul>
+      </section>
+
+      <section data-background-image="img/letsencrypt-logo_0.png" data-background-size="contain" data-background-color="#fff"></section>
+
+      <section>
+        <h3>Processo de uma venda:</h3>
+        <ol>
+          <li>Criar o produto</li>
+          <li>Gerir stock</li>
+          <li>Receber dinheiro</li>
+          <li>Passar fatura</li>
+          <li>Entregar produto</li>
+        </ol>
+      </section>
+
+      <section>
+        <h3>Que Produtos pode vender com o WooCommerce?</h3>
+        <ul>
+          <li>Produtos físicos</li>
+          <li>Produtos digitais</li>
+          <li>Acesso</li>
+          <li>Bilhetes</li>
+          <li>Tempo</li>
+        </ul>
+      </section>
+
+      <!-- INSTALAR E CONFIGURAR O WOOCOMMERCE -->
+
+      <section>
+          <h1>Instalar o WooCommerce</h1>
+        </section>
+
+        <section data-background-video="videos/instalar.mov" data-background-video-loop="true"></section>
+
+        <section>
+          <h1>Vamos ativar?</h1>
+        </section>
+
+
+
+      <section>
+        <h3>Instalar um tema com suporte para WooCommerce</h3>
+      </section>
+      
+      <section data-background-video="videos/storefront.mov" data-background-video-loop="true"></section>
+
+
+      <section>
+        <h3>Configuração via Personalizador</h3>
+      </section>
+
+      <section style="text-align: left;">
+        <h4>Tipos de Produtos</h4>
+        Produto Simples <br />
+        Produto Variável <br />
+        Grupo de Produtos <br />
+        Produtos Externos (Afiliado)
+      </section>
+
+      <section>
+        <h4>Subtipos de Produtos Simples</h4>
+        Produto Virtual <br />
+        Descarregar / Download
+
+      </section>
+
+      <section>
+        <h3>Preparar um produto físico</h3>
+        <ul>
+          <li>Ter em conta os seus atributos: p.e.: tamanhos</li>
+          <li>Caracteristicas: p.e.: cores</li>
+          <li>Gestão de stocks?</li>
+        </ul>
+      </section>
+
+      <section data-background-video="videos/produtosimples.mov" data-background-video-loop="true"></section>
+      
+      <section>
+        <h3>Como se vende um produto virtual</h3>
+      </section>
+
+      <section data-background-video="videos/virtual.mov" data-background-video-loop="true"></section>
+
+      <section>
+        <h2>SEO - Search Engine Optimization</h2>
+        Está bem preparado para motores de busca <br />
+        Já vem com Rich-Snippets - schema.org
+      </section>
+
+      
+      
+
+      <section style="text-align: left;">
+        <h2>Envio</h2>
+
+        Portugal Chronopost Pickup WooCommerce - <a href="https://pt.wordpress.org/plugins/portugal-chronopost-pickup-woocommerce/">link</a><br />
+
+        Portugal VASP Kios WooCommerce - <a href="https://pt.wordpress.org/plugins/portugal-vasp-kios-woocommerce/">link</a><br />
+        
+
+        DHL - <a href="https://pt.wordpress.org/plugins/dhl-woocommerce-shipping-method/">link</a>
+        <br />
+        UPS - <a href="https://pt.wordpress.org/plugins/ups-woocommerce-shipping-method/">link</a>
+      </section>
+      <section>
+        Impostos
+      </section>
+
+            <section data-background-video="videos/imposto.mov" data-background-video-loop="true"></section>
+
+      <section>
+        <h1>Métodos de pagamento</h1>
+      </section>
+      <section>
+        <ul>
+          <li>Referências Multibanco</li>
+          <li><a href="https://www.mbway.pt/" target="_blank>">MB WAY</a></li>
+          <li>Transferência Bancária</li>
+          <li>Pagamento à cobrança?</li>
+          <li><a href="https://paypal.com/" target="_blank">PayPal</a></li>
+          <li><a href="https://stripe.com/pt" target="_blank">Stripe</a></li>
+          <li><a href="https://bitcoin.org/pt_BR/" target="_blank">Bitcoin</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Referências Multibanco</h2>
+        <ul>
+          <li>Webdados: Multibanco e MB WAY (gateway IfThen)<br />
+            <a href="https://pt.wordpress.org/plugins/multibanco-ifthen-software-gateway-for-woocommerce/" target="_blank">https://wordpress.org/plugins/multibanco-ifthen-software-gateway-for-woocommerce/</a>
+          <li>
+            EuPago para WooCommerce<br />
+            <a href="https://pt.wordpress.org/plugins/eupago-for-woocommerce/" target="_blank">https://pt.wordpress.org/plugins/eupago-for-woocommerce/</a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        Bitcoin<br />
+        <a href="https://pt.wordpress.org/plugins/bitcoin-payments-for-woocommerce/" target="_blank">https://pt.wordpress.org/plugins/bitcoin-payments-for-woocommerce/</a>
+      </section>
+      <section>
+        Temas
+      </section>
+      
+
+      <section>
+        <h3>Extensões extra:</h3>
+      </section>
+
+      <section style="text-align: left;">
+          Envio:<br />
+          <ul>
+            <li><a href="https://wordpress.org/plugins/woocommerce-apg-weight-and-postcodestatecountry-shipping/"> APG Weight Based Shipping</a></li>
+            <li><a href="https://wordpress.org/plugins/weight-country-woocommerce-shipping/">WooCommerce Shipping Pro with Table Rate</a></li>
+          </ul>
+        </section>
+
+        <section style="text-align: left;">
+          Número de Contribuinte:<br />
+          <ul>
+            <li><a href="https://wordpress.org/plugins/nif-num-de-contribuinte-portugues-for-woocommerce/">NIF (Num. de Contribuinte Português) for WooCommerce</a></li>
+          </ul>
+        </section>
+
+
+
+
+
+      <section style="text-align: left;">
+        WooCommerce Subscriptions
+        <p><small>
+          Excelente extensão para ter uma subscrição mensal. Ex: revistas. 
+
+          <a href="https://woocommerce.com/products/woocommerce-subscriptions/">link</a></small></p>
+
+        WooCommerce Product Addons
+          <p><small>
+            Adiciona mais campos personalizados ao vosso produto.
+          <a href="https://woocommerce.com/products/product-add-ons/">link</a></small></p>
+
+        Table Rate Shipping
+          <p><small>
+            Para quem precisa de um controlo avançado para os preços de envio dos seus produtos.
+            <a href="https://woocommerce.com/products/table-rate-shipping/">link</a>
+          </small></p>
+      </section>
+
+      <section>
+        Coupons
+      </section>
+
+       <section data-background-video="videos/cupao.mov" data-background-video-loop="true"></section>
+      
+      <section style="text-align: left;">
+            Product vendors
+            <p><small>
+              A sua loja necessita de vários vendedores? Ex: etsy?
+              <a href="https://woocommerce.com/products/product-vendors/">link</a>
+            </small></p>
+            
+            Composite Products
+            <p><small>
+              Para criar kits de produtos
+              <a href="https://woocommerce.com/products/composite-products/">link</a>
+            </small></p>
+
+          </section>
+
+          <section style="text-align: left;">
+            <h4>Integrações com serviços de expedição</h4>
+            UPS - 
+            <a href="https://woocommerce.com/products/ups-shipping-method/">link</a>
+
+
+            <p>Em Portugal os CTT não disponibilizam uma API para vermos um preço de uma encomenda.</p>
+          </section>
+
+         
+
+
+        <section style="text-align: left;">
+        <h4>Apoio / Suporte WooCommerce</h4>
+        Documentação WooCommerce - <a href="https://docs.woocommerce.com/">link</a><br />
+        WooExpert - <a href="https://woocommerce.com/experts/">link</a><br />
+        Advanced WordPress - <a href="https://www.facebook.com/groups/advanced.woocommerce/">link</a><br />
+        Forum - <a href="https://wordpress.org/support/plugin/woocommerce">link</a>
+      </section>
+      <section>
+        WordPress Portugal no Facebook
+      </section>
+      <section>
+        <img src="img/15_saldos.png" alt="">
+      </section>
+
+      <section data-background-image="img/minions1.jpg" data-background-size="cover" data-background-color="#000">
+            <p style="background-color: rgba(0, 0, 0, 0.6); color: #fff; padding: 3em;">
+                <strong>Perguntas?</strong>
+            </p>
+      </section>
+
+        </div>
+      </div>
+      <script src="lib/js/head.min.js"></script>
+      <script src="js/reveal.js"></script>
+      <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true },
+          { src: 'plugin/notes/notes.js', async: true }
+        ]
+      });
+      </script>
+    </body>
+    </html>
