@@ -1,0 +1,24 @@
+.box {
+	background: lightblue;
+	min-width: 100px;
+	min-height: 100px;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	/* justify-content: around;*/ 
+	/* flex-direction: row-reverse;
+}
+
+.one {
+	order: 1;
+}
+
+.two {
+	order: 2;
+}
+
+.three {
+	order: 3;
+}

@@ -1,0 +1,146 @@
+.circulo {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 100%;
+}
+
+.triangulo {
+    width: 0px;
+    height: 0px;
+
+    border-bottom: 100px solid red;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+
+    background: #fff;
+    /*
+    border-right: 10px solid blue;
+    border-bottom: 10px solid red;
+    border-left: 10px solid yellow;
+    border-top: 10px solid green;
+    */
+    margin: 300px;
+}
+
+
+.weird {
+    border-radius: 59% 41% 12% 88% / 86% 16% 84% 14%;
+    
+    background: blue;
+    width: 500px;
+    height: 500px;
+}
+
+
+#q1, #q2, #q3, #q4, #q5 {
+    border: 1px solid #2400FF;
+}
+
+#q1 {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+}
+
+#q2 {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+#q3 {
+    width: 100px;
+    height: 100px;
+}
+
+#q4 {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+#q5 {
+    width: 100px;
+    height: 100px;
+    margin: 25% auto;  
+}
+
+#q6 {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+#q7 {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    transform: rotate(45deg);
+}
+
+#c2 {
+    width: 30px;
+    height: 30px;
+
+    position: relative;
+    left: 35px;
+    top: 35px;
+    border-radius: 100%;
+}
+
+#c3 {
+    width: 30px;
+    height: 30px;
+
+    position: relative;
+    left: 35px;
+    top: 35px;
+    border-radius: 100%;
+}
+
+
+.first {
+    width: 100px;
+    height: 200px;
+    border: 20px solid red;
+    background: blue;
+}
+
+.second {
+    width: 120px;
+    height: 100px;
+    border: 10px solid #ffcc00;
+    background: yellowgreen;
+    margin-top: -50px;
+}
+
+.third {
+    width: 100px;
+    height: 100px;
+    background: turquoise;
+    border-radius: 100%;
+    margin-top: -50px;
+    margin-left: 20px;
+    
+}
+
+
+
+
+/* cores */
+
+.blue {
+    background: blue;
+}
+
+.red {
+    background: red;
+}
+
+.salmon {
+    background: #FA7B7B;
+}
+
+.grey {
+    background: grey;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Focus</title>
+
+  <style>
+
+    input.animated[type=text] {
+      width: 100px;
+      transition: ease-in-out, width .35s ease-in-out;
+    }
+
+    input.animated[type=text]:focus {
+      width: 250px;
+    }
+
+</style>
+</head>
+<body>
+
+  <label for="">
+    <input type="text">
+    Nome
+  </label>
+
+  <label for="">
+    <input type="text">
+    Contacto
+  </label>
+
+  <select name="" id="">
+    <option value="trabalho">Trabalho</option>
+    <option value="telemovel">Telemóvel</option>
+    <option value="casa">Casa</option>
+  </select>
+
+  <br /><br /><br />
+
+  <h3>Exemplo de um formulário com focus e animação:</h3>
+
+  <label for="">
+    <input type="text" class="animated">
+    Nome
+  </label>
+
+  <label for="">
+    <input type="text" class="animated">
+    Contacto
+  </label>
+
+  <select name="" id="">
+    <option value="trabalho">Trabalho</option>
+    <option value="telemovel">Telemóvel</option>
+    <option value="casa">Casa</option>
+  </select>
+
+
+</body>
+</html>

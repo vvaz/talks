@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>HTML e CSS - Flag 2019</title>
+
+		<meta name="description" content="Slides aula 1">
+		<meta name="author" content="Valério Vaz">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/flag.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+
+			<div class="slides">
+
+				<section>
+					<h3>Hoje vamos:</h3>
+					<ul>
+						<li>Um pequeno resumo de sexta-feira</li>
+						<li>Exercícios com DIVs, audio e vídeo</li>
+						<li>CSS</li>
+					</ul>
+				</section>
+
+				<section>
+					<p class="al">
+						Descobrimos o que são formulários e as várias formas de inserir dados
+					</p>
+				</section>
+
+				<section>
+					<pre>
+					 	<code class="hljs" data-trim contenteditable>
+							&lt;form action="/send"&gt;
+							...
+							&lt;/form&gt;
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<p class="al">Vários elementos de entrada:</p>
+
+					<pre>
+					 	<code class="hljs" data-trim contenteditable>
+							&lt;input type="text" name="texto" /&gt;
+							&lt;input type="checkbox" name="caixa-de-seleccao" /&gt;
+							&lt;input type="radio" name="selecao-radio" /&gt;
+							&lt;input type="submit" value="Enviar" /&gt;
+						</code>
+					</pre>
+
+				</section>
+
+				<section>
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+						&lt;select&gt;
+							&lt;option value="volvo"&gt;Volvo&lt;/option&gt;
+							&lt;option value="saab"&gt;Saab&lt;/option&gt;
+  					&lt;option value="mercedes"&gt;Mercedes&lt;/option&gt;
+  					&lt;option value="audi"&gt;Audi&lt;/option&gt;
+						&lt;/select&gt;
+					</code>
+				</pre>
+				</section>
+
+				<section>
+					<p class="al">Exercicio 6 - Os resultados da sondagem, áudio e vídeo</p>
+
+					<p class="al">Objectivos:</p>
+					<ul>
+						<li>Utilizar margins e paddings correctamente;</li>
+						<li>Utilizar widths e heights</li>
+						<li>Colocar um iFrame</li>
+						<li>Disponibilizar um vídeo que existe na nossa pasta</li>
+						<li>Disponibilizar um áudio que existe na nossa pasta</li>
+				</section>
+
+				<section>
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+						&lt;video width="320" height="240" controls&gt;
+						  &lt;source src="SampleVideo_1280x720_2mb.mp4" type="video/mp4"&gt;
+						  &lt;source src="SampleVideo_1280x720_2mb.ogg" type="video/mp4"&gt;
+						  O seu browser não suporta a tag video
+						&lt;/video&gt;
+					</code>
+				</pre>
+				</section>
+
+				<section>
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+						&lt;audio controls&gt;
+							&lt;source src="SampleAudio_0.4mb.mp4" type="video/mp4"&gt;
+							&lt;source src="SampleAudio_0.4mb.ogg" type="video/mp4"&gt;
+							O seu browser não suporta a tag audio.
+						&lt;/video&gt;
+					</code>
+				</pre>
+				</section>
+
+				<section>
+					<p class="al">
+						O Atributo "controls" adiciona os controlos de play, pause e volume
+					</p>
+					<p class="al">
+						O elemento "source" deixa-nos adicionar vários ficheiros com terminações diferentes e o browser irá reproduzir o primeiro ficheiro suportado.
+					</p>
+					<p class="al">
+						O texto apenas será mostrado se o browser não suportar a tag audio ou video.
+					</p>
+				</section>
+
+				<section>
+					<p class="al">
+						Diferentes formas de adicionar estilos CSS a um elemento HTML.
+					</p>
+				</section>
+
+				<section>
+					Como atributo style="" dentro de um elemento HTML
+				</section>
+
+				<section>
+					Utilizando classes ou ids nos elementos HTML e organizando o código CSS dentro da tag &lt;head&gt;
+				</section>
+
+				<section>
+					<p class="al">
+						Nota: As classes podem repetir-se em todo o código HTML, mas as IDs são únicas ao elemento.
+					</p>
+				</section>
+
+				<section>
+					Ou (a melhor forma) utilizando um ficheiro externo de CSS
+				</section>
+
+				<section>
+					&lt;link rel="stylesheet" type="text/css" href="estilos.css"&gt;
+				</section>
+
+				<section>
+					Hierarquias de CSS
+				</section>
+
+				<section>
+					<ul>
+						<li>!important</li>
+						<li>Estilos no elemento HTML inseridos no atributo</li>
+						<li>Estilos em ficheiros externos</li>
+						<li>Estilos por defeito no browser</li>
+					</ul>
+				</section>
+
+
+				<section>
+					<p class="al">
+						Uma ferramenta indispensável na criação de páginas web são os estilos CSS - Cascading Style Sheets.
+					</p>
+					<p class="al">
+						CSS é uma linguagem de estilos que descreve como o HTML deve ser interpretado e utilizado pelo browser.
+					</p>
+
+					<p class="al">
+						O CSS3 é a última revisão aos estilos que se podem utilizar.
+					</p>
+				</section>
+
+				<section>
+					<p class="al">
+						Algumas dos novos estilos de CSS3 incluem dropshadows (sombreados), cantos redondos, animações, transparencias e muito mais.
+					</p>
+				</section>
+
+				<section>
+					<p class="al">Os estilos CSS3 incluem parametros técnicos que os designers estão acustomados a utilizar nos seus trabalhos, e finalmente podem ser integrados numa página web, dentro de standards para os browsers seguirem.</p>
+				</section>
+
+				<section data-background="#fff">
+					<p class="al">
+						Um exemplo de como os CSS3 evoluiram está nos background em forma de gradientes.
+					</p>
+
+					<img src="img/gradient1.png" alt="Gradient" />
+
+				</section>
+
+				<section data-background="#fff">
+					<img src="img/gradient2.png" alt="Gradient" />
+				</section>
+
+				<section>
+
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+						&lt;div style="background-image: url(gradient1,png);
+						 background-repeat: repeat-x;"&gt;	&lt;/div&gt;
+					</code>
+				</pre>
+
+				</section>
+
+				<section>
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+						&lt;div style="linear-gradient(to bottom, #8E0E00 0%,
+						#1F1C18 100%);"&gt;	&lt;/div&gt;
+					</code>
+				</pre>
+				</section>
+
+				<section>
+					Mas assim não é mais complicado, para nós humanos e designers por natureza?
+				</section>
+
+				<section>
+					http://www.colorzilla.com/gradient-editor/
+				</section>
+
+				<section>
+					Curiosidade: Como fazer os gradients para versões antigas (menor que 10) do Internet Explorer?
+				</section>
+
+				<section>
+					<p class="al">
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8E0E00', endColorstr='#1F1C18',GradientType=0 );
+					</p>
+				</section>
+
+
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

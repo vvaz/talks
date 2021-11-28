@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>HTML e CSS - Flag 2019</title>
+
+		<meta name="description" content="Slides aula 1">
+		<meta name="author" content="Valério Vaz">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/flag.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+
+			<div class="slides">
+
+				<!-- getting content from  https://www.slideshare.net/skosta/aula-03-html-e-boas-praticas?qid=465d5857-07c9-47b7-bba8-22a725434c2d&v=&b=&from_search=1 -->
+
+
+				<section>
+					Valerio Vaz | valerio@wpbox.io | @vvaz
+				</section>
+
+				<section>
+					O que o cliente (com um browser) faz
+				</section>
+
+				<section data-background="img/0_PUX4OoW2yEwaCe4R.jpg">
+				</section>
+
+				<section>
+					O HTML não é uma linguagem de programação, nada mais é do que texto.
+				</section>
+
+				<section>
+					HTML - Hyper Text Markup Language
+				</section>
+
+				<section>
+					HTML timeline
+				</section>
+
+				<section>
+					W3C - World Wide Web Consortium
+
+					<p class="al">É uma comunidade internacional, onde os seus membros associados, empregados e o publico em geral, trabalham em conjunto para definir os Web Standards.</p>
+
+					<p class="al"><a href="https://www.w3.org/Consortium/">https://www.w3.org/Consortium/</a></p>
+				</section>
+
+				<section>
+					<h1>HTML template</h1>
+
+					<pre>
+					<code class="hljs" data-trim contenteditable>
+						&lt;html&gt;
+						  &lt;head&gt;
+							  &lt;title&gt;&lt;/title&gt;
+						  &lt;/head&gt;
+						  &lt;body&gt;
+						  &lt;/body&gt;
+						&lt;/html&gt;
+					</code>
+				</pre>
+				</section>
+
+				<section>
+					Google Drive
+				</section>
+
+				<section>
+					Atom.io ou Sublime Text 3
+				</section>
+
+				<section>
+					<pre>
+						<code class="hljs" data-trim contenteditable> &lt;!DOCTYPE html&gt;
+						</code>
+					</pre>
+					<p class="al">A declaração <!DOCTYPE> representa o tipo de documento e ajuda os browsers a mostrar correctamente as páginas web.</p>
+
+					<p class="al">Só deverá aparecer uma só vez, no início da página antes de qualquer tag HTML.</p>
+
+				</section>
+
+				<section>
+					<h3>Antigas declarações de documento</h3>
+
+					<p class="al">HTML 4.01 Strict</p>
+					<pre>
+						<code class="hljs" data-trim contenteditable> &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;
+						</code>
+					</pre>
+
+					<p class="al">HTML 4.01 Transitional</p>
+					<pre>
+						<code class="hljs" data-trim contenteditable> &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;
+						</code>
+					</pre>
+
+					<p class="al">XHTML 1.0 Strict</p>
+					<pre>
+						<code class="hljs" data-trim contenteditable> &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+						</code>
+					</pre>
+
+				</section>
+
+				<section>
+					<h1>HTML5 vs XHTML</h1>
+
+					<p class="al">o XHTML, criado em 2000, é mais rigido na forma como se escreve não admitindo erros.</p>
+					<p class="al">exemplo:</p>
+						<pre>
+						<code class="hljs" data-trim contenteditable> &lt;p&gt;&lt;strong&gt;Conteúdo a negrito&lt;/p&gt;&lt;/strong&gt;</code>
+						</pre>
+					<p class="al">Pode ser usado no HTML5 mas não no XHTML</p>
+				</section>
+
+				<section>
+					<p class="al">A sintaxe do HTML baseia-se nas tags.</p>
+					<p class="al">Tags são rótulos usados para informar ao browser como o conteúdo deverá ser renderizado ou apresentado.</p>
+				</section>
+
+				<section>
+					As tags têm de ser abertas e fechadas. Sempre.
+				</section>
+
+				<section>
+					&lt;tag&gt; ...... &lt;/tag&gt;
+					O browser irá processar tudo o que estiver contido entre a tag de inicio &lt;&gt; e a tag de fim </>
+					<br />
+					Algumas tags, as chamadas de comandos isolados, não precisam de ter conteúdo entre o inicio e o fim. Por exemplo: &lt;br /&gt; ou &lt;img /&gt;
+				</section>
+
+				<section>
+					<h1>Atributos de uma tag</h1>
+
+					<p class="al">Todas as tags HTML podem ter atributos, que o browser pode interpretar. Por exemplo, a tag &lt;a&gt; tem um atributo href, que o browser interpreta como o destino de uma hiperligação.</p>
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+						&lt;a href="https://google.com"&gt;Visitar o Google &lt;/a&gt;
+					</code>
+					</pre>
+				</section>
+
+				<section>
+					<p class="al">Por fim, o conjunto de tags, atributos e o seu conteúdo, chama-se de elemento.</p>
+
+					<p class="al">Um elemento consiste em:</p>
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+							&lt;tagname&gt;O conteúdo a ser mostrado... &lt;/tagname&gt;
+						</code>
+					</pre>
+
+				</section>
+
+				<section>
+					Quantos elementos HTML estão presentes aqui?
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+						&lt;!DOCTYPE html&gt;
+						&lt;html&gt;
+							&lt;body&gt;
+
+							&lt;h1&gt;O primeiro cabeçalho em HTML&lt;/h1&gt;
+							&lt;p&gt;Seguido pelo primeiro parágrafo&lt;/p&gt;
+
+							&lt;/body&gt;
+						&lt;/html&gt;
+					</code>
+				</pre>
+
+				</section>
+
+				<section>
+					<h1>Recomendações</h1>
+					<p class="al">Usar sempre tags escritas em lowercase.</p>
+					<p class="al">O standard em HTML5 não requer que as tags sejam escrita em letra minuscula, mas o W3C recomenda.
+					Já no XHTML é obrigatório.</p>
+				</section>
+
+				<section>
+					<p class="al">Com a evolução da web, foram surgindo tags standard, usadas na maior parte dos casos, outras tags apareceram para substituir tags antigas.</p>
+				</section>
+
+				<section>
+					<strong>Tags que cairem em desuso:</strong>
+						<div class="w-50 fl">
+							<p class="al">b</p>
+							<p class="al">basefont</p>
+							<p class="al">big</p>
+							<p class="al">center</p>
+							<p class="al">dir</p>
+							<p class="al">font</p>
+							<p class="al">hr</p>
+							<p class="al">i</p>
+						</div>
+						<div class="w-50 fr">
+							<p class="al">u</p>
+							<p class="al">isindex</p>
+							<p class="al">menu</p>
+							<p class="al">s</p>
+							<p class="al">small</p>
+							<p class="al">strike</p>
+							<p class="al">tt</p>
+						</div>
+
+						<div class="clearfix"></div>
+
+				</section>
+
+
+				<section>
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+							&lt;meta charset="utf-8" /&gt;
+						</code>
+					</pre>
+				</section>
+
+
+
+				<section>
+					<h1>Atributos</h1>
+					<p class="al">href</p>
+					<p class="al">
+						Os links são definidos pela tag &lt;a&gt; e os endereços são especificados no atributo href
+					</p>
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+							&lt;a href="https://google.pt"&gt;Visitar o Google&lt;/a&gt;
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h1>Atributos</h1>
+					<p class="al">src</p>
+					<p class="al">
+						As imagens são definidas pela tag &lt;img&gt; e a localização e nome do ficheiro são especificados pelo atributo src
+					</p>
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+							&lt;img src="img_001.jpg" /&gt;
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h1>Atributos</h1>
+					<p class="al">width e height</p>
+					<p class="al">
+						As imagens poderão ter atributos de tamanho, definidos por width (largura) e height (altura).
+					</p>
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+							&lt;img src="img_001.jpg" width="500" height="600" /&gt;
+						</code>
+					</pre>
+					<p class="al">
+						Não precisamos de especificar a unidade pixel, ou px.
+					</p>
+				</section>
+
+				<section>
+					<h1>Atributos</h1>
+					<p class="al">alt</p>
+					<p class="al">
+						O atributo alt, especifica um texto alternativo a ser usado, quando a imagem não pode ser apresentada.<br />
+						Este atributo pode ser lido por "screen readers". Deste modo, uma pessoa portadora de deficiência visual que "ouça" a página, percebe que existe uma imagem na página.
+					</p>
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+							&lt;img src="img_001.jpg" alt="Uma pessoa a andar de bicicleta" /&gt;
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h1>Atributos</h1>
+					<p class="al">style</p>
+					<p class="al">
+						O style é utiliazdo para estilizar o elemento, como a sua cor, font utilizada, tamanho, etc.
+					</p>
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+							&lt;p style="color:blue"&gt;Conteúdo de texto a azul &lt;/p&gt;
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h1>Atributos</h1>
+					<p class="al">lang</p>
+					<p class="al">
+						A linguagem do documento pode ser declarada na tag &lt;html&gt;
+					</p>
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+							&lt;html lang="pt-PT"&gt;
+						</code>
+					</pre>
+					<p class="al">
+						Declarar a linguagem é importante tanto para aplicações de acessibilidade, como para os motores de pesquisa identificarem a lingua do website.
+					</p>
+				</section>
+
+				<section>
+					<h1>Atributos</h1>
+					<p class="al">title</p>
+					<p class="al">
+						O atributo title, apresenta uma pequena caixa de texto quando o utilizador coloca o rato sobre um elemento HTML.
+					</p>
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+							&lt;p title="sou uma tooltip"&gt;Isto é um parágrafo de texto. &lt;/p&gt;
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					Elementos estruturais HTML5
+				</section>
+
+				<section>
+					<h2>Elementos estruturais principais</h2>
+
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+							&lt;html&gt; ... &lt;/html&gt; - envolve toda a página
+							&lt;head&gt; ... &lt;/head&gt; - contém informações de cabeçalho, metadata, CSS, JavaScript
+							&lt;title&gt; ... &lt;/title&gt; - O título da página
+							&lt;body&gt; ... &lt;/body&gt; - Contém o conteúdo da página
+						</code>
+					</pre>
+
+				</section>
+
+				<section>
+					<h3>Elementos estruturais comuns</h3>
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+						&lt;a&gt;
+						&lt;p&gt;
+						&lt;img&gt;
+						&lt;div&gt;
+						&lt;table&gt;
+						&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;
+				 </code>
+			 </pre>
+				</section>
+
+				<section>
+					<h3>Elementos estruturais comuns - dados e listas </h3>
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+						&lt;ul&gt;
+						&lt;ol&gt;
+						&lt;li&gt;
+						&lt;div&gt;
+						&lt;table&gt;
+						&lt;tr&gt;
+						&lt;td&gt;
+						&lt;th&gt;
+				 </code>
+			 </pre>
+				</section>
+
+
+				<section>
+					<p class="al">Exercício 1</p>
+				</section>
+
+				<section>
+					<p class="al">Exercício 2</p>
+				</section>
+
+
+				<section>
+					<p class="al">Emmet</p>
+					<p class="al"><a href="https://docs.emmet.io/cheat-sheet/">https://docs.emmet.io/cheat-sheet/</a></p>
+				</section>
+
+				<section>
+					<h2>Novo Elementos Estruturais mais comuns em HTML5</h2>
+
+
+						<pre>
+						 <code class="hljs" data-trim contenteditable>
+							&lt;article&gt; - define um artigo no documento
+							&lt;aside&gt; - define um conteúdo à parte do conteúdo principal
+							&lt;details&gt; - define detalhes adicionais ao conteúdo
+							&lt;figure&gt; - define um bloco para imagens
+							&lt;footer&gt; - define um rodapé do documento
+							&lt;header&gt; - define um cabeçalho para o documento
+							&lt;main&gt; - define o bloco de conteúdo principal do documento
+							&lt;nav&gt; - define items de navegação
+							&lt;section&gt; - define uma secção no documento
+						</code>
+					</pre>
+					<p class="al">Para ver os restantes elementos, visite - <a href="https://www.w3schools.com/html/html5_new_elements.asp">https://www.w3schools.com/html/html5_new_elements.asp</a></p>
+
+				</section>
+
+
+
+
+
+
+
+
+
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

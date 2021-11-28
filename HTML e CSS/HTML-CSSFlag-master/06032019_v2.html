@@ -1,0 +1,223 @@
+d<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>HTML e CSS - Flag 2019</title>
+
+		<meta name="description" content="Slides aula 1">
+		<meta name="author" content="Valério Vaz">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/flag.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+			
+
+			<section>
+				Mais tipos de transições e animações (ver exemplo 3)
+			</section>
+
+			<section>
+				<h3>
+					Flexbox	
+				</h3>
+			</section>
+
+			<section>
+				<h3>Estrutura</h3>
+				tem um "pai" - flex container <br>
+				e os filhos - flex items
+			</section>
+
+			<section>
+				<h3>Eixos</h3>
+				"main" e "cross"
+			</section>
+
+			<section>
+				<pre>
+					 <code class="hljs" data-trim contenteditable>
+						.container {
+						display: flex;
+						flex-direction: row;
+					}
+				 </code>
+			 </pre>
+
+			 <ul>
+			 	<li>row</li>
+			 	<li>row-reverse</li>
+			 	<li>column</li>
+			 	<li>column-reverse</li>
+			 </ul>
+			</section>
+
+			<section>
+				<pre>
+					 <code class="hljs" data-trim contenteditable>
+						.box1 {
+						flex: 1;
+					}
+					.box2 {
+						flex: 2;
+					}
+					.box3 {
+						flex: 1;
+					}
+				 </code>
+			 </pre>
+			</section>
+
+			<section>
+				<pre>
+					 <code class="hljs" data-trim contenteditable>
+						.box1 {
+						order: 1;
+					}
+					.box2 {
+						order: 2;
+					}
+					.box3 {
+						order: 3;
+					}
+				 </code>
+			 </pre>
+			</section>
+
+			<section>
+				<h3>Canvas</h3>
+			</section>
+
+			<section>
+				O que é o elemento canvas e como podem utiliza-lo no futuro
+			</section>
+
+			<section>
+				Para desenharmos e animar elementos dentro de um canvas vamos precisar de:
+
+				<ul>
+					<li>Saber criar o canvas</li>
+					<li>Criar elementos dentro do canvas</li>
+					<li>Animar elementos</li>
+					<li>Interagir com Elementos</li>
+				</ul>
+			</section>
+
+			<section>
+				Show and tell
+			</section>
+
+			<section>
+				<h3>Web storage</h3>
+			</section>
+
+			<section>
+				<ul>
+					<li>
+						Local Storage	
+					</li>
+					<li>
+						Session Storage
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<p class="al">Utilizam os mesmos métodos a diferença é que a Session Storage é apagada quando fechamos o browser, fazemos logout ou apagarmos a cache.</p>
+			</section>
+
+			<section>
+				Show and tell
+			</section>
+
+			<section>
+				Geolocation
+			</section>
+
+			<section>
+				<p class="al">
+					A API da Geoocation é usada para identificar a posição em latitude e longitudo do utilizador.
+				</p>
+
+				<p class="al">
+					Como estes dados são privados, a posição não está disponível a menos que o utilizador aprove a sua partilha.
+				</p>
+			</section>
+
+			<section>
+				Show and tell
+			</section>
+
+			<section>
+				Exercicio Final
+			</section>
+
+			<section>
+				Frameworks de animação - https://daneden.github.io/animate.css/
+			</section>
+
+
+
+
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

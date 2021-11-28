@@ -1,0 +1,20 @@
+p.al {
+  text-align: left;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.w-50 {
+  width: 50%;
+  padding: 1rem; 
+}
+
+.clearfix {
+  clear: both;
+}

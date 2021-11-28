@@ -1,0 +1,321 @@
+d<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>HTML e CSS - Flag 2019</title>
+
+		<meta name="description" content="Slides aula 1">
+		<meta name="author" content="Valério Vaz">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/flag.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<h3>Na sessão de hoje vamos:</h3>
+					<ul>
+						<li>Elementos inline, inline-block e block</li>
+						<li>Acabar o site e aplicar media queries</li>
+						<li>Falar sobre animações CSS3</li>
+					</ul>
+				</section>
+
+				<section>
+					<p class="al">
+						Elementos <strong>inline</strong>
+						<ul>
+							<li>Respeitam as margins e padings à esquerda e direita mas não no top e bottom</li>
+							<li>Não podem ter width e height definidos</li>
+							<li>Deixam existir elementos à esquerda e direita</li>
+						</ul>
+					</p>
+
+				</section>
+
+				<section>
+					<p class="al">
+						Elementos <strong>Block</strong>
+						<ul>
+							<li>Respeitam as margens todas</li>
+							<li>força uma nova linha</li>
+							<li>Fica com a largura máxima se não tivermos definido</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>
+					<p class="al">
+						Elementos <strong>Inline-block</strong>
+						<ul>
+							<li>Outros elementos podem existir à esquerda e direita</li>
+							<li>Respeitam margens top e bottom</li>
+							<li>Respeitam height e width</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>
+					<img src="./img/mGTYI.png" alt="">
+				</section>
+
+				<section>
+					<h3>Animações e Transições</h3>
+					<ul>
+						<li>Dar vida a elementos</li>
+						<li>Dar a percepção que algo tem movimento</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Movimentos em CSS</h3>
+					<ul>
+						<li>Propriedade Transition</li>
+						<li>Propriedade Animation + Keyframes</li>
+					</ul>
+				</section>
+
+				<section>
+					Transições
+				</section>
+
+				<section>
+					<h3>Sintaxe:</h3>
+
+					<pre>
+					 		<code class="hljs" data-trim contenteditable>
+					.elemento {
+						transition: [property] [duration] [effect] [delay];
+					}
+							</code>
+						</pre>
+				</section>
+
+				<section>
+					<h3>Sintaxe:</h3>
+
+					<pre>
+					 		<code class="hljs" data-trim contenteditable>
+					.elemento {
+						transition: opacity 300ms ease-in-out 1s;
+					}
+							</code>
+						</pre>
+				</section>
+
+				<section>
+					[property]
+				</section>
+
+				<section>
+					<h3>[effect]</h3>
+					
+					<ul>
+						<li>ease - transição que começa devagar, depois rápido e acaba devagar</li>
+						<li>linear - velocidade igual no inicio e no fim</li>
+						<li>ease-in - velocidade mais rápida no fim</li>
+						<li>ease-out - velocidade mais rápida no início</li>
+						<li>ease-in-out - começo e fim mais lento</li>
+						<li>cubic-bezier(n,n,n,n) - podemos definir a velocidade desejada</li>
+					</ul>
+
+				</section>
+				
+
+				<section>
+					<h3>Propriedades que podem ser animadas:</h3>
+					<ul>
+						<li>Font-size:</li>
+						<li>background-color:</li>
+						<li>width:</li>
+						<li>left:</li>
+					</ul>
+				</section>
+
+				<section>
+					Propriedades que não podem ser animadas:
+					<ul>
+						<li>display</li>
+						<li>font-family:</li>
+						<li>position:</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>As propriedades melhores para animar</h3>
+					<ul>
+						<li>posição</li>
+						<li>scale:</li>
+						<li>rotation:</li>
+						<li>opacity:</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Como podemos começar uma animação?</h3>
+					<ul>
+						<li>Hover - pseudo class</li>
+						<li>Mudanças de classes</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Para além do CSS3</h3>
+
+					<p class="al">Existem libraries em JavaScript que nos auxiliam a disparar animações aos elementos</p>
+				</section>
+
+				<section>
+					Animações
+				</section>
+
+				<section>
+					Propriedade Animation e Keyframes
+				</section>
+
+				<section>
+					Keyframes
+				</section>
+
+				<section>
+					<h3>Sintaxe:</h3>
+
+					<pre>
+					 		<code class="hljs" data-trim contenteditable>
+						@keyframes [name] {
+							from {
+								[styles]
+							}
+							to {
+								[styles]
+							}
+						}
+							</code>
+						</pre>
+				</section>
+
+				<section>
+					<h3>Sintaxe:</h3>
+
+					<pre>
+					 		<code class="hljs" data-trim contenteditable>
+						@keyframes [name] {
+							from {
+								height: 200px;
+								background: orange;
+							}
+							to {
+								height: 400px;
+								background: blue;
+							}
+						}
+							</code>
+						</pre>
+				</section>
+
+				<section>
+					<h3>Sintaxe:</h3>
+					<pre>
+					 		<code class="hljs" data-trim contenteditable>
+						.element {
+							animation: [name] [duration] [timing-function] [delay] [iteration-count] [direction] [fill-mode] [play-state];
+						}
+							</code>
+						
+						</pre>
+				</section>
+
+				<section>
+					Os Keyframes representam o que a animação faz, e a "animation" representa como é que deve ser feito.
+				</section>
+
+				<section>
+					<pre>
+					 		<code class="hljs" data-trim contenteditable>
+						.element {
+							animation: timeline 2s ease-in-out 0s infinite normal forwards paused;
+						}
+							</code>
+						</pre>
+				</section>
+
+
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
