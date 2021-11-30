@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Responsive com WordPress - Aula 1</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="./css/tailwind.min.css">
+  <link rel="stylesheet" href="../revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="../revealjs/dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="../revealjs/plugin/highlight/monokai.css">
+  <link rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+
+      <section data-background-color="#644EA0">
+        wpbox.io/talks/flag/fundamentosuiux/
+      </section>
+
+      <section data-background-color="#644EA0">
+        Valério Vaz
+      </section>
+
+      <section>
+        @vvaz | valerio@wpbox.io
+      </section>
+
+      <section>
+        O que querem fazer depois de acabarem este curso na FLAG?
+      </section>
+
+      <section class="text-left">
+        Programa do módulo:
+      </section>
+
+      <section class="text-left" data-background-color="#644EA0">
+        <h2>Fundamentos de UX/UI para developers</h2>
+        <ul>
+          <li>Introdução a UX/UI</li>
+          <li>UX/UI and development</li>
+        </ul>
+      </section>
+
+      <section class="text-left">
+        <h3>Fundamentos de UX/UI para developers</h3>
+        <ul>
+          <li>Arquitetura de informação</li>
+          <li>Design Patterns & Componentes</li>
+        </ul>
+      </section>
+
+      <section class="text-left">
+        <h2>Fundamentos de UX/UI para developers</h2>
+        <ul>
+          <li>Wireframing & Prototipagem</li>
+          <li>Multi-screen & Responsive Challenges</li>
+          <li>Assets for development</li>
+        </ul>
+      </section>
+
+      <section class="text-left">
+        Introdução a UI / UX 
+      </section>
+
+      <section data-background-color="#fff">
+        <img src="img/park2.jpeg" alt="">
+      </section>
+
+      <section class="text-left">
+        Resposta de Steve Jobs à questão da falta de rede nos iPhone 4. (2010)
+      </section>
+
+      <section data-background-color="#fff">
+        <img src="img/jobsemail.webp" alt="Email Steve Jobs">
+      </section>
+
+      <section>
+        <h1>UX</h1>
+        <p>Não confundir com UI</p>
+      </section>
+
+      <section>
+        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6869588314056359936" allowfullscreen="" title="Embedded post" width="504" height="577" frameborder="0"></iframe>
+      </section>
+
+
+      <section class="text-left">
+       <h2>UX:</h2>
+       <p>Foco - Toda a experiência do utilizador desde o seu primeiro contacto ao último.</p>
+       <p>Cria - Soluções para os problemas que o utilizador encontra na sua jornada pelo produto</p>
+       <p>Resulta - Em produtos que deliciam os utilizadores com a sua eficiência</p>
+      </section>
+
+      <section class="text-left">
+        <h2>UI:</h2>
+        <p>Foco - Detalhes visuais que permitem o utilizador interagir com o produto</p>
+        <p>Cria - Combinações de tipografia, palete de cores, butões, animações e imagens </p>
+        <p>Resulta - Em produtos que satisfazem os utilizadores estéticamente.</p>
+      </section>
+      
+      <section class="text-left">
+        <h1>UX - User Experience Design</h1>
+        <p>
+          Donald Norman - Cientista Cognitivo e User Experience Architect - define que, independentemente do meio, o UX Design alberga todas as interacções entre um potencial ou activo cliente e a empresa. 
+        </p>
+      </section>
+
+      <section class="text-left">
+        <p>UX Design não é sobre algo visual, foca-se antes na experiência que o utilizador tem.</p>
+      </section>
+
+      <section class="text-left">
+        <h2>"Coisas" com que o UX Designer se preocupa:</h2>
+        <ul>
+          <li>É fácil chegar ao carrinho desta loja online e pagar com MBWay?</li>
+          <li>É intuitivo gerir a conta bancária na APP para Android?</li>
+          <li>É fácil usar o "tira-caroços" para descaroçar as maçãs?</li>
+        </ul>
+      </section>
+
+      <section>
+        <img src="img/tira-carocos.webp" alt="">
+      </section>
+
+      <section class="text-left">
+        <h3>UI - User Interface</h3>
+        <p>Ao contrário do UX (que pode ser experenciado em produtos físicos), UI é apenas um termo de produto digital.</p>
+        <p>Em relação a sites e aplicações, o UI considera o aspecto e a interactividade do produto. Pretende que o produto seja o mais intuitivo possivel, utilizando um detalhe visual em todos os elementos.</p>
+      </section>
+
+      <section class="text-left">
+        <h2>"Coisas" com que o UI Designer se preocupa:</h2>
+        <p>ícones, butões, tipografia, palete de cores, espaçamentos, imagens e design responsivo</p>
+      </section>
+
+      <section data-background-color="#fff">
+        <img src="img/uiuxheinz.jpeg" alt="">
+      </section>
+
+      <section data-background-color="#fff">
+        <img src="img/uiuxheinz-correct.jpeg" alt="">
+      </section>
+
+      <section data-background-color="#fff">
+        <img src="img/Design_versus_User_Experience.jpg" alt="">
+      </section>
+
+      <section data-background-color="#fff">
+        <img src="img/babytoys.jpg" alt="">
+      </section>
+      
+      <section class="text-left">
+        <h2>10 regras de usabilidade</h2>
+        <p>Segundo Steve Krug</p>
+      </section>
+
+      <section data-background-color="#fff" class="text-center">
+     
+        <img src="img/dontmakemethink.jpg" alt="" class="stretch">
+     
+      </section>
+
+      <section>
+        <small>
+          <p>https://www.wook.pt/livro/dont-make-me-think-steve-krug/15108242</p>
+          <p>https://www.fnac.pt/Don-t-Make-me-Think-Steve-Krug/a858215</p>
+        </small>
+      </section>
+
+
+
+
+      <section class="text-left" data-background-color="#fff">
+        <h2>1. USABILIDADE</h2>
+        <div class="grid grid-cols-2 gap-5">
+          <div><small><p>Usabilidade certifica que certa e determinada
+            função serve o seu propósito e que uma pessoa
+            de capacidades básicas as consegue realizar
+            no seu propósito sem se sentir frustada.</p></small>
+          </div>
+          <div><img src="img/frustration.jpg" alt="" width="400"></div>
+        </div>
+      </section>
+
+      <section class="text-left" data-background-color="#fff">
+        <h2>2. Se precisa de explicação…. está errado.</h2>
+        <div class="grid grid-cols-2 gap-5">
+          <div>
+            <small>
+              <p>
+                Tanto quanto humanamente possível, quando olham para um website, a informação deve ser:
+              </p>
+              <ul>
+                <li>Evidente</li>
+                <li>Óbvia</li>
+                <li>Auto-explicativa</li>
+              </ul>
+            </small>
+          </div>
+          <div>
+            <img src="img/Homer_Doh.jpg" alt="" width="400">
+          </div>
+        </div>
+      </section>
+
+      <section class="text-left" data-background-color="#fff">
+        <h2>3. Não me façam pensar.</h2>
+        <div class="grid grid-cols-2 gap-5">
+          <div>
+            <small>
+              <p>
+                Regra geral, as pessoas não gostam de pensar em quebra cabeças.
+              </p>
+              
+            </small>
+          </div>
+          <div>
+            <img src="img/csm_Frustrated_man_b3f83cb71f.png" alt="" width="400">
+          </div>
+        </div>
+      </section>
+
+      <section class="text-left" data-background-color="#fff">
+        <h2>4. Não me façam perder tempo.</h2>
+        <div class="grid grid-cols-2 gap-5">
+          <div>
+            <small>
+              <p>
+                Tempo é dinheiro.
+              </p>
+
+              <p>
+                A maior parte do nosso tempo utilizado na web é simplesmente pelo desejo de economizar tempo.
+              </p>
+              
+            </small>
+          </div>
+          <div>
+            <img src="img/76572-67235.jpg" alt="" width="400">
+          </div>
+        </div>
+      </section>
+
+      <section class="text-left" data-background-color="#fff">
+        <h2>5. Botão de "voltar" é para utilizar</h2>
+        <div class="grid grid-cols-2 gap-5">
+          <div>
+            <small>
+              <p>
+                O botão para voltar atrás ainda é dos mais utilizados hoje em dia.
+              </p>
+
+              <p>
+                Usem e abusem. Assegurem boa navegação porque o utilizador já percebe e interioriza a esquemática standard. O utilizador já está "treinado" (experiencia Pavlov).
+              </p>
+
+              
+              
+            </small>
+          </div>
+          <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xnf8i_IRCcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-left" data-background-color="#fff">
+        <h2>6. Somos criaturas de hábitos.</h2>
+        <div class="grid grid-cols-2 gap-5">
+          <div>
+            <small>
+              <p>
+               Se funciona, usem.
+              </p>
+
+              <p>
+                Somos seres que gostam de saber que quando algo funcoina, raramente mudamos.
+              </p>
+
+              <p>
+                Por norma só utilizamos outro caminho se ele aparecer de repente. Raramente alteramos rotinas por iniciativa própria.
+              </p>
+              
+            </small>
+          </div>
+          <div>
+            <img src="img/photo-1504595403659-9088ce801e29.jpg" alt="" width="300">
+          </div>
+        </div>
+      </section>
+
+      <section class="text-left" data-background-color="#fff">
+        <h2>7. Não me encham os ouvidos</h2>
+        <div class="grid grid-cols-2 gap-5">
+          <div>
+            <small>
+              <p>
+               A melhor conversa é rápida e directa.
+              </p>
+
+              <p>
+                Não cansem o utilizador e não o enganem. Sejam directos e realistas.
+              </p>
+
+              <p>
+                Tudo o que estiver a mais, retirem. Depois revejam e retirem ainda mais. Eficácia e tentação para gerar conversão.
+              </p>
+              
+            </small>
+          </div>
+          <div>
+            <img src="img/photo-1494519870370-1344df8bbb10.jpg" alt="" width="300">
+          </div>
+        </div>
+      </section>
+
+      <section class="text-left" data-background-color="#fff">
+        <h2>8. Botão de pesquisa não se retira.</h2>
+        <div class="grid grid-cols-2 gap-5">
+          <div>
+            <small>
+              <p>
+               Alguns utilizadores vão sempre procurar a caixa / botão de pesquisa.
+              </p>
+
+              <p>
+                Estes utilizadores são as mesmas que assim que entram numa loja procuram o empregado.
+              </p>
+            </small>
+          </div>
+          <div>
+            <img src="img/photo-1581263518256-ba4a28ed5517.jpg" alt="" width="300">
+          </div>
+        </div>
+      </section>
+
+      <section class="text-left" data-background-color="#fff">
+        <h2>9. Nós criamos sitemaps mentais</h2>
+        <div class="grid grid-cols-2 gap-5">
+          <div>
+            <small>
+              <p>
+               Quando voltamos a um website temos que nos lembrar sempre onde estavam certos produtos.
+              </p>
+
+              <p>
+                Isto acontece porque nos lembramos de uma hierarquia conceptual e pensamos nos passos que fizemos anteriormente.
+              </p>
+            </small>
+          </div>
+          <div>
+            <img src="img/unsplash_526360a842e20_1.jpg" alt="" width="300">
+          </div>
+        </div>
+      </section>
+
+      <section class="text-left" data-background-color="#fff">
+        <h2>10. Facilitem o botão "Home"</h2>
+        <div class="grid grid-cols-2 gap-5">
+          <div>
+            <small>
+              <p>
+               Colocar o botão "home" ou "inicio" sempre visível oferece uma garantia para não nos sentirmos perdidos.
+              </p>
+
+              <p>
+                Ajuda também se adicionarmos os breadcrumbs.
+              </p>
+            </small>
+          </div>
+          <div>
+            <img src="img/photo-1581032228805-8c68df475f60.jpg" alt="" width="300">
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Processo</h2>
+        <p>para desenvolvimento de produtos digitais</p>
+      </section>
+
+      <section data-background-color="#fff">
+        <img src="img/1 D4IK6nL5vsukKPDSKVB7iA.png" alt="">
+      </section>
+
+      <section>
+        <h2>Processo</h2>
+        <p>UX > UI > Development</p>
+      </section>
+
+      <section data-background-color="#fff">
+        <img src="img/1 oMq5JeAUXqVb03zta_nb2Q.jpeg" alt="">
+      </section>
+
+      <section>
+        <p>
+          o designer e o developer devem trabalhar como equipa para melhorarem os seus processos, sejam eles criativos ou técnicos.
+        </p>
+      </section>
+
+      <section>
+        <h2>
+          FrontEnd / Backend?
+        </h2>
+      </section>
+
+      <section>
+        Frontend - https://roadmap.sh/frontend
+      </section>
+
+      <section>
+        Backend - https://roadmap.sh/backend
+      </section>
+
+      <section class="text-left">
+        <h2>O inicio do projecto</h2>
+        <p>Num ambiente saudável, o designer deveria partilhar o seu trabalho com o developer logo de ínicio. Tem sempre de existir uma validação técnica e uma discussão de ideias.</p>
+        <p>
+          Cada um na sua área devem discutir o que dá e o que não dá para fazer. Isto sem esquecer o budget do projeto e o tempo que demorará a implementar ambas as ideias.
+        </p>
+      </section>
+
+      <section class="text-left">
+        <h2>Os utilizadores é que recebem o produto</h2>
+        <p>No processo de desenvolvimento do UX/UI, já se definiu quem são os utilizadores, o que fazem e como fazem.</p>
+        <p>Temos de perceber através desta análise o que o utilizador precisa. Performance? Facilidade de chegar a informação? Qual é a maior dor do utilizador?</p>
+      </section>
+
+      <section class="text-left">
+        <h2>Teste, teste e teste</h2>
+        <p>
+          Testar o produto é importantíssimo para recolher feedback do que está a funcionar e o que não está. Às vezes podemos estar a tentar resolver um problema que os utilizadores não têm. Testem! Com testes A/B.
+        </p>
+        <p>Têm a obrigação de construir algo de fácil utilização e sem criar frustração!</p>
+      </section>
+
+      <section class="text-left">
+        <p>Trabalhar em harmonia com o designer é fundamental para o sucesso de um projecto.</p>
+      </section>
+
+
+
+
+
+
+
+
+      <section class="text-left"></section>
+
+
+
+      <section class="text-left">
+        <p>Referências:</p>
+        <p>Donald Norman - https://www.ted.com/speakers/don_norman</p>
+        
+      </section>
+
+
+
+
+
+
+
+    </div>
+
+  </div>
+
+  <script src="../revealjs/dist/reveal.js"></script>
+  <script src="../revealjs/plugin/highlight/highlight.js"></script>
+  <script>
+    Reveal.initialize({
+      center: true,
+      hash: true,
+      plugins: [RevealHighlight]
+    });
+  </script>
+
+</body>
+
+</html>

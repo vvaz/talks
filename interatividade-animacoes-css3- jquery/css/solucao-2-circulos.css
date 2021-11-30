@@ -1,0 +1,32 @@
+.circ {
+    position: absolute;
+    border-radius: 100%;
+}
+
+.circulo-one {
+    background: salmon;
+    width: 300px;
+    height: 300px;
+
+    left: 0px;
+    
+}
+
+.circulo-two {
+    
+    background: aqua;
+    width: 100px;
+    height: 100px;
+    left: 500px;
+    top: 200px;
+}
+
+.container:active .circulo-one {
+    margin-left: 400px;
+    transition: margin-left 0.5s ease-in 0s;
+}
+
+.container:active .circulo-two {
+    left: 900px;
+    transition: left 0.5s ease-in-out 0.4s;
+}
