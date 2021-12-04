@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Responsive com WordPress - Aula 1</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="./css/tailwind.min.css">
+  <link rel="stylesheet" href="../revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="../revealjs/dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="../revealjs/plugin/highlight/monokai.css">
+  <link rel="stylesheet" href="./css/custom.css">
+
+  <style>
+    .reveal section p {
+
+        font-size: 0.6em;
+        line-height: 1.2em;
+        vertical-align: top;
+    }
+
+    .reveal section ul li {
+        
+        font-size: 0.6em;
+        line-height: 1.8em;
+        vertical-align: top;
+    }
+
+    .container{
+    display: flex;
+}
+.col{
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.col ul {
+    padding: 0;
+    margin: 0;
+}
+
+</style>
+</head>
+
+<body>
+
+  <div class="reveal">
+    <div class="slides">
+
+        
+        <section>
+            <h3>Responsive design</h3>
+        </section>
+
+
+        <section data-background-image="img/3heat.png" data-background-color="#fff" class="text-left">
+
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <h3>Responsive Design</h3>
+            <p>Os padrões de Web design responsivo estão a evoluir rapidamente, mas há muitos padrões estabelecidos que funcionam bem em dispositivos móveis e computadores.</p>
+
+            <p>A maioria dos layouts usados por páginas da Web responsivas podem ser categorizadas em um de quatro padrões:</p>
+
+            <ul>
+                <li>Mostly fluid</li>
+                <li>Column drop</li>
+                <li>Layout Shifter</li>
+                <li>Tiny tweaks</li>
+            </ul>
+
+            <p>Em alguns casos, uma página pode usar uma combinação de padrões, como Column Drop e Tiny Tweaks.</p>
+        </section>
+
+        <section class="text-left">
+            <h4>Mobile first ou Content first?</h4>
+            <p>Temos de ter em consideração:</p>
+            <ul>
+                <li>O tipo de conteúdo</li>
+                <li>A importância</li>
+                <li>A frequência de uso</li>
+                <li>Objectivos</li>
+            </ul>
+        </section>
+
+        <section data-background-image="img/31.jpg" data-background-color="#fff" class="text-left">
+            <h3>Mostly fluid</h3>
+            <br /><br /><br /><br /><br /><br /><br /><br />
+            
+        </section>
+
+        <section data-background-image="img/32.jpg" data-background-color="#fff" class="text-left">
+            <h3>Column Drop</h3>
+            <br /><br /><br /><br /><br /><br /><br /><br />
+        </section>
+
+        <section data-background-image="img/33.jpg" data-background-color="#fff" class="text-left">
+            <h3>Layout shifter</h3>
+            <br /><br /><br /><br /><br /><br /><br /><br />
+        </section>
+
+        <section data-background-image="img/34.jpg" data-background-color="#fff" class="text-left">
+            <h3>tiny tweaks</h3>
+            <br /><br /><br /><br /><br /><br /><br /><br />
+        </section>
+
+        <section class="text-left">
+            <p>Ao longo do nosso dia utilizamos diversos modos de navegação, organização e categorização da informação que consultamos em websites e aplicações. Segundo Richard Saul Wurman, podemos usar o método de organização LATCH</p>
+            <ul>
+                <li>Location</li>
+                <li>Alphabet</li>
+                <li>Time</li>
+                <li>Category</li>
+                <li>Hierarchy</li>
+            </ul>
+        </section>
+
+        <section class="text-left" data-background-color="#644EA0">
+            <p>Perguntas a fazer para organizar o conteúdo:</p>
+            <ul>
+                <li>Quão grande é o conteúdo?</li>
+                <li>Quanto espaço é necessário para o mostrar?</li>
+                <li>Tem ordem?</li>
+                <li>O Utilizador pode pesquisar ou ordena?r</li>
+                <li>Que operações o utilizador pode realizar?</li>
+            </ul>
+        </section>
+
+        <section class="text-left">
+            <p>A tendencia para as formas mais comuns de organizar a informação são:</p>
+            <ul>
+                <li>Listas de texto</li>
+                <li>Menus</li>
+                <li>Cards</li>
+                <li>Lista de Resultados</li>
+                <li>Tabelas</li>
+                <li>Painéis ou Accordions</li>
+            </ul>
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <p>Contúdo existe variadas modalidades de organização de conteúdo e informação:</p>
+            <strong>Feature, Search and Browse</strong>
+            <ul>
+                <li>Combinação de três organizações na página principal</li>
+                <li>Deve ser usado quando o nosso produto digital tem uma grande variedade de conteúdos</li>
+                
+            </ul>
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <div class="container">
+                <div class="col">
+<ul>
+
+
+    <li>Features, Search and Browse</li>
+    <li>Mobile Direct Access</li>
+    <li>Streams and Feeds</li>
+    <li>Media Browser (Thumbnails)</li>
+    <li>Dashboard</li>
+    <li>Canvas Plus Palette</li>
+    <li>Wizard</li>
+    <li>Settings Editor</li>
+</ul>
+                </div>
+                <div class="col">
+                   <ul>
+                    <li>Alternative Views</li>
+                    <li>Many Workspaces</li>
+                    <li>Help Systems</li>
+                    <li>Tags</li>
+                    <li>Clear Entry Points</li>
+                    <li>Menus</li>
+                    <li>Pyramid</li>
+                    <li>Modal Panel</li>
+                    <li>Deep Links</li>
+                   </ul>
+                </div>
+                <div class="col">
+                  <ul>
+                      <li>Escape Hatch</li>
+                        <li>Fat/Mega Menus</li>
+                            <li>Sitemap Footer</li>
+                                <li>Sign-in Tools</li>
+                                    <li>Progress Indicators</li>
+                                        <li>Breadcrumbs</li>
+                                            <li>Annotated Scroll Bar</li>
+                  </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="text-left">
+            <strong>Mobile Direct Access</strong>
+            <div class="container">
+                <div class="col"><ul>
+                    <li>O ecrã principal deve accionar informação sem requerer um input por parte do utilizador</li>
+                    <li>Deve ser usado quando a nossa App tem uma função macro genérica</li>
+                    <li>Produzir valor instantâneo ao utilizador, criar um engagement imediato</li>
+                </ul></div>
+                <div class="col">
+                    <img src="img/3maps.jpg" class="r-frame" alt="" style="height: 500px;">
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="text-left">
+            <strong>Streams and Feeds</strong>
+            <div class="container">
+                <div class="col"><ul>
+                <li>Um contínuo update de histórias, imagens, artigos, comentários, vertical scroll</li>
+                <li>Deve ser usado quando o nosso produto é atualizado frequentemente (ao dia)</li>
+                <li>Assegura que o utilizador vê sempre os elementos mais recentes</li>
+            </ul>    </div>
+            <div class="col">
+                <img src="img/3stretch.png" class="r-frame" alt="">
+            </div>
+            </div>
+        </section>
+
+        <section class="text-left">
+            <strong>Media Browser</strong>
+            <div class="container">
+                <div class="col"><ul>
+                <li>Uma grelha de elementos na qual é possivel procurar e seleccionar</li>
+                <li>Deve ser usado quando necessitamos de duas vistas principais</li>
+            </ul>    </div>
+            <div class="col">
+                <img src="img/3linus.png" class="r-frame" alt="">
+            </div>
+            </div>
+        </section>
+        
+        <section class="text-left" data-background-color="#fff">
+            <strong>Dashboard</strong>
+            <div class="container">
+                <div class="col"><ul>
+                <li>É sempre o ecrã que o utilizador vê assim que está na sua área de trabalho</li>
+                <li>Deve ser usado quando precisamos de fornecer um rápido feedback do ponto de situação das informações do produto</li>
+                <li>Página deve assegurar que se faz acompanhar de alguns elementos auxiliares como titulos, tabs, paineis, listas, gráficos, etc...</li>
+            </ul>    </div>
+            <div class="col">
+                <img src="img/3dashboard.jpg" class="r-frame" alt="">
+            </div>
+            </div>
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <strong>Wizard</strong>
+            <div class="container">
+                <div class="col"><ul>
+                <li>Componente que direcciona o utilizador através da interface, passo a passo até concluir um processo</li>
+                <li>Deve ser usado quando o processo tem muitos passos.</li>
+            </ul>    </div>
+            <div class="col">
+                <img src="img/3woo.png" class="r-frame" alt="">
+            </div>
+            </div>
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <strong>Settings Editor</strong>
+            <div class="container">
+                <div class="col"><ul>
+                <li>Página onde se encontram todas as definições, preferências ou propriedades de um sistema</li>
+                <li>Deve ser usado quando estamos a trabalhar num produto com muitas funcionalidades</li>
+                <li>Deve estar organizados com uma sequência lógica.</li>
+            </ul>    </div>
+            <div class="col">
+                <img src="img/3settings.png" class="r-frame" alt="">
+            </div>
+            </div>
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <strong>Modal panel</strong>
+            <div class="container">
+                <div class="col"><ul>
+                <li>Um painel que se sobrepões ao ecrã corrente sem qualquer tipo de navegação</li>
+                <li>Normalmente é invocado pelo utilizador e vai puxar toda a sua atenção</li>
+            </ul>    </div>
+            <div class="col">
+                <img src="img/3modal.png" class="r-frame" alt="">
+            </div>
+            </div>
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <strong>Progress Indicator</strong>
+            <div class="container">
+                <div class="col"><ul>
+                <li>Identificação clara da fase em que o Utilizador se encontra</li>
+                <li>Usado juntamente com o Wizard para marcar posição</li>
+            </ul>    </div>
+            <div class="col">
+                <img src="img/3timeline.png" class="r-frame" alt="">
+            </div>
+            </div>
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <strong>Tabs</strong>
+            <div class="container">
+                <div class="col"><ul>
+                <li>Conteúdo disperso por diferentes tabs</li>
+                <li>Deve ser utilizado quando queremos apenas disponibilizar uma informação específica de cada vez.</li>
+                <li>Estão amplamente utilizadas, desktops e mobile.</li>
+            </ul>    </div>
+            <div class="col">
+                <img src="img/3tabs.png" class="r-frame" alt="">
+            </div>
+            </div>
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <strong>Accordion</strong>
+            <div class="container">
+                <div class="col"><ul>
+                <li>Módulos que se expandem de acordo com a interação do utilizador</li>
+                <li>Deve ser utilizado quando o conteúdo é semelhante</li>
+
+            </ul>    </div>
+            <div class="col">
+                <img src="img/3accordion.jpg" class="r-frame" alt="">
+            </div>
+            </div>
+        </section>
+
+        <section class="text-left">
+            <strong>Collapsible panels</strong>
+            <div class="container">
+                <div class="col"><ul>
+                <li>Quando existe informação adicional para explicar o conteúdo principal.</li>
+                <li>Simplifica a interface e o utilizador consegue controlar a sua visualização.</li>
+            </ul>    </div>
+            <div class="col">
+                <img src="img/3panels.png" class="r-frame" alt="">
+            </div>
+            </div>
+        </section>
+
+        <section class="text-left">
+            <h3>Design Pattenrs - Components</h3>
+        </section>
+
+        <section class="text-left">
+            <p>Usados para captar informação de dados dos utilizadores.</p>
+        </section>
+
+        <section class="text-left">
+            <ul>
+                <li>Uma escolha de várias</li>
+                <li>Várias escolhas</li>
+                <li>Items introduzidos pelo próprio utilizador</li>
+                <li>Textos</li>
+                <li>Números</li>
+                <li>Datas e Horas</li>
+            </ul>
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <h4>Uma escolha de duas possíveis</h4>
+            <img src="img/3yesno.png" alt="">
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <div class="container">
+                <div class="col">
+                    
+                    <h4>Checkbox</h4>
+                    <ul>
+                        <li>Consome pouco espaço</li>
+                    </ul>
+                    <img src="img/3checkbox.png" alt="">
+                </div>
+                <div class="col">
+                    <h4>Radio buttons</h4>
+                    
+                    <ul>
+                        <li>As possíveis escolhas estão visíveis</li>
+                        <li>Consome mais espaço</li>
+                    </ul>
+                    <img src="img/3radio.png" alt="">
+                </div>
+            </div>
+            
+
+            
+        </section>
+        
+        <section class="text-left" data-background-color="#fff">
+            <p>Dropdown list</p>
+
+            <ul>
+                <li>As escolhas possíveis estão visíveis</li>
+                <li>Pouco espaço, mas escalável</li>
+                <li>Obriga a uma ação para se verem todas as opções</li>
+            </ul>
+            <img src="img/3drop.png" alt="">
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <p>Uma opção de N</p>
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <p>Radio buttons</p>
+            <ul>
+                <li>Todas as opções estão visiveis</li>
+                <li>Consome mais espaço</li>
+            </ul>
+            <img src="img/3radio.png" alt="">
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <p>Dropdown</p>
+            <ul>
+                <li>Trabalha bem o espaço disponível</li>
+                <li>Só é visível uma escolha de cada vez</li>
+            </ul>
+            <img src="img/3drop.png" alt="">
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <p>Toggle buttons</p>
+            <ul>
+                <li>Trabalha bem o espaço disponível e todas as opções estão visíveis</li>
+                <li>Não é transmite opção única - obriga a pensar</li>
+            </ul>
+            <img src="img/3toggle.png" alt="">
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <p>Single Selection list</p>
+            <ul>
+                <li>Trabalha bem o espaço disponível</li>
+                <li>Só é visível uma escolha de cada vez.</li>
+            </ul>
+            <img src="img/3single.png" alt="">
+        </section>
+
+
+        <section class="text-left" data-background-color="#fff">
+            <p>Spinner</p>
+            <ul>
+                <li>Necessita de pouco espaço</li>
+                <li>Requer alguma habilidade de interação</li>
+            </ul>
+            <img src="img/3spinner.png" alt="">
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <p>Dropdown list</p>
+            <ul>
+                <li>Ocupa pouco espaço</li>
+                <li>Só é visivel uma escolha de cada vez, e se tiver muitos items, obriga a fazer scroll dentro da dropdown</li>
+            </ul>
+            <img src="img/3drop2.png" alt="">
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <p>Cascading List</p>
+            <ul>
+                <li>Vários items visiveis ao mesmo tempo e organizados</li>
+                <li>Consome muito espaço</li>
+            </ul>
+            <img src="img/3cascading.png" alt="">
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <p>Checkboxes</p>
+            <ul>
+                <li>Todas as opções têm um estado visível</li>
+                <li>Consome muito espaço</li>
+            </ul>
+            <img src="img/3checks.png" alt="">
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <p>Multiple Selection Dropdown</p>
+            <ul>
+                <li>É dificil compreender os que estão selecionados</li>
+                <li>Nem todas as opções estão visíveis.</li>
+            </ul>
+            <img src="img/3multiple.png" alt="">
+        </section>
+        
+        <section class="text-left" data-background-color="#fff">
+            <p>List builder</p>
+
+            <ul>
+                <li>Excelente para quando temos uma lista muito grade e precisamos de selecionar poucas opções.</li>
+                <li>Consome muito espaço</li>
+            </ul>
+            <img src="img/3listbuilder.png" alt="">
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <p>List new item row</p>
+            <ul>
+                <li>Adicionar um novo item é muito fácil.</li>
+                <li>Visualmente pode ficar confuso</li>
+            </ul>
+            <img src="img/3linknew.png" alt="">
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <p>Input field</p>
+            <img src="img/3input.png" alt="">
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <p>Multiline text area</p>
+            <img src="img/3multi.png" alt="">
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <p>Slider</p>
+            <ul>
+                <li>Consome muito espaço e é dificil usar apenas com o teclado</li>
+            </ul>
+            <img src="img/3slider.png" alt="">
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <p>Double slider</p>
+            <ul>
+                <li>Óptimo para seleccionar um "range"</li>
+                <li>Impossível de trabalhar com o teclado</li>
+            </ul>
+            <img src="img/3doubleslider.png" alt="">
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <p>Two sliders</p>
+            <ul>
+                <li>Mais confuso que o anterior</li>
+                <li>Impossível de trabalhar com o teclado</li>
+            </ul>
+            <img src="img/3twosliders.png" alt="">
+        </section>
+
+        
+        <section class="text-left" data-background-color="#fff">
+            <p>Date Picker</p>
+            <ul>
+                <li>Modelo muito utilizado com uma boa representação</li>
+                <li>Interação por vezes complexa</li>
+            </ul>
+            <img src="img/3datepicker.png" alt="">
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <h3>Design Paterns Input pelo utilizador</h3>
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <p>Forgiving Format</p>
+            <ul>
+                <li>Permite que o utilizador insira o formato que pretende</li>
+                <li>Tem o objetico de reduzir a fricção com o utilizador</li>
+            </ul>
+
+            <img src="img/3forgiving.png" alt="">
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <p>Structured Format</p>
+            <ul>
+                <li>Usado para obter especificamente um dado com uma formatação específica</li>
+            </ul>
+            <img src="img/3structured.png" alt="">
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <p>Fill in the blanks</p>
+            <ul>
+                <li>Ajuda que a interface seja muito fácil de entender</li>
+            </ul>
+            <img src="img/3fill.png" alt="">
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <p>Input hints</p>
+            <ul>
+                <li>Para além do placeholder text, existe uma "dica" presente</li>
+                <li>Esclarece o utilizador para o que tem de preencher</li>
+            </ul>
+            <img src="img/3inputhints.png" alt="">
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <p>Responsive Enabling</p>
+            <ul>
+                <li>Apenas se mostra o campo a seguir quando o utilizador preencher o campo actual.</li>
+                <li>Guia o utilizador num processo de inserção de dados</li>
+            </ul>
+            <img src="img/3responsiveenabling.png" alt="">
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <p>Estados / Validação</p>
+            <p>Temos ainda de ter em conta os estados dos campos e a sua validação (se os dados foram inseridos correctamente).</p>
+            <img src="img/3validation.png" alt="">
+        </section>
+
+        <section class="text-left" data-background-color="#fff">
+            <h3>Reverse Engineering para um Wireframe</h3>
+            <p>O Spotify quer apresentar videoclips na sua página principal, um apenas, da música mais ouvida da semana. Objectivo: em figma criar um wireframe de baixa fidelidade, com uma proposta.</p>
+
+            <p>Para referência têm aqui o processo todo explicado de como chegaram ao seu UI actual: https://www.uxbydrew.io/spotify</p>
+        </section>
+
+        <section class="text-left">
+            https://www.figma.com/file/V83pCPYCeH7Kudxit8FqoW/Wireframing-(Copy)?node-id=0%3A1
+        </section>
+
+        <section data-background-color="#fff">
+            <img src="img/export.png" alt=""  class="r-stretch">
+        </section>
+
+
+    <section class="text-left">
+        <h4>Referências:</h4>
+        <ul>
+            <li>https://start.uxdesign.cc/information-architecture/</li>
+            <li>Abby Covert - https://abbycovert.com/</li>
+            <li>Nielsen Norman Group - https://www.nngroup.com</li>
+        </ul>
+    </section>
+
+
+
+
+    </div>
+
+  </div>
+
+  <script src="../revealjs/dist/reveal.js"></script>
+  <script src="../revealjs/plugin/highlight/highlight.js"></script>
+  <script>
+    Reveal.initialize({
+      center: true,
+      hash: true,
+      autoPlayMedia: true,
+      plugins: [RevealHighlight]
+    });
+
+  </script>
+
+</body>
+
+</html>

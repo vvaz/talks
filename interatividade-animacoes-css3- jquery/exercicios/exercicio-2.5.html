@@ -17,27 +17,34 @@
       width: 250px;
     }
 
+    .transition{
+        background:teal;
+        color:#efefef;
+        width:200px;
+        padding:1em 0;
+        text-align: center;
+        font-size:1.2em;
+        letter-spacing: .05em;
+        border-radius: 10px;
+        transition: .4s background ease-out;
+        }
+
+        .transition p {
+        margin:0;
+        padding:0;
+        pointer-events: none;
+        }
+
+        .transition:hover {
+        background:blueviolet;
+        }
+
 </style>
 </head>
 <body>
 
-  <label for="">
-    <input type="text">
-    Nome
-  </label>
 
-  <label for="">
-    <input type="text">
-    Contacto
-  </label>
 
-  <select name="" id="">
-    <option value="trabalho">Trabalho</option>
-    <option value="telemovel">Telemóvel</option>
-    <option value="casa">Casa</option>
-  </select>
-
-  <br /><br /><br />
 
   <h3>Exemplo de um formulário com focus e animação:</h3>
 
@@ -56,6 +63,12 @@
     <option value="telemovel">Telemóvel</option>
     <option value="casa">Casa</option>
   </select>
+
+  <button class="transition">
+      <p>
+          Submeter
+      </p>
+  </button>
 
 
 </body>
