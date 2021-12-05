@@ -121,8 +121,44 @@
         </section>
 
         <section class="text-left">
-            <p></p>
+            <p>Evitando conflitos</p>
+            <p>Os conflitos começam a aparecer quando começamos a usar mais do que uma library que utilize o:</p>
+            <pre>
+                <code>
+                    $();
+                </code>
+            </pre>
+            <p>Uma das libraries que dá conflicto com jQuery é a Prototype</p>
         </section>
+
+        <section class="text-left">
+            <p>Podemos ultrapassar isso criando uma variável diferente para usar o jQuery</p>
+
+            <pre>
+                <code>
+                    var $j = jQuery.noConflict();
+                    $j();
+                    $j(document).ready(function() {
+                        alert("assim funciona");
+                    })
+                </code>
+            </pre>
+        </section>
+
+        <section class="text-left">
+            <p>Usando nativamente:</p>
+            <pre>
+                <code>
+                    jQuery(document).ready(function() {});
+                </code>
+            </pre>
+        </section>
+
+        <section class="text-left">
+            <p>Selecionando Elementos no HTML</p>
+        </section>
+
+
 
     </div>
 
