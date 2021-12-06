@@ -76,13 +76,13 @@
         <section class="text-left">
             <p>Algumas diferenças:</p>
             <pre>
-                <code>
+                <code data-trim data-line-numbers>
                     document.getElementsByClassName("class");
                 </code>
             </pre>
 
             <pre>
-                <code>
+                <code data-trim data-line-numbers>
                     $('class');
                 </code>
             </pre>
@@ -96,7 +96,7 @@
             <p>Sintaxe:</p>
 
             <pre>
-                <code>
+                <code data-trim data-line-numbers>
                     $
                     $.acao
                     $(elemento).acao
@@ -108,7 +108,7 @@
 
         <section class="text-left">
             <pre>
-                <code>
+                <code data-trim data-line-numbers>
                     $.acao
                 </code>
             </pre>
@@ -117,7 +117,7 @@
 
         <section class="text-left">
             <pre>
-                <code>
+                <code data-trim data-line-numbers>
                     $(elemento).acao
                 </code>
             </pre>
@@ -128,7 +128,7 @@
             <p>Evitando conflitos</p>
             <p>Os conflitos começam a aparecer quando começamos a usar mais do que uma library que utilize o:</p>
             <pre>
-                <code>
+                <code data-trim data-line-numbers>
                     $();
                 </code>
             </pre>
@@ -139,7 +139,7 @@
             <p>Podemos ultrapassar isso criando uma variável diferente para usar o jQuery</p>
 
             <pre>
-                <code>
+                <code data-trim data-line-numbers>
                     var $j = jQuery.noConflict();
                     $j();
                     $j(document).ready(function() {
@@ -152,7 +152,7 @@
         <section class="text-left">
             <p>Usando nativamente:</p>
             <pre>
-                <code>
+                <code data-trim data-line-numbers>
                     jQuery(document).ready(function() {});
                 </code>
             </pre>
@@ -173,7 +173,7 @@
 
         <section class="text-leff">
             <pre>
-                <code>
+                <code data-trim data-line-numbers>
                     if(condição) {
                         // código a executar se for verdadeiro
                     } 
@@ -186,7 +186,7 @@
 
         <section class="text-leff">
             <pre>
-                <code>
+                <code data-trim data-line-numbers>
                     if( $('.class') ) {
                         // codigo
                     }
@@ -197,7 +197,7 @@
 
         <section class="text-leff">
             <pre>
-                <code>
+                <code data-trim data-line-numbers>
                     if( $('.class').length > 0 ) {
                         // codigo
                     }
@@ -209,7 +209,7 @@
         <section class="text-left">
             <p>Transferindo o selector para uma variável</p>
             <pre>
-                <code>
+                <code data-trim data-line-numbers>
                     let selector = $('.botao');
                 </code>
             </pre>
@@ -219,13 +219,13 @@
             <p>Mudando cores dos elementos></p>
             
             <pre>
-                <code>
+                <code data-trim data-line-numbers>
                     $('li').css('color', 'red');
                 </code>
             </pre>
             <p>Quando são várias property:</p>
             <pre>
-                <code>
+                <code data-trim data-line-numbers>
                     $('li').css({ 'color': 'red', 'font-size': '30px;' });
                 </code>
             </pre>   
@@ -240,7 +240,7 @@
             <h4>Lendo dados guardados nos atributos com jQuery</h4>
 
             <pre>
-                <code>
+                <code data-trim data-line-numbers>
                     $j(document).ready(function() {
                         $('a').attr('border');
                         $('a').attr('href');
@@ -253,7 +253,7 @@
             <h4>Mudando atributos com jQuery</h4>
 
             <pre>
-                <code>
+                <code data-trim data-line-numbers>
                     $j(document).ready(function() {
                         $('a').attr('href','https://google.com');
                     });
@@ -265,7 +265,7 @@
             <h4>Mudando conteúdo com jQuery</h4>
 
             <pre>
-                <code>
+                <code data-trim data-line-numbers>
                     $j(document).ready(function() {
                         $('.class').html("Alguma coisa diferente");
                     });
@@ -277,9 +277,9 @@
             <h4>Mudando conteúdo com jQuery</h4>
 
             <pre>
-                <code>
+                <code data-trim data-line-numbers>
                     $j(document).ready(function() {
-                        $('.class').text('<div>Alguma coisa diferente</div>');
+                        $('.class').text('Alguma coisa diferente');
                     });
                 </code>
             </pre>
@@ -289,7 +289,7 @@
             <p>Adicionando classes com jQuery</p>
             
             <pre>
-                <code>
+                <code data-trim data-line-numbers>
                     $j(document).ready(function() {
                         $(element).addClass('novaClass');
                     });
