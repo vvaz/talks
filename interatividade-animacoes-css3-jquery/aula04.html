@@ -336,7 +336,51 @@
 
 
         <section class="text-left">
-            <h4>Eventos em jQuery</h4>
+            <h4>Efeitos</h4>
+        </section>
+
+        <section class="text-left">
+            <pre>
+                <code data-trim data-line-numbers>
+                    $j(document).ready(function() {
+                       $(elemento).hide(speed,callback);
+                       $(elemento).show(speed,callback);
+                       $(elemento).toggle(speed,callback);
+                    });
+                </code>
+            </pre>
+            <p>O speed e o callback são opcionais</p>
+        </section>
+
+        <section class="text-left">
+            <p>Os callback são funções que vão correr apenas quando o efeito finalizar.</p>
+        </section>
+
+        <section class="text-left">
+            <p>Fade</p>
+            <pre>
+                <code data-trim data-line-numbers>
+                    $j(document).ready(function() {
+                       $(elemento).fadeIn();
+                       $(elemento).fadeOut();
+                       $(elemento).fadeToggle();
+                       $(elemento).fadeTo(); // usado para fazer fade à opacidade de 0 a 1
+                    });
+                </code>
+            </pre>
+        </section>
+
+        <section class="text-left">
+            <p>Sliding</p>
+            <pre>
+                <code data-trim data-line-numbers>
+                    $j(document).ready(function() {
+                       $(elemento).slideDown());
+                       $(elemento).slideUp());
+                       $(elemento).slideToggle();
+                    });
+                </code>
+            </pre>
         </section>
 
         <section class="text-left">
