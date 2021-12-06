@@ -1,0 +1,1 @@
+$('li').css({ 'color': 'red', 'background': 'yellow' });
