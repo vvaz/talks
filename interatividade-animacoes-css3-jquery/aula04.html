@@ -156,8 +156,71 @@
 
         <section class="text-left">
             <p>Selecionando Elementos no HTML</p>
+            <ul>
+                <li>Seleccionando todos os elementos</li>
+                <li>Seleccionando elementos específicos</li>
+            </ul>
         </section>
 
+        <section class="text-left">
+            <p>Como fazemos para verificar se existe algum elemento no DOM com uma class?</p>
+            jquery4.html
+        </section>
+
+        <section class="text-leff">
+            <pre>
+                <code>
+                    if(condição) {
+                        // código a executar se for verdadeiro
+                    } 
+                    else {
+                        // código a executar se for falso
+                    }
+                </code>
+            </pre>
+        </section>
+
+        <section class="text-leff">
+            <pre>
+                <code>
+                    if( $('.class') ) {
+                        // codigo
+                    }
+                </code>
+            </pre>
+            <p>Isto vai dar sempre falso, porque o selector retorna sempre alguma coisa.</p>
+        </section>
+
+        <section class="text-leff">
+            <pre>
+                <code>
+                    if( $('.class').length > 0 ) {
+                        // codigo
+                    }
+                </code>
+            </pre>
+            <p>Assim, se o length do objecto for maior que 0, é sinal que existe.</p>
+        </section>
+
+        <section class="text-left">
+            <p>Transferindo o selector para uma variável</p>
+            <pre>
+                <code>
+                    let selector = $('.botao');
+                </code>
+            </pre>
+        </section>
+
+        <section class="text-left">
+            Exercicio 1 jQuery
+        </section>
+
+        <sections class="text-left">
+            <h4>Referências</h4>
+            <ul>
+                <li>Diferentes variáveis - https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/</li>
+            </ul>
+        </sections>
 
 
     </div>

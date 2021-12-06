@@ -28,5 +28,16 @@ $(document).ready(function() {
 
 })
 
+// seleccionar elementos
+$('elemento');
+
+// seleccionar classes
+$('.classes');
+
+// seleccionar IDs
+$('#id')
+
+// listar elementos com duas ou mais classes
+$('.list1 li.listA');
 
 
