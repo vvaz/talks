@@ -52,13 +52,27 @@
         <li>Item 4</li>
     </ul>
 
-    <div class="green"></div>
+    <div class="green">
+        <p>Paragrafo</p>
+        <button>Click me</button>
+    </div>
+
+
+    <a href="" class="" id=""></a>
 
 
 
     <!-- Importação jQuery-->
     <script src="jquery.min.css"></script>
     <script src="scripts.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            $('.green').html("<strong>Texto mudado</strong>");
+            $('.green').text("<strong>Texto mudado</strong>");
+        });
+    </script>
 
 
 </body>

@@ -334,6 +334,181 @@
             Exercício 2 jQuery
         </section>
 
+        <section class="text-left">
+            <p>
+                Diferenças entre o .append(); e o .html();
+            </p>
+
+            <p class="fragment">O .append() vai adicionar coisas ao que já existe, e o .html vai substituir todo o código que se encontra nesse elemento.</p>
+        </section>
+
+        <section class="text-left">
+            <p>Como transferir elementos para uma variável?</p>
+            <code data-trim data-line-numbers>
+                $j(document).ready(function() {
+                    var primeiraVariavel = document.getElementById("id");
+                    primeiraVariavel.html('<strong> Vamos mudar o HTML </strong>'); // Não vai funcionar
+
+                    var segundaVariavel = document.getElementById("id");
+                    $(segundaVariavel).html('<strong> Vamos mudar o HTML </strong>'); // Assim já vai funcionar
+                });
+            </code>
+
+            <p>Estamos a enviar a variável para "dentro" do jQuery</p>
+        </section>
+
+        <section class="text-left">
+            <p>Navegação entre elementos:</p>
+            <code data-trim data-line-numbers>
+                <div class="container">
+                    <div>
+                        <div class="column">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem vero qui natus ratione tenetur numquam quisquam culpa veniam ab vel nam ut cupiditate unde, pariatur suscipit quaerat libero? Repudiandae, maxime!</div>
+                    </div>
+                </div>
+            </code>
+        </section>
+
+        <section class="text-left">
+            <p>Navegação entre elementos:</p>
+            <code data-trim data-line-numbers>
+                $('.column').parent(); // selecciona o "pai"
+                $('.column').parent().parent(); // selecciona o "avô"
+                $('.column').find(); // podemos procurar por elementos dentro do "elemento seleccionado"
+                $('.class').eq(2); // vai seleccionar o 3 elemento (começa no 0)
+            </code>
+        </section>
+
+        <section class="text-leff">
+            <p>Como já vimos anteriormente, podemos procurar por uma classe em todo o nosso DOM:</p>
+            <pre>
+                <code data-trim data-line-numbers>
+                    if( $('.class').length > 0 ) {
+                        // codigo
+                    }
+                </code>
+            </pre>     
+        </section>
+
+        <section class="text-leff">
+            <p>Mas também podemos pesquisar por elementos com classe no nosso DOM:</p>
+            <pre>
+                <code data-trim data-line-numbers>
+                    if( $('h1').hasClass('class') ) {
+                        // codigo
+                    }
+                </code>
+            </pre>     
+        </section>
+
+        <section class="text-leff">
+            <p>Não esquecer como adicionar uma class:</p>
+            <pre>
+                <code data-trim data-line-numbers>
+                $('h1').addClass('class');
+                </code>
+            </pre>     
+        </section>
+
+        <section class="text-leff">
+            <p>E como remover uma class:</p>
+            <pre>
+                <code data-trim data-line-numbers>
+                    $('h1').removeClass('class');
+                </code>
+            </pre>     
+        </section>
+
+
+        <section class="text-left">
+            <p>Exercício rápido:</p>
+            <p>Vamos fazer uma página HTML com 6 divs a imitar um quadrado, sem classes nem IDs. Apenas com jQuery vamos:</p>
+            <ul>
+                <li>Atribuir uma width de 200px e height de 200px</li>
+                <li>Colocar todas as divs lado a lado e com uma margin-left de 30px</li>
+                <li>Colocar o background de todas com cores diferentes</li>
+                <li>Adicionar uma classe diferente a todas as div</li>
+            </ul>
+
+        </section>
+
+        <section class="text-left">
+            <h4>Eventos:</h4>
+            <p>Todas as acções de utilizador, que uma página web pode responder, chamam-se eventos.</p>
+        </section>
+
+        <section class="text-left">
+            <p>Exemplos de eventos:</p>
+            <ul>
+                <li>click</li>
+                <li>hover</li>
+                <li>mouseenter</li>
+                <li>mouseleave</li>
+                <li>keypress</li>
+                <li>keydown</li>
+                <li>keyup</li>
+            </ul>
+        </section>
+
+        <section class="text-left">
+            <p>Exemplos de eventos:</p>
+            <ul>
+                <li>submit</li>
+                <li>change</li>
+                <li>focus</li>
+                <li>load</li>
+                <li>resize</li>
+                <li>scroll</li>
+            </ul>
+        </section>
+
+        <section class="text-left">
+            <p>Sintaxe:</p>
+            <pre>
+                <code data-trim data-line-numbers>
+
+                    $("p").click(); 
+                    
+                    // o que acontece depois de um evento:
+                    $("p").click(function(){
+                        // action goes here!!
+                    }); 
+                </code>
+            </pre>
+        </section>
+
+        <section class="text-left">
+            <p>O Método on() permite-nos ter vários eventos:</p>
+            <pre>
+                <code data-trim data-line-numbers>
+                    // um evento
+                    $("p").on("click", function(){
+                        $(this).hide();
+                    }); 
+                </code>
+            </pre>
+        </section>
+
+        <section class="text-left">
+            <p>O Método on() permite-nos ter vários eventos:</p>
+            <pre>
+                <code data-trim data-line-numbers>
+                    // vários eventos:
+                    $("p").on({
+                        mouseenter: function(){
+                          $(this).css("background-color", "lightgray");
+                        },
+                        mouseleave: function(){
+                          $(this).css("background-color", "lightblue");
+                        },
+                        click: function(){
+                          $(this).css("background-color", "yellow");
+                        }
+                      }); 
+                </code>
+            </pre>
+        </section>
+
+
 
         <section class="text-left">
             <h4>Efeitos</h4>
