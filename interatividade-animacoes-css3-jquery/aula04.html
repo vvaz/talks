@@ -325,13 +325,21 @@
                         $(element).prepend(''); // Insere código dentro do elemento
                     });
 
-                    <img src="#" alt="" width="200" height="200">
+
                 </code>
             </pre>
         </section>
 
         <section class="text-left">
             Exercício 2 jQuery
+        </section>
+
+        <section class="text-left">
+            <p>Exercício rápido</p>
+
+            <p>Vamos fazer um toggle de layout de uma página web de white mode para dark mode.</p>
+            <p>O utilizador quando chega ao site vê o fundo branco e texto a preto, e quando clica num botão, o fundo fica a preto e o texto a branco</p>
+            
         </section>
 
         <section class="text-left">
@@ -344,6 +352,7 @@
 
         <section class="text-left">
             <p>Como transferir elementos para uma variável?</p>
+            <pre>
             <code data-trim data-line-numbers>
                 $j(document).ready(function() {
                     var primeiraVariavel = document.getElementById("id");
@@ -353,29 +362,34 @@
                     $(segundaVariavel).html('<strong> Vamos mudar o HTML </strong>'); // Assim já vai funcionar
                 });
             </code>
+        </pre>
 
             <p>Estamos a enviar a variável para "dentro" do jQuery</p>
         </section>
 
         <section class="text-left">
-            <p>Navegação entre elementos:</p>
-            <code data-trim data-line-numbers>
-                <div class="container">
-                    <div>
-                        <div class="column">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem vero qui natus ratione tenetur numquam quisquam culpa veniam ab vel nam ut cupiditate unde, pariatur suscipit quaerat libero? Repudiandae, maxime!</div>
+            <p>Navegação entre elementos: Como selecionamos a div sem class?</p>
+            <pre>
+                <code data-trim data-line-numbers>
+                    <div class="container">
+                        <div>
+                            <div class="column">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem vero qui natus ratione tenetur numquam quisquam culpa veniam ab vel nam ut cupiditate unde, pariatur suscipit quaerat libero? Repudiandae, maxime!</div>
+                        </div>
                     </div>
-                </div>
-            </code>
+                </code>
+            </pre>
         </section>
 
         <section class="text-left">
             <p>Navegação entre elementos:</p>
+        <pre>
             <code data-trim data-line-numbers>
                 $('.column').parent(); // selecciona o "pai"
                 $('.column').parent().parent(); // selecciona o "avô"
                 $('.column').find(); // podemos procurar por elementos dentro do "elemento seleccionado"
                 $('.class').eq(2); // vai seleccionar o 3 elemento (começa no 0)
             </code>
+        </pre>
         </section>
 
         <section class="text-leff">
@@ -576,13 +590,7 @@
 
 
 
-        <section class="text-left">
-            <p>Exercício rápido</p>
 
-            <p>Vamos fazer um toggle de layout de uma página web de white mode para dark mode.</p>
-            <p>O utilizador quando chega ao site vê o fundo branco e texto a preto, e quando clica num botão, o fundo fica a preto e o texto a branco</p>
-            
-        </section>
 
         <section class="text-left">
             Exercício 3 jQuery
