@@ -1,0 +1,147 @@
+html {
+	font-size: 1px;
+}
+
+.enunciado {
+    background: white;
+    color: #000;
+    font-size: 20px;
+    width: 100%;
+    padding: 2rem 10rem;
+    margin: 0;
+}
+
+
+body {
+    height: 100%;
+    margin: 0;
+    background: salmon;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.box {
+    height: 100vh;
+    width: 300px;
+    position: absolute;
+    left: -350px;
+    z-index: 1001;
+    background: #D32F2F;
+    overflow: hidden;
+    text-align: left;
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+}
+
+.active {
+    -webkit-transform: translateX(350px);
+    -moz-transform: translateX(350px);
+    -o-transform: translateX(350px);
+    -ms-transform: translateX(350px);
+    transform: translateX(350px);
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    -moz-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    -webkit-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.open-menu {
+    display: inline-block;
+}
+
+.open-menu button{
+    display: inline;
+    z-index: 0;
+    background: transparent;
+    border: none;
+    margin-top: 10px;
+    margin-left: 25px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.open-menu img {
+    width: 30px;
+    height: 30px;
+}
+
+.header-menu {
+    height: 50px;
+    background: #D32F2F;
+	margin-bottom: 200px
+}
+
+.header-menu button {
+    position: relative;
+    left: 260px;
+    background: transparent;
+    border: none;
+    margin-top: 10px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.header-menu img {
+    width: 40px;
+    height: 40px;
+}
+
+.top-menu {
+    margin-top: 35px;
+}
+
+.top-menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16rem;
+    display: block;
+    line-height: 40px;
+    padding-left: 35px;
+	 transition: .2s;
+}
+
+.bottom-menu {
+    position: absolute;
+    bottom: 0px;
+    width: 300px;
+    background: #D32F2F;
+    text-align: center;
+}
+
+.bottom-menu li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    color: black;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.text {
+  	font-size: 70rem;
+  	position: absolute;
+   top: 50%;
+   left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	text-align: center;
+}
+
+/* Misc */
+li {
+    list-style-type: none;
+    padding: 0px 0px 0px 0px;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.twitter:hover {
+
+}
