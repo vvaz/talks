@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate CSS</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/tailwind.min.css">
+    <link rel="stylesheet" href="./animatecss-styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <div class="container py-10">
+        <div class="col-12 max-w-2xl mx-auto">
+            <h1 class="animate__animated animate__bounce">Animate CSS</h1>
+
+            <div class="box animate__animated animate__bounceIn bg-orange-600"></div>
+        </div>
+    </div>
+
+    <div class="container py-10">
+        <div class="col-12 max-w-2xl mx-auto py-10">
+            <h1 class="">AOS - Animate on Scroll</h1>
+            <div class="box" data-aos="fade-up"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
+
+    
+</body>
+</html>

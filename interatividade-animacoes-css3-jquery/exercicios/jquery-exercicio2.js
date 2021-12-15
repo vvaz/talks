@@ -32,4 +32,6 @@ $(document).ready(function() {
     $('.newLi li').eq(2).append('<li>ITEM 4</li');
 
 
+    $('.newLi').find('li:nth-child(1)');
+
 });

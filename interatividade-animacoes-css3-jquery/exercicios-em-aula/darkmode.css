@@ -1,0 +1,18 @@
+button {
+    padding: 1rem;
+    background: #000;
+    color: #fff;
+    font-size: 2rem;
+}
+
+body.white {
+    color: black;
+    background: white;
+    transition: all 1s;
+}
+
+body.black {
+    color: white;
+    background: black;
+    transition: all 1s;
+}
