@@ -35,10 +35,7 @@ body {
 }
 
 .active {
-    -webkit-transform: translateX(350px);
-    -moz-transform: translateX(350px);
-    -o-transform: translateX(350px);
-    -ms-transform: translateX(350px);
+
     transform: translateX(350px);
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     -moz-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
@@ -60,11 +57,6 @@ body {
     cursor: pointer;
 }
 
-.open-menu img {
-    width: 30px;
-    height: 30px;
-}
-
 .header-menu {
     height: 50px;
     background: #D32F2F;
@@ -81,10 +73,6 @@ body {
     cursor: pointer;
 }
 
-.header-menu img {
-    width: 40px;
-    height: 40px;
-}
 
 .top-menu {
     margin-top: 35px;
@@ -140,8 +128,4 @@ ul {
 
 button:focus {
     outline: none;
-}
-
-.twitter:hover {
-
 }
