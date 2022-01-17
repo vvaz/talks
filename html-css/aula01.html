@@ -57,17 +57,6 @@
 				<section class="text-left">
 					<h1>HTML template</h1>
 
-					<pre>
-					<code class="hljs" data-trim contenteditable>
-						&lt;html&gt;
-						  &lt;head&gt;
-							  &lt;title&gt;&lt;/title&gt;
-						  &lt;/head&gt;
-						  &lt;body&gt;
-						  &lt;/body&gt;
-						&lt;/html&gt;
-					</code>
-				</pre>
 
                 <pre>
                     <code data-trim data-line-numbers>
@@ -344,7 +333,7 @@
 					<h2>Elementos estruturais principais</h2>
 
 					<pre>
-						<code class="hljs" data-trim contenteditable>
+						<code data-trim contenteditable>
 							&lt;html&gt; ... &lt;/html&gt; - envolve toda a página
 							&lt;head&gt; ... &lt;/head&gt; - contém informações de cabeçalho, metadata, CSS, JavaScript
 							&lt;title&gt; ... &lt;/title&gt; - O título da página
@@ -357,7 +346,7 @@
 				<section>
 					<h3>Elementos estruturais comuns</h3>
 					<pre>
-					 <code class="hljs" data-trim contenteditable>
+					 <code data-trim contenteditable>
 						&lt;a&gt;
 						&lt;p&gt;
 						&lt;img&gt;
@@ -371,7 +360,7 @@
 				<section>
 					<h3>Elementos estruturais comuns - dados e listas </h3>
 					<pre>
-					 <code class="hljs" data-trim contenteditable>
+					 <code data-trim contenteditable>
 						&lt;ul&gt;
 						&lt;ol&gt;
 						&lt;li&gt;
@@ -404,7 +393,7 @@
 
 
 						<pre>
-						 <code class="hljs" data-trim contenteditable>
+						 <code data-trim contenteditable>
 							&lt;article&gt; - define um artigo no documento
 							&lt;aside&gt; - define um conteúdo à parte do conteúdo principal
 							&lt;details&gt; - define detalhes adicionais ao conteúdo
@@ -434,33 +423,16 @@
 
 		</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+        <script src="../revealjs/dist/reveal.js"></script>
+        <script src="../revealjs/plugin/highlight/highlight.js"></script>
 
-		<script>
-
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/search/search.js', async: true },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-
-		</script>
+        <script>
+            Reveal.initialize({
+              center: true,
+              hash: true,
+              plugins: [RevealHighlight]
+            });
+          </script>
 
 	</body>
 </html>
