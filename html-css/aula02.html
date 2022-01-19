@@ -56,6 +56,8 @@
 				</pre>
 				</section>
 
+
+
 				<section>
 					<p class="al">Temos sempre que definir o tipo de documento na primeira linha.</p>
 					<pre>
@@ -80,7 +82,56 @@
 					<p class="al">Algumas tags, as chamadas de comandos isolados, não precisam de ter conteúdo entre o inicio e o fim. Por exemplo: &lt;br /&gt; ou &lt;img /&gt;</p>
 				</section>
 
-				<section>
+				<section class="text-left">
+					<p>
+						&lt;html&gt; . . . &lt;/html&gt;
+					</p>
+					<p>Define que a página foi escrita em HTML.</p>
+					<p>
+						&lt;head&gt; . . . &lt;/head&gt;
+					</p>
+					<p>
+						Esta tag é usada para especificar dados meta sobre a página, por exemplo o título, dependências, definição de fonte, etc.
+					</p>
+				</section>
+
+				<section class="text-left">
+					<p>
+						&lt;title&gt; . . . &lt;/title&gt;
+					</p>
+					<p>Esta tag contém o título da página.</p>
+					<p>
+						&lt;body&gt; . . . &lt;/body&gt;
+					</p>
+
+					<p>Contém todos os elementos HTML da página.</p>
+				</section>
+
+				<section class="text-left">
+					<p>
+						&lt;meta /&gt;
+					</p>
+					<p>Mensiona o autor da página, palavras chave, datas de publicação, etc...</p>
+
+					<p>
+						&lt;link /&gt;
+					</p>
+					<p>Esta tag especifica o caminho para ligar ficheiros externos à página</p>
+				</section>
+
+				<section class="text-left">
+					<p>
+						&lt;style&gt; . . . &lt;/style&gt;
+					</p>
+					<p>Tag que serve para a inclusão de estilos dentro da própria página</p>
+
+					<p>
+						&lt;script&gt; . . . &lt;/script&gt;
+					</p>
+					<p>Tag usada para adicionar códigos em JavaScript para se conseguir adicionar algum dinamismo ao site. Podemos também incluir ficheiros externos.</p>
+				</section>
+
+				<section class="text-left">
 					<h1>Uma tag pode ter ATRIBUTOS</h1>
 
 					<p class="al">Todas as tags HTML podem ter atributos que o browser pode interpretar. Por exemplo, a tag &lt;a&gt; tem um atributo href, que o browser interpreta como o destino de uma hiperligação.</p>
@@ -91,7 +142,7 @@
 					</pre>
 				</section>
 
-				<section>
+				<section class="text-left">
 					<p class="al">O conjunto de tags, atributos e o seu conteúdo, chama-se de elemento.</p>
 
 					<p class="al">Um elemento consiste em:</p>
@@ -103,16 +154,16 @@
 
 				</section>
 
-				<section>
+				<section class="text-left">
 					<h1>Recomendações</h1>
 					<p class="al">Usar sempre tags escritas em lowercase.</p>
 					<p class="al">O standard em HTML5 não requer que as tags sejam escrita em letra minuscula, mas o W3C recomenda.
 					Já no XHTML é obrigatório.</p>
 				</section>
 
-				<section>
+				<section class="text-left">
 					<strong>Tags que cairem em desuso:</strong>
-						<div class="w-50 fl">
+
 							<p class="al">b</p>
 							<p class="al">basefont</p>
 							<p class="al">big</p>
@@ -121,8 +172,10 @@
 							<p class="al">font</p>
 							<p class="al">hr</p>
 							<p class="al">i</p>
-						</div>
-						<div class="w-50 fr">
+</section>
+<section class="text-left">
+	<strong>Tags que cairem em desuso:</strong>
+
 							<p class="al">u</p>
 							<p class="al">isindex</p>
 							<p class="al">menu</p>
@@ -130,13 +183,10 @@
 							<p class="al">small</p>
 							<p class="al">strike</p>
 							<p class="al">tt</p>
-						</div>
-
-						<div class="clearfix"></div>
 
 				</section>
 
-				<section>
+				<section class="text-left">
 					<h3>Exemplos de atributos</h3>
 					<div class="w-50 fl">
 						<p class="al">href</p>
@@ -144,20 +194,23 @@
 						<p class="al">width</p>
 						<p class="al">height</p>
 					</div>
-					<div class="w-50 fr">
+				</section>
+
+				<section class="text-left">
+					
 						<p class="al">style</p>
 						<p class="al">IDs</p>
 						<p class="al">classes</p>
-					</div>
+					
 				</section>
 
-				<section>
+				<section class="text-left">
 					<h3>Existem unidades de medida</h3>
 					<strong>Absoluta</strong>
 					<p class="al">Pixel - representado por PX <br />
 					Centimetros e Milimentros - cm e mm</p>
 				</section>
-				<section>
+				<section class="text-left">
 
 					<strong>Relativas</strong>
 					<p class="text-left">em - relativo ao font-size do elemento HTML em que se encontra</p>
@@ -168,13 +221,13 @@
 
 				</section>
 
-				<section>
+				<section class="text-left">
 					<h2>Compatibilidade</h2>
 
 					<img src="img/cssunits-browser.png" alt="Compatibilidade medidas entre os browsers" />
 				</section>
 
-				<section>
+				<section class="text-left">
 					<h3>Elementos estruturais comuns</h3>
 					<pre>
 					 <code class="hljs" data-trim contenteditable>
@@ -188,7 +241,7 @@
 				 	</pre>
 				</section>
 
-				<section>
+				<section class="text-left">
 					<h3>Elementos estruturais comuns - dados e listas </h3>
 					<pre>
 					 <code class="hljs" data-trim contenteditable>
@@ -213,8 +266,14 @@
 				</section>
 
 
-				<section>
-					<p class="al">Exercício 1</p>
+				<section class="text-left">
+					<p class="al">Exercício Criar estrutura básica de um projecto em HTML</p>
+					<ul>
+						<li>Pastas: js, css, img, inc, fonts</li>
+						<li>Na raíz criar um ficheiro chamado estruturabase.html</li>
+						<li>Com o título: "Estrutura"</li>
+						<li>Com o conteúdo da composição de todas as pastas e ficheiros que este próprio projecto tem.</li>
+					</ul>
 				</section>
 
 				<section>
