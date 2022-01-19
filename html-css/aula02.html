@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>HTML - CSS // Flag</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="./css/tailwind.min.css">
+  <link rel="stylesheet" href="../revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="../revealjs/dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="../revealjs/plugin/highlight/monokai.css">
+  <link rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+
+		<div class="reveal">
+
+
+			<div class="slides">
+
+				<!-- getting content from  https://www.slideshare.net/skosta/aula-03-html-e-boas-praticas?qid=465d5857-07c9-47b7-bba8-22a725434c2d&v=&b=&from_search=1 -->
+
+
+				<section>
+					<h3>Hoje vamos:</h3>
+					<ul>
+						<li>Um pequeno resumo da última aula</li>
+						<li>Exercicios com texto e imagens</li>
+						<li>Descobrir novos elementos estruturais do HTML5</li>
+						<li>Recomendações na escrita de código</li>
+					</ul>
+				</section>
+
+
+				<section>
+					O HTML não é uma linguagem de programação, nada mais é do que texto.
+				</section>
+
+				<section>
+					<h1>HTML template</h1>
+
+					<pre>
+					<code class="hljs" data-trim contenteditable>
+						&lt;html&gt;
+						  &lt;head&gt;
+							  &lt;title&gt;&lt;/title&gt;
+						  &lt;/head&gt;
+						  &lt;body&gt;
+						  &lt;/body&gt;
+						&lt;/html&gt;
+					</code>
+				</pre>
+				</section>
+
+				<section>
+					<p class="al">Temos sempre que definir o tipo de documento na primeira linha.</p>
+					<pre>
+						<code class="hljs" data-trim contenteditable> &lt;!DOCTYPE html&gt;
+						</code>
+					</pre>
+					<p class="al">e o DOCTYPE não é uma tag HTML</p>
+				</section>
+
+				<section>
+					<p class="al">A sintaxe do HTML baseia-se nas tags.</p>
+				</section>
+
+				<section>
+					As tags têm um inicio e fim, sempre.
+				</section>
+
+				<section>
+					&lt;tag&gt; ...... &lt;/tag&gt;
+					<p class="al">O browser irá processar tudo o que estiver contido entre a tag de inicio &lt;&gt; e a tag de fim </></p>
+					<br />
+					<p class="al">Algumas tags, as chamadas de comandos isolados, não precisam de ter conteúdo entre o inicio e o fim. Por exemplo: &lt;br /&gt; ou &lt;img /&gt;</p>
+				</section>
+
+				<section>
+					<h1>Uma tag pode ter ATRIBUTOS</h1>
+
+					<p class="al">Todas as tags HTML podem ter atributos que o browser pode interpretar. Por exemplo, a tag &lt;a&gt; tem um atributo href, que o browser interpreta como o destino de uma hiperligação.</p>
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+						&lt;a href="https://google.com"&gt;Visitar o Google &lt;/a&gt;
+					</code>
+					</pre>
+				</section>
+
+				<section>
+					<p class="al">O conjunto de tags, atributos e o seu conteúdo, chama-se de elemento.</p>
+
+					<p class="al">Um elemento consiste em:</p>
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+							&lt;tagname&gt;O conteúdo a ser mostrado... &lt;/tagname&gt;
+						</code>
+					</pre>
+
+				</section>
+
+				<section>
+					<h1>Recomendações</h1>
+					<p class="al">Usar sempre tags escritas em lowercase.</p>
+					<p class="al">O standard em HTML5 não requer que as tags sejam escrita em letra minuscula, mas o W3C recomenda.
+					Já no XHTML é obrigatório.</p>
+				</section>
+
+				<section>
+					<strong>Tags que cairem em desuso:</strong>
+						<div class="w-50 fl">
+							<p class="al">b</p>
+							<p class="al">basefont</p>
+							<p class="al">big</p>
+							<p class="al">center</p>
+							<p class="al">dir</p>
+							<p class="al">font</p>
+							<p class="al">hr</p>
+							<p class="al">i</p>
+						</div>
+						<div class="w-50 fr">
+							<p class="al">u</p>
+							<p class="al">isindex</p>
+							<p class="al">menu</p>
+							<p class="al">s</p>
+							<p class="al">small</p>
+							<p class="al">strike</p>
+							<p class="al">tt</p>
+						</div>
+
+						<div class="clearfix"></div>
+
+				</section>
+
+				<section>
+					<h3>Exemplos de atributos</h3>
+					<div class="w-50 fl">
+						<p class="al">href</p>
+						<p class="al">src</p>
+						<p class="al">width</p>
+						<p class="al">height</p>
+					</div>
+					<div class="w-50 fr">
+						<p class="al">style</p>
+						<p class="al">IDs</p>
+						<p class="al">classes</p>
+					</div>
+				</section>
+
+				<section>
+					<h3>Existem unidades de medida</h3>
+					<strong>Absoluta</strong>
+					<p class="al">Pixel - representado por PX <br />
+					Centimetros e Milimentros - cm e mm</p>
+				</section>
+				<section>
+
+					<strong>Relativas</strong>
+					<p class="al">em - relativo ao font-size do elemento HTML em que se encontra</p>
+					<p class="al">rem - relativo ao font-size do elemento &lt;body&gt;</p>
+					<p class="al">% - relativo ao elemento pai</p>
+
+					<p class="al">Fonte - https://www.w3.org/TR/css3-values/</p>
+
+				</section>
+
+				<section>
+					<h2>Compatibilidade</h2>
+
+					<img src="img/cssunits-browser.png" alt="Compatibilidade medidas entre os browsers" />
+				</section>
+
+				<section>
+					<h3>Elementos estruturais comuns</h3>
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+						&lt;a&gt;
+						&lt;p&gt;
+						&lt;img&gt;
+						&lt;div&gt;
+						&lt;table&gt;
+						&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;
+					 </code>
+				 	</pre>
+				</section>
+
+				<section>
+					<h3>Elementos estruturais comuns - dados e listas </h3>
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+						&lt;ul&gt;
+						&lt;ol&gt;
+						&lt;li&gt;
+						&lt;div&gt;
+						&lt;table&gt;
+						&lt;tr&gt;
+						&lt;td&gt;
+						&lt;th&gt;
+				 </code>
+			 </pre>
+				</section>
+
+				<section>
+					Indents - Como escrever o código HTML para uma boa leitura
+				</section>
+
+				<section>
+					Comentários no código
+				</section>
+
+
+				<section>
+					<p class="al">Exercício 1</p>
+				</section>
+
+				<section>
+					vamos validar no W3C Validator
+				</section>
+
+				<section>
+					<p class="al">Exercício 2</p>
+				</section>
+
+
+				<section>
+					<p class="al">Emmet</p>
+					<p class="al"><a href="https://docs.emmet.io/cheat-sheet/">https://docs.emmet.io/cheat-sheet/</a></p>
+				</section>
+
+				<section>
+					<h2>Novo Elementos Estruturais mais comuns em HTML5</h2>
+						<pre>
+						 <code class="hljs" data-trim contenteditable>
+							&lt;article&gt; - define um artigo no documento
+							&lt;aside&gt; - define um conteúdo à parte do conteúdo principal
+							&lt;details&gt; - define detalhes adicionais ao conteúdo
+							&lt;figure&gt; - define um bloco para imagens
+							&lt;footer&gt; - define um rodapé do documento
+							&lt;header&gt; - define um cabeçalho para o documento
+							&lt;main&gt; - define o bloco de conteúdo principal do documento
+							&lt;nav&gt; - define items de navegação
+							&lt;section&gt; - define uma secção no documento
+						</code>
+					</pre>
+					<p class="al">Para ver os restantes elementos, visite - <a href="https://www.w3schools.com/html/html5_new_elements.asp">https://www.w3schools.com/html/html5_new_elements.asp</a></p>
+
+				</section>
+
+				<section>
+					<img src="wrappers.png" alt="Esta imagem mostra os diferentes elementos HTML" />
+				</section>
+
+				<section>
+					<img src="img/wrappers.png" alt="Esta imagem mostra os diferentes elementos HTML" />
+				</section>
+
+				<section>
+					&lt;section&gt; - define uma secção no documento
+
+					<p class="al">Exemplo:</p>
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+					&lt;section&gt;
+					  &lt;h1&gt;Porto: 6 sítios acolhedores para beber bons chás&lt;/h1&gt;
+					  &lt;p&gt;Tomar uma chávena de chá quente a meio da tarde continua
+						um clássico de aconchego e bom gosto, principalmente
+						nos dias mais frios. &lt;/p&gt;
+					&lt;section&gt;
+				</code>
+			</pre>
+				</section>
+
+				<section>
+					&lt;article&gt; - define um artigo no documento
+
+					<p class="al">Exemplo:</p>
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+					&lt;article&gt;
+					  &lt;h1&gt;Porto: 6 sítios acolhedores para beber bons chás&lt;/h1&gt;
+					  &lt;p&gt;Tomar uma chávena de chá quente a meio da tarde continua
+						um clássico de aconchego e bom gosto, principalmente
+						nos dias mais frios. &lt;/p&gt;
+					&lt;article&gt;
+				</code>
+			</pre>
+				</section>
+
+				<section>
+					<p class="al">Sugestão:</p>
+
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+					&lt;section&gt;
+					&lt;article&gt;
+					  &lt;h1&gt;Porto: 6 sítios acolhedores para beber bons chás&lt;/h1&gt;
+					  &lt;p&gt;Tomar uma chávena de chá quente a meio da tarde continua
+						um clássico de aconchego e bom gosto, principalmente
+						nos dias mais frios. &lt;/p&gt;
+					&lt;article&gt;
+					&lt;section&gt;
+
+				</code>
+			</pre>
+				</section>
+
+				<section>
+					Exercicio 3
+				</section>
+
+				<section>
+					<h3>Atributo style</h3>
+					<p class="al">O atributo style pode ser usado na maior parte das tags, e deixa-nos adicionar estilos ao elemento HTML.</p>
+
+					<p class="al">Alguns dos estilos que vamos utilizar são: background-color, color, font-size, width e height</p>
+				</section>
+
+				<section>
+					<p class="al">Vamos falar de CSS e de estilos que podemos utilizar no atributo style mais à frente.</p>
+				</section>
+
+				<section>
+					<p class="al">background-color & color</p>
+					<p class="al">blue, white, red, yellow, black</p>
+				</section>
+
+				<section>
+					<h3>Formulários</h3>
+
+					<p class="al">Existem várias tags HTML que nos ajudam a criar formulários nas nossas páginas web</p>
+				</section>
+
+				<section>
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+					&lt;form&gt; ... &lt;/form&gt;
+
+					&lt;input&gt; - elemento de entrada
+
+				</code>
+				</pre>
+
+				<p class="al">Elementos de entrada podem conter checkboxes (escolha multipla), campos de password, botões de radio (escolha singular), botão de envio (submit) e é definido pelo atributo type=""</p>
+				</section>
+
+				<section>
+					<p class="al">Infelizmente, os formulários precisam de uma linguagem de programação que processe os dados, que os guarde numa base de dados, ou que envie um email.</p>
+				</section>
+
+				<section>
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+						&lt;input type="text"&gt;	Define uma linha de texto
+						&lt;input type="radio"&gt;	Define um radio button - escolha uma opção entre várias
+						&lt;input type="submit"&gt;	Gera um botão de envio de dados
+					</code>
+				</pre>
+				</section>
+
+				<section>
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+&lt;form&gt;
+Primeiro nome:<br />
+&lt;input type="text" name="firstname" /&lt;<br />
+Último nome:<br />
+&lt;input type="text" name="lastname" /&gt;
+&lt;/form&gt;
+					</code>
+				</pre>
+				</section>
+
+				<section>
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+	&lt;form&gt;
+  &lt;input type="radio" name="gender" value="male" checked&gt; Masculino<br>
+  &lt;input type="radio" name="gender" value="female"&gt; Feminino<br>
+  &lt;input type="radio" name="gender" value="other"&gt; Outro
+&lt;/form&gt;
+</code>
+</pre>
+				</section>
+
+			</div>
+
+		</div>
+
+        <script src="../revealjs/dist/reveal.js"></script>
+        <script src="../revealjs/plugin/highlight/highlight.js"></script>
+
+        <script>
+            Reveal.initialize({
+              center: true,
+              hash: true,
+              plugins: [RevealHighlight]
+            });
+          </script>
+
+	</body>
+</html>
