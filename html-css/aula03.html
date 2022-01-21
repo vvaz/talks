@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>HTML - CSS // Flag</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="./css/tailwind.min.css">
+  <link rel="stylesheet" href="../revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="../revealjs/dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="../revealjs/plugin/highlight/monokai.css">
+  <link rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+
+		<div class="reveal">
+
+
+			<div class="slides">
+
+				<!-- getting content from  https://www.slideshare.net/skosta/aula-03-html-e-boas-praticas?qid=465d5857-07c9-47b7-bba8-22a725434c2d&v=&b=&from_search=1 -->
+
+
+        <section class="text-left">
+          <h3>Hoje vamos fazer:</h3>
+					<ul>
+						<li>Um pequeno resumo da última aula</li>
+						<li>Correção do último exercício</li>
+						<li>Formulários em HTML</li>
+						<li>Exercicios com formulários</li>
+						<li>Alguns estilos básicos CSS</li>
+						<li>Áudio e Vídeo em HTML</li>
+					</ul>
+				</section>
+
+				<section class="text-left">
+					<h3>Existem unidades de medida</h3>
+					<strong>Absoluta</strong>
+					<p class="al">Pixel - representaod por PX <br />
+					Centimetros e Milimentros - cm e mm</p>
+        </section>
+        <section class="text-left">
+					<strong>Relativas</strong>
+					<p class="al">em - relativo ao font-size do elemento HTML em que se encontra</p>
+					<p class="al">rem - relativo ao font-size do elemento &lt;body&gt;</p>
+					<p class="al">% - relativo ao elemento pai</p>
+          <p>vh e vw - relativo ao viewport do browser</p>
+
+					<p class="al">Fonte - https://www.w3.org/TR/css3-values/</p>
+
+				</section>
+
+				<section class="text-left">
+					<h3>Elementos estruturais comuns</h3>
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+						&lt;a&gt;
+						&lt;p&gt;
+						&lt;img&gt;
+						&lt;div&gt;
+						&lt;table&gt;
+						&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;
+					 </code>
+				 	</pre>
+				</section>
+
+				<section class="text-left">
+					<h3>Elementos estruturais comuns - dados e listas </h3>
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+						&lt;ul&gt;
+						&lt;ol&gt;
+						&lt;li&gt;
+						&lt;div&gt;
+						&lt;table&gt;
+						&lt;tr&gt;
+						&lt;td&gt;
+						&lt;th&gt;
+				 </code>
+			 </pre>
+				</section>
+
+				<section class="text-left">
+          <p>
+            Comentários no código
+          </p>
+					
+          <pre>
+						<code class="hljs" data-trim contenteditable>
+							&lt;!-- cometário --&gt;
+						</code>
+					</pre>
+				</section>
+
+				<section class="text-left">
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+							&lt;!--
+							cometário
+							em várias
+							linhas --&gt;
+						</code>
+					</pre>
+				</section>
+
+				<section class="text-left">
+					<h2>Novo Elementos Estruturais mais comuns em HTML5</h2>
+						<pre>
+						 <code class="hljs" data-trim contenteditable>
+							&lt;article&gt; - define um artigo no documento
+							&lt;aside&gt; - define um conteúdo à parte do conteúdo principal
+							&lt;details&gt; - define detalhes adicionais ao conteúdo
+							&lt;figure&gt; - define um bloco para imagens
+							&lt;footer&gt; - define um rodapé do documento
+							&lt;header&gt; - define um cabeçalho para o documento
+							&lt;main&gt; - define o bloco de conteúdo principal do documento
+							&lt;nav&gt; - define items de navegação
+							&lt;section&gt; - define uma secção no documento
+						</code>
+					</pre>
+					<p class="al">Para ver os restantes elementos, visite - <a href="https://www.w3schools.com/html/html5_new_elements.asp">https://www.w3schools.com/html/html5_new_elements.asp</a></p>
+				</section>
+
+
+				<section class="text-left">
+					<img src="img/wrappers.png" alt="Esta imagem mostra os diferentes elementos HTML" />
+				</section>
+
+				<section class="text-left">
+					<p class="al">Sugestão:</p>
+
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+					&lt;section&gt;
+					&lt;article&gt;
+					  &lt;h1&gt;Porto: 6 sítios acolhedores para beber bons chás&lt;/h1&gt;
+					  &lt;p&gt;Tomar uma chávena de chá quente a meio da tarde continua
+						um clássico de aconchego e bom gosto, principalmente
+						nos dias mais frios. &lt;/p&gt;
+					&lt;article&gt;
+					&lt;section&gt;
+
+				</code>
+			</pre>
+				</section>
+
+        <section class="text-left">
+          <h2>
+            listas
+          </h2>
+
+          <pre>
+            <code class="hljs" data-trim contenteditable>
+           &lt;ul&gt;
+           &lt;li&gt; lista &lt;/li&gt;
+           &lt;li&gt; lista &lt;/li&gt;
+           &lt;li&gt; lista &lt;/li&gt;
+           &lt;/ul&gt;
+ 
+         </code>
+       </pre>
+
+        </section>
+
+        <section class="text-left">
+          <h2>
+            listas
+          </h2>
+
+          <pre>
+            <code class="hljs" data-trim contenteditable>
+           &lt;ol&gt;
+           &lt;li&gt; lista &lt;/li&gt;
+           &lt;li&gt; lista &lt;/li&gt;
+           &lt;li&gt; lista &lt;/li&gt;
+           &lt;/ol&gt;
+ 
+         </code>
+       </pre>
+
+        </section>
+
+        <section class="text-left">
+          <h2>Hiperligações</h2>
+
+          <pre>
+            <code class="hljs" data-trim contenteditable>
+           &lt;a href=""&gt; ... &lt;/a&gt;
+
+           &lt;a href="mailto:....."&gt; ... &lt;/a&gt;
+
+           &lt;a href="tel://#########"&gt; ... &lt;/a&gt;
+
+           &lt;a href="#ancora"&gt; ... &lt;/a&gt;
+
+ 
+         </code>
+       </pre>
+
+        </section>
+
+        <section class="text-left">
+          <h2>Imagens</h2>
+          <pre>
+            <code class="hljs" data-trim contenteditable>
+          &lt;img src="" /&gt;
+
+          &lt;img alt="" /&gt;
+
+          &lt;img height="" /&gt;
+
+          &lt;img width="" /&gt;
+
+          &lt;img align="" /&gt;
+
+          &lt;img border="" /&gt;
+
+
+        </code>
+      </pre>
+        </section>
+
+
+        <section class="text-left">
+          <h2>Elementos multimédia</h2>
+          <pre>
+            <code class="hljs" data-trim contenteditable>
+          &lt;object&gt; .... &lt;/object&gt;
+
+          &lt;iframe&gt; .... &lt;/iframe&gt;
+
+          &lt;embed&gt; .... &lt;/embed&gt;
+
+          &lt;video&gt; .... &lt;/video&gt;
+        </code>
+      </pre>
+
+        </section>
+
+        <section class="text-left">
+          <pre>
+            <code class="hljs" data-trim contenteditable>
+          &lt;video width="320" height="240" controls&gt;
+            &lt;source src="movie.mp4" type="video/mp4"&gt;
+            &lt;source src="movie.ogg" type="video/ogg"&gt;
+            Your browser does not support the video tag
+          &lt;/video&gt;
+
+
+        </code>
+      </pre>
+      O atributo de controls, adiciona controlos como: play, pause e o volume
+        </section>
+
+        <section class="text-left">
+          <pre>
+            <code class="hljs" data-trim contenteditable>
+          &lt;video width="320" height="240" autoplay muted&gt;
+            &lt;source src="movie.mp4" type="video/mp4"&gt;
+            &lt;source src="movie.ogg" type="video/ogg"&gt;
+            Your browser does not support the video tag
+          &lt;/video&gt;
+
+
+        </code>
+      </pre>
+      Adicionar muted depois de autoplay, permite ao video iniciar automaticamente, mas sem som
+        </section>
+
+        <section class="text-left">
+          <pre>
+            <code class="hljs" data-trim contenteditable>
+          &lt;audio width="320" height="240" autoplay muted&gt;
+            &lt;source src="movie.mp4" type="video/mp4"&gt;
+            &lt;source src="movie.ogg" type="video/ogg"&gt;
+            Your browser does not support the audio element
+          &lt;/audio&gt;
+
+
+        </code>
+      </pre>
+        </section>
+
+        
+
+        <section class="text-left">
+          <h2>Caracteres especiais em HTML</h2>
+          
+          &#34; &quot; | Sinais de citação
+          &#60; &lt; | Sinal de menor que
+          &#62; &gt; | Sinal de maior que
+          &#160; &nbsp; | Espaço sem quebra
+          &#169; &copy; | Símbolo de copyright ©
+          &#38; &amp; | E comercial
+          &#64; &Uuml; | Símbolo de arroba
+          &#149; &ouml; | Símbolo de ponto
+          &#153; &ucirc; | Símbolo de marca registrada
+
+          <p>
+            https://www.w3schools.com/html/html_entities.asp
+          </p>
+
+        </section>
+
+
+        
+
+        <section class="text-left">
+					Exercício 3
+				</section>
+
+
+				<section class="text-left">
+					<h3>Formulários</h3>
+
+					<p class="al">
+						A experiência do utilizador num website não é só carregar em links e mudar de páginas. Às vezes o utilizador terá que interagir com o website para realizar diferentes tarefas.
+					</p>
+
+					<p class="al">
+						<ul>
+							<li>Efectuar autenticação numa área privada (login)</li>
+							<li>Introduzir informação pessoal, como nome, morada, dados de cartão de crédito, etc</li>
+							<li>Filtragem de conteúdo (por exemplo co checkboxes e dropwdowns)</li>
+							<li>Realizar uma pesquisa no website</li>
+							<li>Carregar ficheiros</li>
+						</ul>
+					</p>
+				</section>
+
+				<section class="text-left">
+					<p class="al">Existem várias tags HTML que nos ajudam a criar formulários nas nossas páginas web</p>
+
+					<p class="al">
+						<ul>
+							<li>Inputs de texto</li>
+							<li>Radio Buttons</li>
+							<li>Checkboxes</li>
+							<li>Dropdowns</li>
+							<li>Upload widgets</li>
+							<li>Submit buttons</li>
+						</ul>
+					</p>
+
+					<p class="al">Muitas destes elementos, são atributos da tag &lt;input&gt;</p>
+
+				</section>
+
+				<section class="text-left">
+
+					<h3>O elemento Form</h3>
+
+					<p class="al">
+						A tag &lt;form&gt; constitui um elemento que define uma parte interactiva numa página. Todas as tags de controlo (exemplo &lt;input&gt;, &lt;textarea&gt;, &lt;button&gt;), têm de estar inseridas dentro da tag &lt;form&gt;
+					</p>
+
+					exemplo:
+
+					<pre>
+					 	<code class="hljs" data-trim contenteditable>
+							&lt;form action="/send"&gt;
+								&lt;input type="text" /&gt;
+							&lt;/form&gt;
+						</code>
+					</pre>
+
+				</section>
+
+				<section>
+					<p class="al">Os dados são então enviados para o servidor, que atrávés de uma linguagem de programação os processa. Isto é definido pelo atributo action, que nós vamos sempre colocar action="/send" </p>
+
+					<p class="al">Como estes dados são processados vai para além do HTML e CSS</p>
+				</section>
+
+				<section class="text-left">
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+					&lt;form action="/send"&gt; ... &lt;/form&gt;
+
+					&lt;input&gt; - elemento de entrada
+
+				</code>
+				</pre>
+
+				<p class="al">Elementos de entrada podem conter checkboxes (escolha multipla), campos de password, radio buttons (escolha singular), botão de envio (submit) e é definido pelo atributo type=""</p>
+				</section>
+
+
+				<section class="text-left">
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+						&lt;input type="text"&gt;	Define uma linha de texto
+						&lt;input type="radio"&gt;	Define um radio button - escolha uma opção entre várias
+						&lt;input type="submit"&gt;	Gera um botão de envio de dados
+					</code>
+				</pre>
+				</section>
+
+				<section class="text-left">
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+						&lt;form action="/send"&gt;
+						Primeiro nome:<br />
+						&lt;input type="text" name="primeironome" /&lt;<br />
+						Último nome:<br />
+						&lt;input type="text" name="ultimonome" /&gt;
+						&lt;/form&gt;
+					</code>
+				</pre>
+				</section>
+
+				<section class="text-left">
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+						&lt;form action="/send"&gt;
+					  	&lt;input type="radio" name="gender" value="masculino" checked&gt; Masculino<br>
+					  	&lt;input type="radio" name="gender" value="feminino"&gt; Feminino<br>
+					  	&lt;input type="radio" name="gender" value="outro"&gt; Outro
+						&lt;/form&gt;
+					</code>
+					</pre>
+				</section>
+
+				<section class="text-left">
+					<p class="al">Area de escrita com múltiplas linhas</p>
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+						&lt;textarea&gt; ... 	&lt;/textarea&gt;
+					 </code>
+				 </pre>
+				</section>
+
+				<section class="text-left">
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+						&lt;select&gt;
+							&lt;option value="volvo"&gt;Volvo&lt;/option&gt;
+							&lt;option value="saab"&gt;Saab&lt;/option&gt;
+  					&lt;option value="mercedes"&gt;Mercedes&lt;/option&gt;
+  					&lt;option value="audi"&gt;Audi&lt;/option&gt;
+						&lt;/select&gt;
+					</code>
+				</pre>
+				</section>
+
+
+
+
+
+
+				<section class="text-left">
+					<h3>Atributo style</h3>
+					<p class="al">O atributo style pode ser usado na maior parte das tags, e deixa-nos adicionar estilos ao elemento HTML.</p>
+
+					<p class="al">Alguns dos estilos que vamos utilizar são: background-color, color, font-size, width, height, margin e padding</p>
+				</section>
+
+				<section class="text-left">
+					exemplo:
+
+					<pre>
+					 <code class="hljs" data-trim contenteditable>
+
+					&lt;div style="background-color: red; width: 300px;"&gt;
+					Conteúdo
+					&lt;/div&gt;
+				</code>
+			</pre>
+				</section>
+
+				<section class="text-left">
+					<p class="al">background-color & color</p>
+					<p class="al">blue, white, red, yellow, black</p>
+				</section>
+
+				<section class="text-left">
+					Exercício 4 - Formulários
+				</section>
+
+			</div>
+
+		</div>
+
+        <script src="../revealjs/dist/reveal.js"></script>
+        <script src="../revealjs/plugin/highlight/highlight.js"></script>
+
+        <script>
+            Reveal.initialize({
+              center: true,
+              hash: true,
+              plugins: [RevealHighlight]
+            });
+          </script>
+
+	</body>
+</html>
