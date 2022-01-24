@@ -1,0 +1,53 @@
+.titulo_principal {
+  color: blue;
+}
+
+
+#titulo_top {
+  color: rgba(255,0,0,0.2);
+}
+
+
+.amarelo {
+  width: 200px;
+  height: 200px;
+  background: #ffcc00;
+  float: left;
+}
+
+.azul {
+  width: 200px;
+  height: 200px;
+  background: rgb(0,0,255);
+  float: right;
+}
+
+.clearfix {
+  clear:both;
+}
+
+
+.amarelo2 {
+  width: 200px;
+  height: 200px;
+  background: #ffcc00;
+
+}
+
+.azul2 {
+  width: 200px;
+  height: 200px;
+  background: rgb(0,0,255);
+
+}
+
+.grupo {
+  display: flex;
+}
+
+
+.conteudo {
+  width: 500px;
+  background: grey;
+  margin: 0 auto;
+}

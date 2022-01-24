@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio 4</title>
+
+  <style>
+    form {
+      border: 1px solid red;
+    }
+  </style>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <h1 style="color: blue" class="titulo_principal" id="titulo_top">Um formulário de demonstração</h1>
+
+  
+
+  <form action="/send">
+    <h2 class="titulo_principal">Neste exemplo só queremos que uma opção fique selecionada</h2>
+    <input type="radio" name="grupo1" id="opcao-1">
+    <label for="opcao-2">Esta é a primeira opção</label>
+    
+    <br />
+
+    <input type="radio" name="grupo1" id="opcao-2">
+    <label for="opcao-2">Esta é a segunda opção</label>
+
+    <br />
+    <input type="radio" name="grupo1" id="opcao-3">
+    <label for="opcao-3">Esta é a terceira opção</label>
+    <br />
+    <br>
+
+
+
+
+    <h2 class="titulo_principal">Cores Preferidas</h2>
+
+    <input type="checkbox" name="grupo2" id="checkbox-1">
+    <label for="checkbox-1">Azul</label>
+
+    <br />
+
+    <input type="checkbox" name="grupo2" id="checkbox-2">
+    <label for="checkbox-2">Azul e Branco</label>
+
+    <br />
+
+    <input type="checkbox" name="grupo2" id="checkbox-3">
+    <label for="checkbox-3">Cinzento</label>
+
+    <br />
+
+    <select name="grupo3" id="">
+      <option value="Amarelo">Amarelo</option>
+      <option value="Verde">Verde</option>
+      <option value="Rosa">Rosa</option>
+    </select>
+
+
+    <br />
+
+    <h2 class="titulo_principal">Banda Preferida</h2>
+
+    <input type="text" name="banda" id="banda" placeholder="Amália Rodrigues">
+
+    <h2>Coloca a letra de uma música aqui:</h2>
+
+    <textarea name="" id="" style="width: 200px" rows="10"></textarea>
+
+    <br />
+
+    <input type="submit" value="Enviar">
+
+
+  </form>
+
+</body>
+</html>
