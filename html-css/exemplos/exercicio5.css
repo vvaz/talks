@@ -1,0 +1,86 @@
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(218,238,239,1) 100%); 
+}
+
+
+.caixabranca {
+  width: 75%;
+  margin: 30px auto 0 auto;
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 21px;
+
+}
+
+img {
+  width: 50%;
+  height: auto;
+  float: left;
+  padding-right: 30px;
+  padding-bottom: 20px;
+
+}
+
+.form-nome {
+  width: 50%;
+  margin-bottom: 30px;
+
+}
+
+.grupoflex {
+  display: flex;
+}
+
+.grupoflex input {
+  margin-right: 30px;
+
+  width: 300px;
+}
+
+textarea {
+  width: 100%
+}
+
+.botao input {
+  background: #32D543;
+  color: #fff;
+  text-align: center;
+  width: 20%;
+  margin-left: 80%;
+  margin-top: 20px;
+  box-shadow: none;
+  border: 1px solid #AAAAAA;
+  padding: 10px 0;
+}
+
+.box {
+  width: 500px;
+  height: 500px;
+
+  background: #ffcc00;
+  border: 1px solid black;
+  border-top-width: 10px;
+  border-bottom-width: 30px;
+
+  -webkit-box-shadow: 5px 5px 23px 3px rgba(115,255,62,0.78); 
+  box-shadow: 5px 5px 23px 3px rgba(115,255,62,0.78);
+}
+
+
+
+
+
+div {
+  background: red;
+}
+
+div:hover {
+  background: blue;
+}
