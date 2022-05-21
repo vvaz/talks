@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Responsive com WordPress - Aula 1</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="./css/tailwind.min.css">
+  <link rel="stylesheet" href="../revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="../revealjs/dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="../revealjs/plugin/highlight/monokai.css">
+  <link rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+
+      <section data-background-color="#644EA0">
+        talks.valeriovaz.dev/workshop-woocommerce/
+      </section>
+
+      <section data-background-color="#644EA0">
+        Valério Vaz
+      </section>
+
+      <section>
+        @vvaz | valerio@wpbox.io
+      </section>
+
+      <section class="text-left">
+        <h2>Apresentação alunos</h2>
+      </section>
+
+      <section class="text-left">
+        <h2>Programa</h2>
+      </section>
+
+      <section class="text-left">
+        <h2>Aula 3 e 4:</h2>
+        <ul>
+          <li>WordPress</li>
+          <li>Instalação e configuração template e plugin WooCommerce</li>
+        </ul>   
+      </section>
+
+      <section class="text-left">
+        <h2>WordPress</h2>
+        <ul>
+          <li>Gestão de backups</li>
+          <li>Política de Privacidade</li>
+          <li>Estruturas multilingua</li>
+          <li>Gestão de SEO</li>
+          <li>Cookies</li>
+        </ul>
+      </section>
+
+      <section class="text-left">
+        <ul>
+          <li>Tipos de produtos</li>
+          <li>Produtos Agrupados</li>
+          <li>Categorias e etiquetas</li>
+          <li>Atributos</li>
+          <li>Vendas cruzadas</li>
+          <li>Avaliações aos produtos</li>
+          <li>Adaptar o produto ao modelo de negócio</li>
+        </ul>
+      </section>
+
+      <section class="text-left">
+        <h2>Impostos</h2>
+        <ul>
+          <li>Legislação e directivas europeias</li>
+          <li>Criação e aplicação de taxas</li>
+          <li>Métodos de atribuição de taxa com base na região</li>
+        </ul>
+      </section>
+
+
+      <section class="text-left">
+        <h2>Configurações Padrão de Envio</h2>
+        <ul>
+          <li>Expedição e valores associados</li>
+          <li>Criação de tarifas de expedição com base no peso e região</li>
+            <li>Soluções de atribuição de expedição gratuita com base no valor ou região</li>
+        </ul>
+
+        <h2>Métodos de pagamento</h2>
+        <ul>
+          <li>Soluções nativas de pagamento</li>
+          <li>Instalação de gateways de pagamento adicionais</li>
+          <li>REF. MB / MB WAY / PAYSHOP</li>
+        </ul>
+      </section>
+
+      <section class="text-left">
+        <ul>
+          <li>Gestão e edição de encomendas</li>
+          <li>Emails e notificações</li>
+          <li>Soluções de performance do sucesso de entrega de emails</li>
+          <li>Edição e personalização de emails</li>
+          <li>Gestão e edição de clientes</li>
+          <li>Notas e Acções de encomendas</li>
+          <li>Relatórios de vendas</li>
+          <li>Cupões e Descontos</li>
+        </ul>
+      </section>
+
+      
+
+
+
+      <section class="text-left">
+        <h2>Leis mais relevantes em eCommerce</h2>
+        <p>DL nr 24/2014 - contratos celebrad´s à distância e fora do estabelecimento comercial</p>
+        <ul>
+          <li>Termos e condições gerais de venda tem de ter a informação pré-contratual no contratos celebrados à distância ou celebrados fora do estabelecimento comercial (artigo 4)</li>
+          <li>Antes de o consumidor se vincular a um contrato, o fornecedor de bens ou prestador de serviços deve facultar as seguintes informações:</li>
+          <li>Entidade, incluindo o nome, denominação social, endereço fisico, número de telefone e endereço eletrónico</li>
+        </ul>
+      </section>
+
+      <section class="text-left">
+        <p>DL nr 24/2014 - contratos celebrad´s à distância e fora do estabelecimento comercial</p>
+        <ul>
+          <li>Quando a encomenda implicar a obrigação de pagamento, deve ser dado ao consumir, de forma clara e imediatamente antes deste concluir a encomenda as informações previamente listadas.</li>
+          <li>ex: o botão de checkout deve ser claro: "efetuar pagamento", "pagar", etc. Não pode dizer "encomendar" ou "reservar" por exemplo</li>
+        </ul>
+      </section>
+
+      <section class="text-left">
+        <p>DL nr 24/2014 - contratos celebrad´s à distância e fora do estabelecimento comercial</p>
+        <p>No checkout temos de ter:</p>
+        <ul>
+          <li>Caracteristicas essenciais do bem ou serviço</li>
+          <li>Preço total, incluindo taxas, impostos e encargos suplementares</li>
+          <li>O modo de cálculo do preço</li>
+          <li>Indicação de que pode haver encargos suplementares quando estes não são calculados antes da compra.</li>
+        </ul>
+      </section>
+
+      <section class="text-left">
+        <p>Nas lojas online, é obrigatória a indicação de forma clara, o mais tardar no inicio do processo de encomenda, da eventual existência de restrições geográficas ou outras à entrega e aos meios de pagamente aceites.</p>
+        <ul>
+          <li>Podemos ter uma página para explicar o nosso processo de entrega</li>
+          <li>Métodos de pagamento podem estar no footer</li>
+        </ul>
+      </section>
+
+      <section class="text-left">
+        <p>Política de Devolução</p>
+        <p>A lei prevê 14 dias para o cliente poder devolver o produto, mas cada loja pode definir este minimo ou mais dias. Esta informação tem de estar presente, senão o cliente pode devolver um produto passado um ano.</p>
+      </section>
+
+      <section class="text-left">
+        <p>O cliente pode comunicar que quer deveolver o produto por email ou por carta registada. Pode também preencher um formulário na loja online especifico para solicitar devolução.</p>
+      </section>
+
+      <section class="text-left">
+        <p>Política de Devolução</p>
+        <ul>
+          <li>Sem custos de devolução.</li>
+          <li>Sem necessidade de indicar o motivo</li>
+        </ul>
+
+        <p>A parte do "sem custos" não se refere a custos de shipping, mas a uma qualquer taxa extra de devolução.</p>
+      </section>
+
+      <section class="text-left">
+        <p>Politica de devolução:</p>
+        <p>O fornecedor deve reembolsar o consumidor de todos os pagamentos recebidos, incluindo os custos de entrega, no prazo de 14 dias através do mesmo método de pagamento.</p>
+      </section>
+
+      <section class="text-left">
+        <p>Caso o fornecedor de bens não se ofereça para efetuar a recolha, o consumidor deve devolver ou entregar o bem no prazo de 14 dias a contar da data em que tiver comunicado a sua decisão de resolução de contrato.</p>
+      </section>
+
+      <section class="text-left">
+        <p>O consumidor não pode resolver livremente os contratos de:</p>
+        <ul>
+          <li>Bens confecionados de acordo com especificações do consumidor ou manifestamente personalizados</li>
+          <li>Gravações áudio ou vídeo seladas, ou programas informáticos selados, a que o consumidor tenha retirado o selo de garantia da inviolabilidade após a entrega.</li>
+        </ul>
+        <p>Não se esqueçam de informar previamente o cliente quando não se aceita a devolução.</p>
+      </section>
+
+      <section class="text-left">
+        <p>DL nr 70/2007 - Práticas comerciais com redução de preço "Lei dos saldos e promoções"</p>
+        <p>Aplicado a</p>
+        <ul>
+          <li>Às vendas a retalho praticadas nos estabelecimentos comerciais;</li>
+          <li>À oferta de serviços, com as devidas adaptações</li>
+          <li>Às vendas a retalho efetuadas à distância, ao domicílio, ou por outros métodos usados pelos estabelecimentos, com as devidas adaptações.</li>
+        </ul>
+      </section>
+
+      <section class="text-left">
+        <p>É obrigatório que as reduções de preço (descontos) se enquadrem numa das seguintes modalidades:</p>
+        <ul>
+          <li>Saldos</li>
+          <li>Promoções</li>
+          <li>Liquidações</li>
+        </ul>
+      </section>
+
+      <section class="text-left">
+        <h2>Saldos</h2>
+        <p>Objetivo de promover o escoamento acelerado das existências</p>
+        <ul>
+          <li>Posso vender abaixo do preço de custo</li>
+          <li>Tempo limite por ano (124 dias por ano)</li>
+          <li>Não se pode fazer saldos e promoções em simultâneo</li>
+          <li>Obrigatório comunicar à ASAE</li>
+        </ul>
+      </section>
+
+      <section class="text-left">
+        <h2>Promoções:</h2>
+        <p>Potenciar a venda de determinados produtos ou o lançamento de um produto não comercializado anteriormente</p>
+        <ul>
+          <li>Podem ser feitas em qualquer altura do ano</li>
+          <li>Não se tem de comunicar à ASAE</li>
+        </ul>
+      </section>
+
+      <section class="text-left">
+        <h2>Liquidações</h2>
+        <p>Resultado do fecho de uma atividade.</p>
+        <ul>
+          <li>Obrigam à comunicação por escrito à ASAE com 15 dias de antecedências</li>
+        </ul>
+      </section>
+
+      <section class="text-left">
+        <p>É proibida a utilização de expressões similares para anunciar vendas com redução de preços, como por exemplo:</p>
+        <ul>
+          <li>Oportunidades</li>
+          <li>Ofertas especiais</li>
+          <li>Descontos de inverso</li>
+          <li>Outlet</li>
+          <li>Black Friday</li>
+        </ul>
+      </section>
+
+      <section class="text-left">
+        <p>Temos sempre que ter definido se são saldos, promoções ou liquidações.</p>
+      </section>
+
+      <section class="text-left">
+        <p>Em todas as modalidades, a loja online deve apresentar:</p>
+        <ul>
+          <li>A modalidade da venda</li>
+          <li>o tipo de produto</li>
+          <li>a respectiva percentagem de redução</li>
+          <li>a data de início e período de duração</li>
+          <li>Preço riscado e o preço novo que estamos a praticar</li>
+        </ul>
+      </section>
+
+      <section class="text-left">
+        <h2>Atualização da lei</h2>
+        <p>O desconto anunciado deve ser relativamente ao preço mais baixo a que o produto foi vendido nos 90 dias anteriores ao dia em que é posto à venda em saldo ou em promoção.</p>
+      </section>
+
+      <section class="text-left">
+        <h2>Promoção a agente da ASAE</h2>
+        <p>(durante 10 minutos)</p>
+        Vamos encontrar lojas com descontos ativos e ver se encontramos maus exemplos.
+      </section>
+
+      <section class="text-left">
+        https://www.worten.pt/
+      </section>
+
+     
+
+
+
+
+
+
+    </div>
+
+  </div>
+
+  <script src="../revealjs/dist/reveal.js"></script>
+  <script src="../revealjs/plugin/highlight/highlight.js"></script>
+  <script>
+    Reveal.initialize({
+      center: true,
+      hash: true,
+      plugins: [RevealHighlight]
+    });
+  </script>
+
+</body>
+
+</html>
