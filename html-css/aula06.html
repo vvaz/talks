@@ -22,18 +22,152 @@
 
 			<div class="slides">
 
+				<section class="text-left">
+					CSS - Cascading Style Sheets
+				</section>
 
 				<section class="text-left">
-					<p class="al">
-						Elementos <strong>inline</strong>
-						<ul>
-							<li>Respeitam as margins e padings à esquerda e direita mas não no top e bottom</li>
-							<li>Não podem ter width e height definidos</li>
-							<li>Deixam existir elementos à esquerda e direita</li>
-						</ul>
-					</p>
+					<p>As nossas folhas de estilo são muito poderosas e podemos mudar como se comportam elementos, as suas cores, tamanhos, ordem, posição, a sua visibilidade, animações, etc..</p>
+				</section>
+
+				<section class="text-left">
+					<p>Tal como o HTML, não é uma linguagem de programação, apenas podemos descrever regras de como formatar o nosso documento (DOM)</p>
+
+					<p>ex: Todos os h1 deverão ser vermelhos</p>
+				</section>
+
+
+				<section class="text-left">
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+						 h1 {
+							color: red;
+						 }
+					 </code>
+				 </pre>
+				</section>
+
+				<section data-background="#fff">
+          <img src="img/seletor.png" alt="" srcset="">
+        </section>
+
+				<section class="text-left">
+					<p>Como se pode incorporar CSS:</p>
+					<ul>
+						<li>No atributo do elemento usando o style=""</li>
+						<li>No elemento head com a tag style </li>
+						<li>Num ficheiro externo</li>
+					</ul>
+				</section>
+
+				<section class="text-left">
+					<p>CSS para diferentes meios:</p>
+					<p>Screen & print</p>
+				</section>
+
+				<section class="text-left">
+					<h1>Selectores de CSS</h1>
+				</section>
+
+				<section class="text-left">
+					<p>No âmbito da programação, existem duas coisas difíceis, invalidação de cache, dar nomes a coisas e reparar erros que falharam por 1.</p>
+				</section>
+
+				<section class="text-left">
+					<p>Sendo um programador, está ao nosso alcance o poder de dar nomes a coisas, seja a elementos HTML, seja a funções ou variáveis... Pensem sempre bem antes de o fazer e usem palavras que façam sentido.</p>
+					<p>exemplo: dar um nome do que uma coisa faz e não com o que ela é parecida</p>
+
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+						 .titulo // .titulo-vermelho
+					 </code>
+				 </pre>
 
 				</section>
+
+				<section>
+						<pre>
+						 <code class="hljs" data-trim contenteditable>
+							.class // .banner
+						</code>
+					</pre>
+
+					Seleciona todos os elementos com a class="banner"
+				</section>
+
+				<section class="text-left">
+						<pre>
+						 <code class="hljs" data-trim contenteditable>
+							#id // #navegacao1
+						</code>
+					</pre>
+
+					Seleciona todos os elementos com a id="navegacao1"
+				</section>
+
+				<section>
+						<pre>
+						 <code class="hljs" data-trim contenteditable>
+							*
+						</code>
+					</pre>
+
+					Seleciona todos os elementos
+				</section>
+
+
+
+				<section class="text-left">
+					<p>Comentários em CSS</p>
+
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+ 
+					 /* comentário */
+				 		</code>
+			 		</pre>
+				</section>
+
+				<section class="text-left">
+					<p>Comentários em CSS</p>
+
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+					 /* comentário
+					 em várias
+					 linhas */
+				 		</code>
+			 		</pre>
+				</section>
+
+				<section class="text-left">
+					<h2>Cores</h2>
+					<p>Para percebermos o uso das cores num ecrã, temos de esquecer o que aprendemos em criança - Juntando mais cores, mais escura a cor vai ficar.</p>
+					
+					<p>Em ecrãns, trabalhamos com luz, o que significa que quando todas as cores estão juntas, é produzido o branco.</p>
+				</section>
+
+				<section class="text-left">
+					<h2>Cores</h2>
+					<p>O CSS compreende vários formatos de cores:</p>
+					<ul>
+						<li>Com o nome em inglês de uma cor</li>
+						<li>Com o valor em HEX (Hexadécimal)</li>
+						<li>Com o valor em rgb / rgba</li>
+						<li>Com o valor em HSL (Hue, Saturation and Lightness)</li>
+					</ul>
+				</section>
+
+				<section class="text-right">
+					<p>Os nomes possíveis das cores podem ser consultados aqui: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">MDN Color Values</a></p>
+				</section>
+
+				<section class="text-right">
+					<p>Chuck Norris joke</p>
+					<a href="https://stackoverflow.com/questions/8318911/why-does-html-think-chucknorris-is-a-color">source</a>
+				</section>
+
+				
 
 				<section class="text-left">
 					<p class="al">
@@ -45,6 +179,21 @@
 						</ul>
 					</p>
 				</section>
+
+
+				<section class="text-left">
+					<p class="al">
+						Elementos <strong>inline</strong>
+						<ul>
+							<li>Respeitam as margins e paddings à esquerda e direita mas não no top e bottom</li>
+							<li>Não podem ter width e height definidos</li>
+							<li>Deixam existir elementos à esquerda e direita</li>
+						</ul>
+					</p>
+
+				</section>
+
+				
 
 				<section class="text-left">
 					<p class="al">
