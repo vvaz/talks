@@ -126,6 +126,56 @@
 					<p>Há muitas outras pseudoclasses em CSS que podem ver <a href="https://css-tricks.com/pseudo-class-selectors/">neste artigo</a></p>
 				</section>
 
+				<section class="text-left">
+					<h2>Box Model</h2>
+
+					<p>é o conceito mais dificil de aprender, mas nós já temos usado todas as funcionalidades do box model até aqui</p>
+				</section>
+
+				<section class="text-left">
+					<p>Consistem em display, width, height, border, margin e paddings (e o seu conteúdo).</p>
+					<small>
+						<p>Por defeito no CSS, existem vários elementos por default (ex: a cor do texto ser sempre preta), e o display assume vários defaults. Nas divs temos o display:block, na span temos o display:inline por exemplo (e faz sentido consoante o que os elementos têm de fazer por default).</p>
+					</small>
+				</section>
+
+				<section class="text-left">
+					<h2>Flex</h2>
+
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+							.flex-container {
+								display: flex;
+							}
+					 </code>
+				 </pre>
+
+				 <small>
+					<p>Define um container para o flex. Habilita o display flex para os seus filhos diretos</p>
+				 </small>
+				</section>
+
+				<section class="text-left">
+					<small>
+						<p>
+							Estabelece o eixo principal e a sua direção.
+						</p>
+						<img src="img/flex-direction.svg" alt="">
+					</small>
+
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+							.flex-container {
+								flex-direction: row | row-reverse | column | column-reverse;
+							}
+					 </code>
+				 </pre>
+				</section>
+
+				
+				<section class="text-left">
+					<p>Para mais informação detalhada do flex, consultar <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">este artigo</a></p>.
+				</section>
 
 
 
@@ -513,23 +563,6 @@
 				<section class="text-left">
 					Frameworks de animação - https://daneden.github.io/animate.css/
 				</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 			</div>
