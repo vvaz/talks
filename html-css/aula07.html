@@ -96,17 +96,17 @@
 
 				<section class="text-left">
 					<p>Podemos também usar os pseudoelementos ::before e o ::after para introduzir algo antes ou depois do elemento HTML</p>
-					<p>Atenção aos 2 :: antes </p>
+					<p>Atenção aos 2 :: antes. É usado para distinguir pseudoclasses de pseudoelementos. IE8 não suporta. </p>
 				</section>
 
 				<section class="text-left">
 					<pre>
 						<code class="hljs" data-trim contenteditable>
 							div::before {
-								content: "before";
+								content: "conteúdo antes";
 							}
 							div::after {
-								content: "after";
+								content: "conteúdo depois";
 							}
 					 </code>
 				 </pre>
@@ -114,9 +114,9 @@
 				 <pre>
 					<code class="hljs" data-trim contenteditable>
 						<div>
-							before
-							<!-- Rest of stuff inside the div -->
-							after
+							conteúdo antes
+							&lt;!-- o conteúdo vem aqui --&gt;
+							conteúdo depois
 						</div>
 				 </code>
 			 </pre>
