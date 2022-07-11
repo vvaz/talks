@@ -150,12 +150,32 @@
 					 </code>
 				 </pre>
 
+				</section>
+
+				<section class="text-left">
+					<h2>Propriedades do pai Flex</h2>
+				</section>
+
+				<section class="text-left">
+					<h2>Flex</h2>
+
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+							.flex-container {
+								display: flex;
+							}
+					 </code>
+				 </pre>
+
 				 <small>
 					<p>Define um container para o flex. Habilita o display flex para os seus filhos diretos</p>
 				 </small>
 				</section>
 
+
+
 				<section class="text-left">
+					<p>flex-direction</p>
 					<small>
 						<p>
 							Estabelece o eixo principal e a sua direção.
@@ -171,6 +191,105 @@
 					 </code>
 				 </pre>
 				</section>
+
+				<section class="text-left">
+					<p>flex-wrap</p>
+					<small>
+						<p>
+							Por defeito, todos os flex items vão tentar ficar na mesma linha. Podemos mudar esse comportamento com o flex-wrap.
+						</p>
+						<img src="img/flex-wrap.svg" alt="">
+					</small>
+
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+							.flex-container {
+								flex-wrap: nowrap | wrap | wrap-reverse;
+							}
+					 </code>
+				 </pre>
+				</section>
+
+				<section class="text-left">
+					<p>justify-content</p>
+					<small>
+						<p>
+							Define o alinhamento sobre o eixo principal. Ajuda a distribuir espaço livre pelos elementos onde não é indicado uma dimensão.
+
+						</p>
+						<img src="img/justify-content.svg" alt="">
+					</small>
+
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+							.flex-container {
+								justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;
+							}
+					 </code>
+				 </pre>
+				</section>	
+
+				<section class="text-left">
+					<p>align-items</p>
+					<small>
+						<p>
+							Define o alinhamento sobre o eixo secundário. Podemos pensar nele como um justify-content mas para o outro eixo - perpendicular ao eixo principal.
+						</p>
+						<img src="img/align-items.svg" alt="">
+					</small>
+
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+							.flex-container {
+								align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
+							}
+					 </code>
+				 </pre>
+				</section>	
+
+				<section class="text-left">
+					<p>align-content</p>
+					<small>
+						<p>
+							Define o alinhamento sobre as linhas dependendo do espaço disponível no eixo secundário.
+
+						</p>
+						<img src="img/align-content.svg" alt="">
+					</small>
+
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+							.flex-container {
+								align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
+							}
+					 </code>
+				 </pre>
+				</section>	
+
+				<section class="text-left">
+					<p>gap, row-gap, column-gap</p>
+					<small>
+						<p>
+							Controla o espaço entre items flex.
+
+						</p>
+						<img src="img/gap-1.svg" alt="">
+					</small>
+
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+							.flex-container {
+								display: flex;
+								...
+								gap: 10px;
+								gap: 10px 20px; /* row-gap column gap */
+								row-gap: 10px;
+								column-gap: 20px;
+							}
+					 </code>
+				 </pre>
+				</section>	
+
 
 				
 				<section class="text-left">
