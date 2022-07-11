@@ -43,7 +43,7 @@
 								h1.nav-head.nav-main.other-useful-class {
 									color: green;
 								}
-								&lt;/style&gt;
+							&lt;/style&gt;
 							<h1 id="site-brand" class="nav-head nav-main other-useful-class">
 								The Brand of my Website
 							</h1>
@@ -53,12 +53,14 @@
 
 
 				<section class="text-left">
-					<h2>Pseudo Classes</h2>
 					<small>
-					<p>
-						Às vezes, queremos mudar como os elementos aparecem baseado em certos eventos que acontecem no DOM. Uma dessas situações acontece quando queremos mudar a aparência de um elemento quando passamos com o rato por cima desse elemento.
-					</p>
-				</small>
+						<h2>Pseudoclasses</h2>
+						<small>(lê-se sudoclasses)</small>
+						
+						<p>
+							Às vezes, queremos mudar como os elementos aparecem baseado em certos eventos que acontecem no DOM. Uma dessas situações acontece quando queremos mudar a aparência de um elemento quando passamos com o rato por cima desse elemento.
+						</p>
+					</small>
 					<pre>
 						<code class="hljs" data-trim contenteditable>
 							&lt;style&gt;
@@ -78,6 +80,27 @@
 					 </code>
 				 </pre>
 
+				</section>
+
+
+				<section class="text-left">
+					<p>A parte do :hover seleciona o elemento, quando a condição é verdadeira.</p>
+					<p>É como um trigger para um evento. Conseguimos "captar" o momento que algo acontece e definimos algo para depois disso acontecer.</p>
+					<p>Outros exemplos: :first-child :last-child :nth-child(n) :first-letter</p>
+				</section>
+
+				<section class="text-left">
+					<p>Os elementos :hover são muito utilizados para links e navegações.</p>
+					<p>Existem outros para as hyperligações como o :active e o :visited por exemplo</p>
+				</section>
+
+				<section class="text-left">
+					<p>Podemos também usar os pseudoelementos ::before e o ::after para introduzir algo antes ou depois do elemento HTML</p>
+					<p>Atenção aos 2 :: antes </p>
+				</section>
+
+				<section class="text-left">
+					<p>Há muitas outras pseudoclasses em CSS que podem ver <a href="https://css-tricks.com/pseudo-class-selectors/">neste artigo</a></p>
 				</section>
 
 
