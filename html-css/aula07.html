@@ -23,6 +23,60 @@
 			<div class="slides">
 
 
+				<section class="text-left">
+					<h2>IDs e !important</h2>
+
+					<p>
+						No contexto dos CSS, nunca deveriamos usar o selector das IDs nem o comando !important. São duas ferramentas muito destruidoras, mas temos de saber o que fazem, principalmente porque aparecem muitas vezes em tutoriais e soluções de código online. (No contexto de JavaScript, as IDs podem e devem ser usadas).
+					</p>
+
+				</section>
+
+				<section class="text-left">
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+							&lt;style type="text/css"&gt;
+								#site-brand {
+									color: red;
+								}
+							
+								h1.nav-head.nav-main.other-useful-class {
+									color: green;
+								}
+								&lt;/style&gt;
+							<h1 id="site-brand" class="nav-head nav-main other-useful-class">The Brand of my Website</h1>
+					 </code>
+				 </pre>
+				</section>
+
+
+				<section class="text-left">
+					<h2>Pseudo Classes</h2>
+					<p>
+						Às vezes, queremos mudar como os elementos aparecem baseado em certos eventos que acontecem no DOM. Uma dessas situações acontece quando queremos mudar a aparência de um elemento quando passamos com o rato por cima desse elemento.
+					</p>
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+							&lt;style&gt;
+								.hover-example {
+									width: 100px;
+									height: 100px;
+									background-color: limegreen;
+									color: white;
+								}
+								.hover-example:hover {
+									background-color: crimson;
+									width: 150px;
+									height: 150px;
+								}
+								&lt;/style&gt;
+								&lt;div class="hover-example"&gt;Hover your mouse over me&lt;/div&gt;
+					 </code>
+				 </pre>
+
+				</section>
+
+
         <section class="text-left">
 					<h3>Animações e Transições</h3>
 					<ul>
