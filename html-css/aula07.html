@@ -348,20 +348,53 @@
 					 </code>
 				 </pre>
 				</section>
-
-
-
-				
+	
 				<section class="text-left">
 					<p>Para mais informação detalhada do flex, consultar <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">este artigo</a></p>.
 				</section>
 
+				<section class="text-left">
+					<h2>Vendor Prefixes</h2>
+					<p>É uma maneira que os browsers usam para dar acesso aos developers a novas funcionalidades de CSS que ainda não são consideradas estáveis.</p>
+					<p>No entanto alguns developers também usam os vendor prefixes para adicionar regras de CSS especificas para alguns browsers (wrong!)</p>
+				</section>
 
+				<section class="text-left">
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+							-webkit- (Chrome, Safari, iOS Safari / iOS WebView, Android)
+    					-moz- (Firefox)
+    					-ms- (Edge, Internet Explorer)
+    					-o- (Opera, Opera Mini)
+					 </code>
+				 </pre>
+				</section>
 
+				<section class="text-left">
+					<pre>
+						<code class="hljs" data-trim contenteditable>
+							.myClass {
+								-webkit-transition: all 1s linear;
+								-moz-transition: all 1s linear;
+								-ms-transition: all 1s linear;
+								-o-transition: all 1s linear;
+								transition: all 1s linear;
+							}							
+					 </code>
+				 </pre>
 
+				 <pre>
+					<code class="hljs" data-trim contenteditable>
+						.myClass {
+							transition: all 1s linear;
+						}							
+				 	</code>
+			 		</pre>
+				</section>
 
-
-
+				<section class="text-left">
+					<p>Podemos ver <a href="https://css-tricks.com/is-vendor-prefixing-dead/">neste artigo</a> os vendor prefixes ainda suportados hoje.</p>
+				</section>
 
         <section class="text-left">
 					<h3>Animações e Transições</h3>
