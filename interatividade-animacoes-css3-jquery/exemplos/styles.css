@@ -44,7 +44,7 @@ Click on the large ball on the left to see the animation.
     /* Double hint: Don't forget about transition-delay! */
   
     margin-left: 300px;
-    transition: margin-left 1s ease-in 500ms;
+    transition: margin-left 1s ease-in 350ms;
   
   }
   
