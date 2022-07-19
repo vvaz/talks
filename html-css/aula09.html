@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>HTML - CSS // Flag</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="stylesheet" href="./css/tailwind.min.css" />
+    <link rel="stylesheet" href="../revealjs/dist/reveal.css" />
+    <link rel="stylesheet" href="../revealjs/dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="../revealjs/plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section class="text-left">
+          <h2>Bootstrap 5</h2>
+          <p>
+            É a framework de CSS mais popular para o desenvolvimento de sites e
+            aplicações web em <span class="bold">modo responsivo</span> e
+            <span class="bold">mobile-first</span>.
+          </p>
+        </section>
+
+        <section class="text-left">
+          <ul>
+            <li>
+              Rápida organização visual dos nossos projetos e poupa imenso tempo
+              na aplicação de CSS;
+            </li>
+            <li>Fácil de implementação;</li>
+            <li>Documentação bastante vasta;</li>
+            <li>Gratuito :)</li>
+          </ul>
+        </section>
+
+        <section class="text-left">
+          <ul>
+            <li>Importação do Bootstrap via CDN e via manual</li>
+            <li>Já não dependemos de jQuery (ainda bem) desde a versão 4.x</li>
+            <li>Quer dizer que Bootstrap já não suporta o Internet Explorer</li>
+          </ul>
+        </section>
+
+        <section class="text-left">
+          <pre>
+						<code class="hljs" data-trim contenteditable>
+							* {
+                box-shadow: 0px 0px 2px rgba(255,0,0,0.8);
+              }
+					 </code>
+				 </pre>
+        </section>
+
+        <section class="text-left">
+          <ul>
+            <li>Containers</li>
+          </ul>
+        </section>
+
+        <section class="text-left">
+          <ul>
+            <li>Grid System</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="../revealjs/dist/reveal.js"></script>
+    <script src="../revealjs/plugin/highlight/highlight.js"></script>
+
+    <script>
+      Reveal.initialize({
+        center: true,
+        hash: true,
+        plugins: [RevealHighlight],
+      });
+    </script>
+  </body>
+</html>
