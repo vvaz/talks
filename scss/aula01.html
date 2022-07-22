@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Responsive com WordPress - Aula 1</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="./css/tailwind.min.css">
+  <link rel="stylesheet" href="../revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="../revealjs/dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="../revealjs/plugin/highlight/monokai.css">
+  <link rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+
+      <section>
+        @vvaz | valerio@wpbox.io
+      </section>
+
+      <section class="text-left">
+        <h2>SCSS</h2>
+      </section>
+
+      <section class="text-left">
+        <p>Porque é que não usamos uma linguagem que o browser já reconhece? (CSS)</p>
+      </section>
+
+      <section class="text-left">
+        <small>
+          <p>1. No encapsulation</p>
+          <p>Com o CSS estamos a trabalhar num espaço "Global". Não temos forma de nos proteger enquanto criamos as nossas declarações de CSS.</p>
+          <p>2. No variables</p>
+          <p>Se quisermos dar suporte à maior parte dos browsers não podemos usar variáveis.</p>
+          <p>3. Not composable</p>
+          <p>É muito dificil / às vezes impossível, ao estilizar um componente não reutilizar declarações</p>
+          <p>4. Bad modularity primitives</p>
+          <p>O CSS não foi desenhado para ser usado nas aplicações complexas que temos neste momento. Manter as coisas organizadas é um desafio.</p>
+        </small>
+      </section>
+
+      <section class="text-left">
+        <small>
+          <h2>Agenda:</h2>
+          <ul>
+            <li>Preprocessing</li>
+            <li>Variáveis</li>
+            <li>Nesting</li>
+            <li>Partials</li>
+          </ul>
+        </small>
+      </section>
+
+      <section class="text-left">
+        <small>
+          <h2>Preprocessors</h2>
+          <p>Define conceitos similares a CSS, mas o que estamos a escrever, não é CSS. Ajuda-nos a organizar ficheiros, adicionar variáveis e reutilizar código.</p>
+          <p>O Preprocessor vai pegar no código que escrevermos em Sass e compilar para CSS</p>
+          <p>É modular</p>
+          <p>Existe o Less, o Sass e o Stylus</p>
+        </small>
+      </section>
+
+
+
+      <section class="text-left">
+        <small>
+          <h2>Preprocessors</h2>
+          <ul>
+            <li>Adiciona coisas que deveriam ser base do CSS</li>
+            <li>Os estilos são mais fáceis de escrever e mais fáceis de gerir</li>
+            <li>É muito mais fácil de manter os estilos organizados</li>
+            <li>É fácil de instalar</li>
+            <li>Existem algumas ferramentas muito boas para gerir SCSS</li>
+          </ul>
+        </small>
+      </section>
+
+      <section class="text-left">
+        <h2>Syntax</h2>
+        <p>style.scss</p>
+        <pre>
+          <code data-trim data-line-numbers contenteditable>
+            .quadrado {
+              width: 100px;
+              height: 100px;
+              background: blue;
+            }        
+          </code>
+        </pre>
+      </section>
+
+      <section class="text-left">
+        <h2>Syntax</h2>
+        <p>style.sass - é indent based - não vamos usar</p>
+        <pre>
+          <code data-trim data-line-numbers contenteditable>
+            <div class="container">
+              <div class="sidebar">
+                Sidebar
+              </div>
+              <div class="main">
+                Conteúdo
+              </div>
+            </div>      
+          </code>
+        </pre>
+      </section>
+
+      <section class="text-left">
+        <small>
+          <h2>Configurando o nosso VS Code</h2>
+
+          <p>Vamos instalar uma Extensão chamada Live Sass Compiler</p>
+        </small>
+      </section>
+
+      <section class="text-left">
+        <small>
+          <h2>Configurando o nosso VS Code</h2>
+
+          <pre>
+            <code data-trim data-line-numbers contenteditable>
+              "liveSassCompile.settings.formats": [{
+                "format": "expanded",
+                "extensionName": ".css",
+                "savePath": "./scss/examples/assets/css"
+              }],
+            </code>
+          </pre>
+        </small>
+      </section>
+
+      <section class="text-left">
+        <p>Vamos criar os estilos necessários para o ecrã 1 deste <a href="https://www.figma.com/file/ATfYNFnp5GawAnIVn3bnjo/Untitled?node-id=0%3A1">Figma</a></p>
+      </section>
+
+      <section class="text-left">
+        <small>
+          <h2>Nesting and Scoping</h2>
+          <p>Descendant</p>
+        
+
+        <pre>
+          <code data-trim data-line-numbers contenteditable>
+            <div class="container">
+              <div class="left">...</div>
+              <div class="outra-coisa">
+                <div class="left">...</div>
+              </div>
+            </div>
+          </code>
+        </pre>
+
+        <pre>
+          <code data-trim data-line-numbers contenteditable>
+            .container {
+              .left {
+                ...
+              }
+            }
+          </code>
+        </pre>
+
+      </small>
+      </section>
+
+      <section class="text-left">
+        <small>
+          <h2>Nesting and Scoping</h2>
+          <p>Direct Descendant - apenas elementos que são "filhos" diretos de um outro elemento</p>
+        
+
+          <pre>
+            <code data-trim data-line-numbers contenteditable>
+              <div class="container">
+                <div class="left">...</div>
+                <div class="outra-coisa">
+                  <div class="left">...</div>
+                </div>
+              </div>
+            </code>
+          </pre>
+
+          <pre>
+            <code data-trim data-line-numbers contenteditable>
+              .container {
+                > .left {
+                  ...
+                }
+              }
+            </code>
+          </pre>
+
+        </small>
+      </section>
+
+      <section class="text-left">
+        <small>
+          <h2>Nesting and Scoping</h2>
+          <p>Parent Selector &</p>
+        
+
+          <pre>
+            <code data-trim data-line-numbers contenteditable>
+              .container {
+                &.left {
+                  ...
+                }
+              }
+            </code>
+          </pre>
+
+        </small>
+      </section>
+
+      <section class="text-left">
+        <small>
+          <h2>Nesting and Scoping</h2>
+          <p>Parent Selector &</p>
+
+          <pre>
+            <code data-trim data-line-numbers contenteditable>
+              .container {
+                &.left {
+                  ...
+                }
+              }
+            </code>
+          </pre>
+
+        </small>
+      </section>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+  </div>
+
+  <script src="../revealjs/dist/reveal.js"></script>
+  <script src="../revealjs/plugin/highlight/highlight.js"></script>
+  <script>
+    Reveal.initialize({
+      center: true,
+      hash: true,
+      plugins: [RevealHighlight]
+    });
+  </script>
+
+</body>
+
+</html>
