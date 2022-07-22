@@ -51,9 +51,9 @@
           <h2>Agenda:</h2>
           <ul>
             <li>Preprocessing</li>
-            <li>Variáveis</li>
             <li>Nesting</li>
             <li>Partials</li>
+            <li>Variáveis</li>
           </ul>
         </small>
       </section>
@@ -258,10 +258,17 @@
 
           <pre>
             <code data-trim data-line-numbers contenteditable>
-              @import '_variables';
+              @import '_variables'; // para importar um ficheiro
+              @import 'layout/colors' // para importar um ficheiro dentro de uma pasta layout
             </code>
           </pre>
 
+        </small>
+      </section>
+
+      <section class="text-left">
+        <small>
+          <p>Com o import, podemos importar outros ficheiros .scss, ficheiros .css, ou até libraries externas (como o fontawesome)</p>
         </small>
       </section>
 
@@ -274,12 +281,100 @@
             _layout.scss
             _variables.scss
             _typography.scss
+            layout/colors.scss
             app.scss
             other.scss
           </code>
         </pre>
       </section>
 
+      <section class="text-left">
+        <small>
+          <p>Os ficheiros com o underscore inicial chamam-se de partials.</p>
+          <p>São desenhados para serem importados para o ficheiro principal e não vão gerar ficheiros CSS únicos</p>
+        </small>
+      </section>
+
+      <section class="text-left">
+        <small>
+          <h2>Variáveis</h2>
+          <p>Podemos guardar valores em váriaveis com o Sass e utilizar em todos os ficheiros .scss</p>
+        </small>
+      </section>
+
+      <section class="text-left">
+        <small>
+          <pre>
+            <code data-trim data-line-numbers contenteditable>
+              $error_color: #f00 !default;
+
+              .alert-color {
+                $text_color: #ddd;
+                background-color: $error_color;
+                color: $text_color;
+                text-shadow: 0 0 2px darken($text_color, 40%);
+              }
+            </code>
+          </pre>
+          <p>o !default quer dizer "unless set elsewhere" - ou seja, usa este valor, a menos que seja definido noutro sitio</p>
+          <p>
+            o $text_color - está a definir uma variável local, só vai ser usado nesse block
+          </p>
+          <p>O darken() é uma função do Sass que requer um valor em percentagem para escurecer uma certa cor.</p>
+        </small>
+      </section>
+      
+      <section class="text-left">
+        <small>
+          <h2>Variávels</h2>
+          <ul>
+            <li>É possível usar expressões matemáticas simples.</li>
+            <li>Sass pode converter unidades</li>
+            <li>Todos os valores de CSS podem ser usados como variáveis</li>
+          </ul>
+        </small>
+      </section>
+
+      <section class="text-left">
+        <small>
+          <h2>Variávels - Types</h2>
+          <ul>
+            <li>Números;</li>
+            <li>Cores;</li>
+            <li>Strings;</li>
+            <li>Booleans (True or False)</li>
+            <li>Lists</li>
+          </ul>
+        </small>
+      </section>
+
+      <section class="text-left">
+        <small>
+          <h2>Comentários:</h2>
+
+          <pre>
+            <code data-trim data-line-numbers contenteditable>
+              /*
+               * Este comentário vai manter-se no ficheiro compilado
+               */
+               .foo {
+                  color: red; // este comentário vai ser apagado
+               }
+            </code>
+          </pre>
+
+        </small>
+      </section>
+
+      <section class="text-left">
+        <small>
+          <h2>Exercício 3:</h2>
+
+          <p>Vamos pegar no exercício 2 e transformar todos os valores no nosso CSS em variáveis.</p>
+          <p>As variáveis têm de estar num ficheiro externo</p>
+
+        </small>
+      </section>
 
 
 
