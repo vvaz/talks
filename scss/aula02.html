@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Responsive com WordPress - Aula 1</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="./css/tailwind.min.css">
+  <link rel="stylesheet" href="../revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="../revealjs/dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="../revealjs/plugin/highlight/monokai.css">
+  <link rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+
+      <section class="text-left">
+        <small>
+          <h2>Mixins</h2>
+          <p>Os mixins são usados para substituir declarações inteiras de CSS. Podemos guardar num mixin e reutilizar estilos de CSS pelos nossos ficheiros todos.</p>
+          <p>O código é aplicado através do @include</p>
+          <p>Tem por boas práticas residir num ficheiro externo tal como as variáveis</p>
+        </small>
+      </section>
+
+      <section class="text-left">
+        <pre>
+          <code data-trim data-line-numbers contenteditable>
+              @mixing alert {
+                background-color: #fff;
+                color: #000;
+              }
+              .error {
+                @include alert;
+              }
+          </code>
+        </pre>
+      </section>
+
+      <section class="text-left">
+        <small>
+          <h2> Mixin Arguments</h2>
+          <p>Podemos também passar argumentos aos Mixins, dando uso então às nossas variáveis:</p>
+          <pre>
+            <code data-trim data-line-numbers contenteditable>
+                @mixing alert-text($color) {
+                  background-color: $color;
+                  color: #000;
+                }
+                .error {
+                  @include alert(blue);
+                }
+            </code>
+          </pre>
+        </small>
+      </section>
+
+      <section class="text-left">
+        <h3>Exercicio 4</h3>
+        <p>Fazer vários botões e usar mixins para se definir as cores</p>
+      </section>
+
+      <section class="text-left">
+        Exercicio 5
+        <p>Figma</p>
+      </section>
+
+      <section class="text-left">
+        <small>
+          <h2>Exercicio 6</h2>
+          <p>Vamos ter um concurso: vamos ver quem consegue converter para SaSS e exportar  ficheiro CSS mais leve que se conseguir.</p>
+          <p>Utilizem o método DRY - Don't Repeat Yourself</p>
+          <a href="https://codepen.io/chriscoyier/pen/vYoMzN">Codepen</a>
+        </small>
+      </section>
+    
+
+
+
+
+
+
+
+
+
+    </div>
+
+  </div>
+
+  <script src="../revealjs/dist/reveal.js"></script>
+  <script src="../revealjs/plugin/highlight/highlight.js"></script>
+  <script>
+    Reveal.initialize({
+      center: true,
+      hash: true,
+      plugins: [RevealHighlight]
+    });
+  </script>
+
+</body>
+
+</html>
