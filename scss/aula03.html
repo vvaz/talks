@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Responsive com WordPress - Aula 1</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="./css/tailwind.min.css">
+  <link rel="stylesheet" href="../revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="../revealjs/dist/theme/black.css" id="theme">
+  <link rel="stylesheet" href="../revealjs/plugin/highlight/monokai.css">
+  <link rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+
+      <section class="text-left">
+        <small>
+          <h2>Control Flow - @if</h2>
+        </small>
+        <pre>
+          <code data-trim data-line-numbers contenteditable>
+              @mixing foo($size) {
+                font-size: $size;
+                @if $size > 20 {
+                  line-height: $size;
+                }
+              }
+
+              .small {
+                @include foo(14px);
+              }
+              .large {
+                @inhclude foo(24px);
+              }
+          </code>
+        </pre>
+      </section>
+
+      <section class="text-left">
+        <small>
+          <h2>Algumas funções do Sass</h2>
+          <ul>
+            <li>Lightness - lightness(#ffcc00) - retorna o valor HSL da luminosidade de uma cor</li>
+            <li>RGB - rgb($red $green $blue) - retorna a cor, lendo os valores RGB</li>
+            <li>greyscale - grayscale(#ffcc00) - retorna uma cor cinzenta com o mesmo lightness da cor original</li>
+            <li>Invert - invert(#ffcc00) - retorna a cor inversa do original</li>
+          </ul>
+
+          <p>Podem ver mais funções aqui:</p>
+        </small>
+      </section>
+
+      <section class="text-left">
+        <small>
+          <h2>Exercicio</h2>
+        </small>
+      </section>
+
+
+    </div>
+
+  </div>
+
+  <script src="../revealjs/dist/reveal.js"></script>
+  <script src="../revealjs/plugin/highlight/highlight.js"></script>
+  <script>
+    Reveal.initialize({
+      center: true,
+      hash: true,
+      plugins: [RevealHighlight]
+    });
+  </script>
+
+</body>
+
+</html>
