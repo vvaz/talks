@@ -1,0 +1,16 @@
+.three-columns div {
+  width: 33%;
+  padding: 1rem;
+}
+.three-columns div img {
+  width: 100%;
+  height: auto;
+}
+
+.two-columns div {
+  padding: 1rem;
+}
+.two-columns div img {
+  width: 100%;
+  height: auto;
+}/*# sourceMappingURL=custom.css.map */
