@@ -237,6 +237,71 @@
         Vamos lá resolver problemas!
       </section>
 
+      <section class="text-left">
+        <small>
+          <h2>Breakpoints</h2>
+          <p>CSS Breakpoints são pontos onde o conteúdo do website se adapta à largura do ecrã, permitindo mostrar sempre o conteúdo mais importante ao visitante.</p>
+
+          <p>São também chamados de media query breakpoints, pois são usados com a funcionalidade media query.</p>
+
+        </small>
+      </section>
+
+      <section data-background="img/css-breakpoints-layouts-01.webp">
+
+      </section>
+
+      <section class="text-left">
+        <small>
+          <h2>Media Query:</h2>
+        </small>
+        <pre>
+          <code class="hljs" data-trim contenteditable>
+            @media only screen and (max-width: 600px) {
+              body {
+                background-color: lightblue;
+              }
+            }
+         </code>
+       </pre>
+      </section>
+
+      <section class="text-left">
+        <small>
+          <p>Existme breakpoints baseados em dispositivos e em conteúdo. Os breakpoints baseados em dispositivos são possíveis, mas tornam-se enormes:</p>
+          <pre>
+            <code class="hljs" data-trim contenteditable>
+              /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+              /* Portrait */
+              @media only screen
+              and (min-device-width: 375px)
+              and (max-device-width: 667px)
+              and (-webkit-min-device-pixel-ratio: 2)
+              and (orientation: portrait) {
+              --- css ---
+              }
+
+              /* Landscape */
+              @media only screen
+              and (min-device-width: 375px)
+              and (max-device-width: 667px)
+              and (-webkit-min-device-pixel-ratio: 2)
+              and (orientation: landscape) {
+              --- css --- 
+              }
+           </code>
+         </pre>
+        </small>
+      </section>
+
+      <section class="text-left">
+        <a href="https://www.figma.com/file/Wkiuz78UnhaJv0AP2GkOCV/Untitled?node-id=0%3A1">Exercício Responsive 1</a>
+      </section>
+
+      <section class="text-leff">
+        <a href="https://www.figma.com/file/sOkiyhwkua0uFvnNlSFb1f/Portfolio-Website-Homepage?node-id=0%3A1">Exercício Responsive 2</a>
+      </section>
+
 
     </div>
 
