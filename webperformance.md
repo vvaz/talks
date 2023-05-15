@@ -77,3 +77,7 @@ E mesmo assim, isto não é o problema real. Se nós pagarmos mais para ter velo
 
 Latência:
 Tempo que decorre entre o envio de um pacote de dados e a sua recepção, expressado em milisegundos.
+
+Temos um problema de latência ainda no tráfego móvel
+
+Num portátil ou desktop, as condições são diferentes. A rede é mais rápida, o hardware é mais rápido.
