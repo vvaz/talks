@@ -26,7 +26,7 @@ Vocês já sabem que:
 
 ## Porquê?
 
-Porque têm um site lento! Um site lento converte mentos (qualquer que seja o significado de conversão do vosso site (vendas, views, inscrições para uma newsletter, etc))
+Porque têm um site lento! Um site lento converte menos (qualquer que seja o significado de conversão do vosso site (vendas, views, inscrições para uma newsletter, etc))
 
 Provavelmente o causador desta lentidão é do nosso frontend.
 
