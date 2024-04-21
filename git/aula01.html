@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Git - Aula 1</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="stylesheet" href="./css/tailwind.min.css" />
+    <link rel="stylesheet" href="../revealjs/dist/reveal.css" />
+    <link rel="stylesheet" href="../revealjs/dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="../revealjs/plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-background-color="#644EA0">
+          talks.valeriovaz.dev/git/aula01.html
+        </section>
+
+        <section class="text-left">
+          Workshop: GIT
+
+          <ul>
+            <li>Instalação e configuração de GIT</li>
+            <li>Instalação de Cliente GIT</li>
+            <li>Criar uma equipa</li>
+            <li>Criar um projecto</li>
+            <li>Configurar repositório</li>
+            <li>Criar um branch a partir de master</li>
+            <li>Commit</li>
+            <li>Revert</li>
+            <li>Merge</li>
+            <li>Deploy</li>
+          </ul>
+
+        </section>
+
+
+        <section class="text-left">
+          <h2>
+            Requisitos
+          </h2>
+          <ul>
+            <li>linha de comandos (unix)</li>
+            <li>git version 2.0 ou superior (get --version)</li>
+            <li>homebrew no macOS ajuda</li>
+            <li>conta no github.com</li>
+          </ul>
+        </section>
+
+        <section class="text-left">
+          <p>
+            Programar raramente é um trabalho de uma pessoa só. A maioria dos programadores está inserida numa equipa, onde cada um tem uma função específica - ou trabalha numa feature específica.
+          </p>
+
+          <p>
+            Como podem imaginar, até numa equipa de apenas duas pessoas, é necessário um sistema de controlo de versões para garantir que o trabalho de cada um não se sobrepõe ao do outro.
+          </p>
+        </section>
+
+        <section class="text-left">
+          <h2>
+            O que é o GIT?
+          </h2>
+          <p>
+            O GIT é um sistema de controlo de versões distribuído, que permite que várias pessoas trabalhem no mesmo projecto ao mesmo tempo.
+          </p>
+          <p>
+            Global information tracker
+          </p>
+        </section>
+
+        <section class="text-left">
+          <p>
+            No macOS ou numa distribuição de Linux, o GIT já vem instalado por defeito. No entanto, é sempre bom verificar a versão do GIT que temos instalada.
+          </p>
+
+          <p>
+            Para Windows, é necessário instalar o GIT a partir do site gitforwindows.org
+          </p>
+
+          <p>
+            Para verificar a versão do GIT, basta correr o seguinte comando:
+          </p>
+
+          <pre><code>
+            git --version
+          </code></pre>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="../revealjs/dist/reveal.js"></script>
+    <script src="../revealjs/plugin/highlight/highlight.js"></script>
+    <script>
+      Reveal.initialize({
+        center: true,
+        hash: true,
+        plugins: [RevealHighlight],
+      });
+    </script>
+  </body>
+</html>
