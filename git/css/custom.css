@@ -13,4 +13,9 @@
 .two-columns div img {
   width: 100%;
   height: auto;
-}/*# sourceMappingURL=custom.css.map */
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
