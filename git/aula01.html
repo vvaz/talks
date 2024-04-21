@@ -73,7 +73,7 @@
             O GIT é um sistema de controlo de versões distribuído, que permite que várias pessoas trabalhem no mesmo projecto ao mesmo tempo.
           </p>
           <p>
-            Global information tracker
+            Global information tracker - criado por Linus Torvalds em 2005 para o desenvolvimento do kernel do Linux. (git "uk" - "stupid content tracker")
           </p>
         </section>
 
@@ -165,6 +165,317 @@
           <p class="fragment">
             <a href="https://explainshell.com/explain?cmd=ls+-lah" target="_blank">explainshell.com</a>
           </p>
+        </section>
+
+        <section class="text-left">
+          tab completion
+        </section>
+
+        <section class="text-left">
+          <h2>touch</h2>
+
+          <pre>
+            <code>
+              touch index.html
+            </code>
+          </pre>
+
+          <p>
+            cria um ficheiro vazio chamado index.html
+          </p>
+        </section>
+
+        <section class="text-left">
+          <h2>mkdir</h2>
+
+          <pre>
+            <code>
+              mkdir project
+            </code>
+          </pre>
+
+          <p>
+            cria um diretório chamado project
+          </p>
+        </section>
+
+        <section class="text-left">
+          <pre>
+            <code>
+              echo "<h1>Hello mom</h1>" > index.html
+            </code>
+          </pre>
+
+          <p>
+            escreve a string "<h1>Hello mom</h1>" no ficheiro index.html
+          </p>
+
+          <p style="font-size: 0.9rem;">
+            uma string é um conjunto de caracteres
+          </p>
+
+        </section>
+
+        <section class="text-left">
+          <h2>cat</h2>
+
+          <pre>
+            <code>
+              cat index.html
+            </code>
+          </pre>
+
+          <p>
+            lê o conteúdo do ficheiro index.html
+          </p>
+
+          <pre>
+            <code>
+              man cat
+            </code>
+          </pre>
+        </section>
+
+        <section class="text-left">
+          <h2>rm</h2>
+
+          <pre>
+            <code>
+              rm index.html
+            </code>
+          </pre>
+
+          <p>
+            remove o ficheiro index.html
+          </p>
+
+          <pre>
+            <code>
+              rm -rf project
+            </code>
+          </pre>
+            <p>
+              remove o diretório project e todos os ficheiros dentro dele
+            </p>
+          </section>
+
+          <section class="text-left">
+            <h2>code</h2>
+
+            <pre>
+              <code>
+                code .
+              </code>
+            </pre>
+
+            <p>
+              abre o Visual Studio Code na pasta atual
+            </p>
+
+            <p class="fragment">
+              Podem instalar este comando usando o cmd + shift + p e procurar por "shell command".
+            </p>
+
+            <p class="fragment">
+              ctrl + shift + p em Windows
+            </p>
+          </section>
+
+          <section class="text-left">
+
+            <h2>vim e como sair</h2>
+
+            <pre>
+              <code>
+                vim index.html
+              </code>
+            </pre>
+
+            <p>
+              abre o ficheiro index.html no vim
+            </p>
+
+            <pre>
+              <code>
+                :q
+              </code>
+
+              <code>
+                :q!
+              </code>
+
+              <code>
+                :wq
+              </code>
+            </pre>
+          </section>
+
+          <section class="text-left">
+            <h2>git</h2>
+
+            <pre>
+              <code>
+                git init
+              </code>
+            </pre>
+
+            <p>
+              inicia um repositório git
+            </p>
+
+            <p>
+              Se fizermos ls -lah, vamos ver uma pasta chamada .git, que é onde o git guarda toda a informação sobre o repositório.
+            </p>
+          </section>
+
+          <section class="text-left">
+            <h2>git add</h2>
+
+            <pre>
+              <code>
+                git add index.html
+              </code>
+            </pre>
+
+            <p>
+              adiciona o ficheiro index.html ao stage
+            </p>
+
+            <pre>
+              <code>
+                git add .
+              </code>
+            </pre>
+
+            <p>
+              adiciona todos os ficheiros ao stage
+            </p>
+          </section>
+
+          <section class="text-left">
+            <h2>git status</h2>
+
+            <pre>
+              <code>
+                git status
+              </code>
+            </pre>
+
+            <p>
+              vê o estado do repositório
+            </p>
+          </section>
+
+          <section class="text-left">
+            <h2>git diff</h2>
+
+            <pre>
+              <code>
+                git diff
+              </code>
+            </pre>
+
+            <p>
+              vê as diferenças entre o stage e o último commit
+            </p>
+            </section>
+
+          <section class="text-left">
+            <h2>git commit</h2>
+
+            <pre>
+              <code>
+                git commit -m "first commit"
+              </code>
+            </pre>
+
+            <p>
+              faz um commit com a mensagem "first commit"
+            </p>
+          </section>
+
+          <section class="text-left">
+            <h2>git log</h2>
+
+            <pre>
+              <code>
+                git log
+              </code>
+            </pre>
+
+            <p>
+              vê o histórico de commits
+            </p>
+          </section>
+
+          <section class="text-left">
+            <h2>git checkout</h2>
+
+            <pre>
+              <code>
+                git checkout -b feature
+              </code>
+            </pre>
+
+            <p>
+              cria um branch chamado feature
+            </p>
+
+            <pre>
+              <code>
+                git checkout master
+              </code>
+            </pre>
+
+            <p>
+              muda para o branch master
+            </p>
+          </section>
+
+          <section class="text-left">
+
+            <p>
+              ohshitgit.com é um site que mostra como resolver problemas comuns no git.
+            </p>
+
+            <p>
+              gitignore.io é um site que gera um ficheiro .gitignore com base nos ficheiros que queremos ignorar.
+            </p>
+
+            <p>
+              gitmoji.dev é um site que mostra os emojis que podemos usar nos nossos commits.
+            </p>
+
+          </section>
+
+
+          <section class="text-left">
+            <h2>Criar conta no github.com </h2>
+            <p>
+              github.com é um site onde podemos guardar os nossos repositórios de código. É uma rede social para programadores.
+            </p>
+          </section>
+
+          <section class="text-left">
+            github.com/vvaz/
+          </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
     </div>
 
