@@ -49,10 +49,19 @@
           </h2>
           <ul>
             <li>linha de comandos (unix)</li>
+            <li>Versão do Windows 10 19041.0 ou superior</li>
             <li>git version 2.0 ou superior (get --version)</li>
             <li>homebrew no macOS ajuda</li>
             <li>conta no github.com</li>
           </ul>
+        </section>
+
+        <section class="text-left">
+          <p>Qual é o objetivo do workshop?</p>
+
+          <p>Há mais de 130 comandos no Git, nós vamos falar de 10+, que são os mais usados.</p>
+
+          <p>Vamos saber o suficiente para usar o Git de uma maneira eficiente.</p>
         </section>
 
         <section class="text-left">
@@ -63,6 +72,8 @@
           <p>
             Como podem imaginar, até numa equipa de apenas duas pessoas, é necessário um sistema de controlo de versões para garantir que o trabalho de cada um não se sobrepõe ao do outro.
           </p>
+
+          <p class="fragment">checkout / checkin != todos podem trabalhar no ficheiro</p>
         </section>
 
         <section class="text-left">
@@ -97,15 +108,15 @@
         </section>
 
         <section class="text-left">
-          <p>
-            Durante o curso e a vossa carreira, vão usar a linha de comandos muitas vezes. No entanto, para quem prefere uma interface gráfica, existem várias opções disponíveis.
+          <p class="fragment">
+            Durante a formação e a vossa carreira, vão usar a linha de comandos muitas vezes. No entanto, para quem prefere uma interface gráfica, existem várias opções disponíveis.
           </p>
 
-          <p>
-            O GitHub Desktop é uma das opções mais populares, e é uma boa opção para quem está a começar. (outros: Sourcetree & GitKraken são outras opções)
+          <p class="fragment">
+            O GitHub Desktop é uma das opções mais populares e é uma boa opção para quem está a começar. (outros: Sourcetree & GitKraken são outras opções)
           </p>
 
-          <p>
+          <p class="fragment">
             Para instalar o GitHub Desktop, basta ir ao site desktop.github.com e seguir as instruções.
           </p>
         </section>
@@ -132,8 +143,12 @@
             ls -l
           </code></pre>
 
+          <p class="fragment">
+            Podemos usar flags, que são opções que podemos passar para os comandos.
+          </p>
+
           <p>
-            vê o diretório com mais informações (permissões, dono, grupo, tamanho, data de criação)
+            ls -l vê o diretório com mais informações (permissões, dono, grupo, tamanho, data de criação)
           </p>
 
           <pre><code>
@@ -237,6 +252,40 @@
         </section>
 
         <section class="text-left">
+          <p>O "man" permite aceder ao manual de qualquer comando no terminal. Se quisermos saber o que algo faz, podemos escrever "man comando".</p>
+          <ul>
+            <li>j vai para a linha abaixo</li>
+            <li>k vai para a linha acima</li>
+            <li>q sai do manual</li>
+            <li>d anda meia página para baixo</li>
+            <li>u anda meia página para cima</li>
+            <li>/term pesquisa</li>
+            <li>n próxima pesquisa</li>
+            <li>N pesquisa anterior</li>
+          </ul>
+        </section>
+
+        <section class="text-left">
+          <h2>Exercício rápido</h2>
+
+          <p>No man existem termos em <strong>bold.</strong> Vamos encontrar no man o que é que isso significa usando o manual do man.</p>
+        </section>
+
+        <section class="text-left">
+          <h2>cp</h2>
+
+          <pre>
+            <code>
+              cp index.html index2.html
+            </code>
+          </pre>
+
+          <p>
+            copia o ficheiro index.html para index2.html
+          </p>
+        </section>
+
+        <section class="text-left">
           <h2>rm</h2>
 
           <pre>
@@ -308,6 +357,70 @@
                 :wq
               </code>
             </pre>
+          </section>
+
+          <section class="text-left">
+            <h2>git</h2>
+
+            <p>
+              O git é um sistema de controlo de versões distribuído, que permite que várias pessoas trabalhem no mesmo projecto ao mesmo tempo.
+            </p>
+
+            <p>
+              O git guarda o histórico de todos os ficheiros, e permite que voltemos atrás no tempo.
+            </p>
+          </section>
+
+          <section class="text-left">
+            <h2>git workflow</h2>
+
+            <p>
+              O git tem um workflow muito simples. Criamos um ficheiro, adicionamos ao stage, fazemos um commit, e fazemos um push.
+            </p>
+
+            <ul>
+              <li>É gratuito e open-source</li>
+              <li>Tem um histórico</li>
+              <li>Cria backups</li>
+              <li>Permite colaboração</li>
+              <li>É escalável</li>
+            </ul>
+          </section>
+
+          <section class="text-left" data-background-color="#ffffff">
+            <img src="img/gitworkflow1.png" alt="gitworkflow">
+          </section>
+
+          <section>
+            <a href="https://excalidraw.com">ver workflow untracked / stage / tracked </a>
+          </section>
+
+          <section class="text-left">
+            <p>
+              No Git, os comandos estão divididos em duas categorias a high level "porcelain" e o low level "plumbing".
+            </p>
+
+            <p>
+              Os comandos de alto nível são os que usamos no dia a dia, como git add, git commit, git push.
+            </p>
+
+            <p>
+              Os comandos de baixo nível são os que são usados para criar os comandos de alto nível, como git hash-object, git cat-file, git update-index.
+            </p>
+
+            <p>
+              lista - <a href="https://git-scm.com/docs/git">de comandos</a>
+          </section>
+
+          <section class="text-left">
+            <p>key terms:</p>
+
+            <ul>
+              <li>repo - é um projeto que o git faz track</li>
+              <li>stage - é onde os ficheiros estão antes de se fazer commit</li>
+              <li>commit - ponto no tempo que representa o projeto</li>
+            </ul>
+
           </section>
 
           <section class="text-left">
@@ -568,12 +681,65 @@
             https://choosealicense.com/
           </section>
 
+          <section class="text-left">
+            <h2>Exercício</h2>
+            <p>
+              Vamos adicionar um ficheiro license.md ao nosso repositório, e vamos adicionar uma licença ao nosso repositório.
+            </p>
+          </section>
 
           <section class="text-left">
-            clone
-            make changes
-            make pull request
+            <h2>git pull</h2>
+
+            <pre>
+              <code>
+                git pull origin master
+              </code>
+            </pre>
+
+            <p>
+              faz um pull do repositório remoto para o repositório local
+            </p>
           </section>
+
+          <section class="text-left">
+            <h2>git clone</h2>
+
+            <pre>
+              <code>
+                git clone <REPO_URL>
+              </code>
+            </pre>
+
+            <p>
+              clona um repositório remoto para o repositório local
+            </p>
+          </section>
+
+          <section class="text-left">
+            <h2>git branch</h2>
+
+            <pre>
+              <code>
+                git branch
+              </code>
+            </pre>
+
+            <p>
+              vê todos os branches
+            </p>
+
+            <pre>
+              <code>
+                git branch feature
+              </code>
+            </pre>
+
+            <p>
+              cria um branch chamado feature
+            </p>
+          </section>
+
 
 
 
