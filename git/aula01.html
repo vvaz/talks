@@ -27,7 +27,7 @@
         <section class="text-left">
           <h2>Workshop Git</h2>
 
-          <ul style="font-size: 1.2rem;">
+          <ul style="font-size: 1.2rem">
             <li>Instalação e configuração de GIT</li>
             <li>Instalação de Cliente GIT</li>
             <li>Criar uma equipa</li>
@@ -39,14 +39,10 @@
             <li>Merge</li>
             <li>Deploy</li>
           </ul>
-
         </section>
 
-
         <section class="text-left">
-          <h2>
-            Requisitos
-          </h2>
+          <h2>Requisitos</h2>
           <ul>
             <li>linha de comandos (unix)</li>
             <li>Versão do Windows 10 19041.0 ou superior</li>
@@ -59,43 +55,58 @@
         <section class="text-left">
           <p>Qual é o objetivo do workshop?</p>
 
-          <p>Há mais de 130 comandos no Git, nós vamos falar de 10+, que são os mais usados.</p>
+          <p>
+            Há mais de 130 comandos no Git, nós vamos falar de 10+, que são os
+            mais usados.
+          </p>
 
-          <p>Vamos saber o suficiente para usar o Git de uma maneira eficiente.</p>
+          <p>
+            Vamos saber o suficiente para usar o Git de uma maneira eficiente.
+          </p>
         </section>
 
         <section class="text-left">
           <p>
-            Programar raramente é um trabalho de uma pessoa só. A maioria dos programadores está inserida numa equipa, onde cada um tem uma função específica - ou trabalha numa feature específica.
+            Programar raramente é um trabalho de uma pessoa só. A maioria dos
+            programadores está inserida numa equipa, onde cada um tem uma função
+            específica - ou trabalha numa feature específica.
           </p>
 
           <p>
-            Como podem imaginar, até numa equipa de apenas duas pessoas, é necessário um sistema de controlo de versões para garantir que o trabalho de cada um não se sobrepõe ao do outro.
+            Como podem imaginar, até numa equipa de apenas duas pessoas, é
+            necessário um sistema de controlo de versões para garantir que o
+            trabalho de cada um não se sobrepõe ao do outro.
           </p>
 
-          <p class="fragment">checkout / checkin != todos podem trabalhar no ficheiro</p>
-        </section>
-
-        <section class="text-left">
-          <h2>
-            O que é o GIT?
-          </h2>
-          <p>
-            O GIT é um sistema de controlo de versões distribuído, que permite que várias pessoas trabalhem no mesmo projecto ao mesmo tempo.
-          </p>
-          <p>
-            Global information tracker - criado por Linus Torvalds em 2005 para o desenvolvimento do kernel do Linux. (git "uk" - "stupid content tracker")
+          <p class="fragment">
+            checkout / checkin != todos podem trabalhar no ficheiro
           </p>
         </section>
 
+        <section class="text-left">
+          <h2>O que é o GIT?</h2>
+          <p>
+            O GIT é um sistema de controlo de versões distribuído, que permite
+            que várias pessoas trabalhem no mesmo projecto ao mesmo tempo.
+          </p>
+          <p>
+            Global information tracker - criado por Linus Torvalds em 2005 para
+            o desenvolvimento do kernel do Linux. (git "uk" - "stupid content
+            tracker")
+          </p>
+        </section>
 
         <section class="text-left">
           <p>
-            No macOS ou numa distribuição de Linux, o GIT já vem instalado por defeito. No entanto, é sempre bom verificar a versão do GIT que temos instalada.
+            No macOS ou numa distribuição de Linux, o GIT já vem instalado por
+            defeito. No entanto, é sempre bom verificar a versão do GIT que
+            temos instalada.
           </p>
 
           <p>
-            Para Windows, é necessário instalar o GIT a partir do site gitforwindows.org, ou usar o WSL (Windows Subsystem for Linux) para instalar o GIT.
+            Para Windows, é necessário instalar o GIT a partir do site
+            gitforwindows.org, ou usar o WSL (Windows Subsystem for Linux) para
+            instalar o GIT.
           </p>
 
           <p>
@@ -109,7 +120,8 @@
 
         <section class="text-left">
           <p>
-            Para termos todos a mesma experiência com o Git, vamos dar reset a uma possível definição que tenham na vossa máquina
+            Para termos todos a mesma experiência com o Git, vamos dar reset a
+            uma possível definição que tenham na vossa máquina
           </p>
 
           <pre><code>
@@ -120,20 +132,24 @@
 
         <section class="text-left">
           <p class="fragment">
-            Durante a formação e a vossa carreira, vão usar a linha de comandos muitas vezes. No entanto, para quem prefere uma interface gráfica, existem várias opções disponíveis.
+            Durante a formação e a vossa carreira, vão usar a linha de comandos
+            muitas vezes. No entanto, para quem prefere uma interface gráfica,
+            existem várias opções disponíveis.
           </p>
 
           <p class="fragment">
-            O GitHub Desktop é uma das opções mais populares e é uma boa opção para quem está a começar. (outros: Sourcetree & GitKraken são outras opções)
+            O GitHub Desktop é uma das opções mais populares e é uma boa opção
+            para quem está a começar. (outros: Sourcetree & GitKraken são outras
+            opções)
           </p>
 
           <p class="fragment">
-            Para instalar o GitHub Desktop, basta ir ao site desktop.github.com e seguir as instruções.
+            Para instalar o GitHub Desktop, basta ir ao site desktop.github.com
+            e seguir as instruções.
           </p>
         </section>
 
         <section class="text-left">
-
           <h2>bash</h2>
 
           <ul>
@@ -144,7 +160,6 @@
             <li class="fragment">clear</li>
             <li class="fragment">~</li>
           </ul>
-
         </section>
 
         <section class="text-left">
@@ -155,20 +170,20 @@
           </code></pre>
 
           <p class="fragment">
-            Podemos usar flags, que são opções que podemos passar para os comandos.
+            Podemos usar flags, que são opções que podemos passar para os
+            comandos.
           </p>
 
           <p>
-            ls -l vê o diretório com mais informações (permissões, dono, grupo, tamanho, data de criação)
+            ls -l vê o diretório com mais informações (permissões, dono, grupo,
+            tamanho, data de criação)
           </p>
 
           <pre><code>
             ls -a
           </code></pre>
 
-          <p>
-            vê todos os ficheiros, incluindo os ficheiros ocultos
-          </p>
+          <p>vê todos os ficheiros, incluindo os ficheiros ocultos</p>
         </section>
 
         <section class="text-left">
@@ -179,7 +194,8 @@
           </pre>
 
           <p>
-            -lah são flags que podem ser usadas em conjunto. -l e -a são flags diferentes, mas podem ser usadas em conjunto.
+            -lah são flags que podem ser usadas em conjunto. -l e -a são flags
+            diferentes, mas podem ser usadas em conjunto.
           </p>
 
           <pre>
@@ -189,13 +205,15 @@
           </pre>
 
           <p class="fragment">
-            <a href="https://explainshell.com/explain?cmd=ls+-lah" target="_blank">explainshell.com</a>
+            <a
+              href="https://explainshell.com/explain?cmd=ls+-lah"
+              target="_blank"
+              >explainshell.com</a
+            >
           </p>
         </section>
 
-        <section class="text-left">
-          tab completion
-        </section>
+        <section class="text-left">tab completion</section>
 
         <section class="text-left">
           <h2>touch</h2>
@@ -206,9 +224,7 @@
             </code>
           </pre>
 
-          <p>
-            cria um ficheiro vazio chamado index.html
-          </p>
+          <p>cria um ficheiro vazio chamado index.html</p>
         </section>
 
         <section class="text-left">
@@ -220,9 +236,7 @@
             </code>
           </pre>
 
-          <p>
-            cria um diretório chamado project
-          </p>
+          <p>cria um diretório chamado project</p>
         </section>
 
         <section class="text-left">
@@ -232,14 +246,11 @@
             </code>
           </pre>
 
-          <p>
-            escreve a string "Hello mom" no ficheiro index.html
-          </p>
+          <p>escreve a string "Hello mom" no ficheiro index.html</p>
 
-          <p style="font-size: 0.9rem;">
+          <p style="font-size: 0.9rem">
             uma string é um conjunto de caracteres
           </p>
-
         </section>
 
         <section class="text-left">
@@ -251,9 +262,7 @@
             </code>
           </pre>
 
-          <p>
-            lê o conteúdo do ficheiro index.html
-          </p>
+          <p>lê o conteúdo do ficheiro index.html</p>
 
           <pre>
             <code>
@@ -263,7 +272,10 @@
         </section>
 
         <section class="text-left">
-          <p>O "man" permite aceder ao manual de qualquer comando no terminal. Se quisermos saber o que algo faz, podemos escrever "man comando".</p>
+          <p>
+            O "man" permite aceder ao manual de qualquer comando no terminal. Se
+            quisermos saber o que algo faz, podemos escrever "man comando".
+          </p>
           <ul>
             <li>j vai para a linha abaixo</li>
             <li>k vai para a linha acima</li>
@@ -279,7 +291,10 @@
         <section class="text-left">
           <h2>Exercício rápido</h2>
 
-          <p>No man existem termos em <strong>bold.</strong> Vamos encontrar no man o que é que isso significa usando o manual do man.</p>
+          <p>
+            No man existem termos em <strong>bold.</strong> Vamos encontrar no
+            man o que é que isso significa usando o manual do man.
+          </p>
         </section>
 
         <section class="text-left">
@@ -291,9 +306,7 @@
             </code>
           </pre>
 
-          <p>
-            copia o ficheiro index.html para index2.html
-          </p>
+          <p>copia o ficheiro index.html para index2.html</p>
         </section>
 
         <section class="text-left">
@@ -305,57 +318,47 @@
             </code>
           </pre>
 
-          <p>
-            remove o ficheiro index.html
-          </p>
+          <p>remove o ficheiro index.html</p>
 
           <pre>
             <code>
               rm -rf project
             </code>
           </pre>
-            <p>
-              remove o diretório project e todos os ficheiros dentro dele
-            </p>
-          </section>
+          <p>remove o diretório project e todos os ficheiros dentro dele</p>
+        </section>
 
-          <section class="text-left">
-            <h2>code</h2>
+        <section class="text-left">
+          <h2>code</h2>
 
-            <pre>
+          <pre>
               <code>
                 code .
               </code>
             </pre>
 
-            <p>
-              abre o Visual Studio Code na pasta atual
-            </p>
+          <p>abre o Visual Studio Code na pasta atual</p>
 
-            <p class="fragment">
-              Podem instalar este comando usando o cmd + shift + p e procurar por "shell command".
-            </p>
+          <p class="fragment">
+            Podem instalar este comando usando o cmd + shift + p e procurar por
+            "shell command".
+          </p>
 
-            <p class="fragment">
-              ctrl + shift + p em Windows
-            </p>
-          </section>
+          <p class="fragment">ctrl + shift + p em Windows</p>
+        </section>
 
-          <section class="text-left">
+        <section class="text-left">
+          <h2>vim e como sair</h2>
 
-            <h2>vim e como sair</h2>
-
-            <pre>
+          <pre>
               <code>
                 vim index.html
               </code>
             </pre>
 
-            <p>
-              abre o ficheiro index.html no vim
-            </p>
+          <p>abre o ficheiro index.html no vim</p>
 
-            <pre>
+          <pre>
               <code>
                 :q
               </code>
@@ -368,541 +371,536 @@
                 :wq
               </code>
             </pre>
-          </section>
+        </section>
 
-          <section class="text-left">
-            <h2>git</h2>
+        <section class="text-left">
+          <h2>git</h2>
 
-            <p>
-              O git é um sistema de controlo de versões distribuído, que permite que várias pessoas trabalhem no mesmo projecto ao mesmo tempo.
-            </p>
+          <p>
+            O git é um sistema de controlo de versões distribuído, que permite
+            que várias pessoas trabalhem no mesmo projecto ao mesmo tempo.
+          </p>
 
-            <p>
-              O git guarda o histórico de todos os ficheiros, e permite que voltemos atrás no tempo.
-            </p>
-          </section>
+          <p>
+            O git guarda o histórico de todos os ficheiros, e permite que
+            voltemos atrás no tempo.
+          </p>
+        </section>
 
-          <section class="text-left">
-            <h2>git workflow</h2>
+        <section class="text-left">
+          <h2>git workflow</h2>
 
-            <p>
-              O git tem um workflow muito simples. Criamos um ficheiro, adicionamos ao stage, fazemos um commit, e fazemos um push.
-            </p>
+          <p>
+            O git tem um workflow muito simples. Criamos um ficheiro,
+            adicionamos ao stage, fazemos um commit, e fazemos um push.
+          </p>
 
-            <ul>
-              <li>É gratuito e open-source</li>
-              <li>Tem um histórico</li>
-              <li>Cria backups</li>
-              <li>Permite colaboração</li>
-              <li>É escalável</li>
-            </ul>
-          </section>
+          <ul>
+            <li>É gratuito e open-source</li>
+            <li>Tem um histórico</li>
+            <li>Cria backups</li>
+            <li>Permite colaboração</li>
+            <li>É escalável</li>
+          </ul>
+        </section>
 
-          <section class="text-left" data-background-color="#ffffff">
-            <img src="img/gitworkflow1.png" alt="gitworkflow">
-          </section>
+        <section class="text-left" data-background-color="#ffffff">
+          <img src="img/gitworkflow1.png" alt="gitworkflow" />
+        </section>
 
-          <section>
-            <a href="https://excalidraw.com">ver workflow untracked / stage / tracked </a>
-          </section>
+        <section>
+          <a href="https://excalidraw.com"
+            >ver workflow untracked / stage / tracked
+          </a>
+        </section>
 
-          <section class="text-left">
-            <p>
-              No Git, os comandos estão divididos em duas categorias a high level "porcelain" e o low level "plumbing".
-            </p>
+        <section class="text-left">
+          <p>
+            No Git, os comandos estão divididos em duas categorias a high level
+            "porcelain" e o low level "plumbing".
+          </p>
 
-            <p>
-              Os comandos de alto nível são os que usamos no dia a dia, como git add, git commit, git push.
-            </p>
+          <p>
+            Os comandos de alto nível são os que usamos no dia a dia, como git
+            add, git commit, git push.
+          </p>
 
-            <p>
-              Os comandos de baixo nível são os que são usados para criar os comandos de alto nível, como git hash-object, git cat-file, git update-index.
-            </p>
+          <p>
+            Os comandos de baixo nível são os que são usados para criar os
+            comandos de alto nível, como git hash-object, git cat-file, git
+            update-index.
+          </p>
 
-            <p>
-              lista - <a href="https://git-scm.com/docs/git">de comandos</a>
-          </section>
+          <p>lista - <a href="https://git-scm.com/docs/git">de comandos</a></p>
+        </section>
 
-          <section class="text-left">
-            <p>key terms:</p>
+        <section class="text-left">
+          <p>key terms:</p>
 
-            <ul>
-              <li>repo - é um projeto que o git faz track</li>
-              <li>stage - é onde os ficheiros estão antes de se fazer commit</li>
-              <li>commit - ponto no tempo que representa o projeto</li>
-            </ul>
+          <ul>
+            <li>repo - é um projeto que o git faz track</li>
+            <li>stage - é onde os ficheiros estão antes de se fazer commit</li>
+            <li>commit - ponto no tempo que representa o projeto</li>
+          </ul>
+        </section>
 
-          </section>
+        <section class="text-left">
+          <ul>
+            <li>As configurações do git seguem um padrão section.key</li>
+            <li>
+              --global é para todas as pastas, --local é para a pasta atual
+            </li>
+            <li>
+              Para adicionar um key value, podem usar git config --add --global
+              key "value"
+            </li>
+            <li>
+              user.name e user.email são keys usadas para associar uma commit à
+              vossa pessoa
+            </li>
+            <li>
+              Podem ver qualquer valor da git config executando git config --get
+              key
+            </li>
+          </ul>
+        </section>
 
-          <section class="text-left">
-            <ul>
-              <li>As configurações do git seguem um padrão section.key</li>
-              <li>--global é para todas as pastas, --local é para a pasta atual</li>
-              <li>Para adicionar um key value, podem usar git config --add --global key "value" </li>
-              <li>user.name e user.email são keys usadas para associar uma commit à vossa pessoa</li>
-              <li>Podem ver qualquer valor da git config executando git config --get key</li>
-            </ul>
-          </section>
+        <section class="text-left">
+          <h2>Criar conta no github.com</h2>
+          <p>
+            github.com é um site onde podemos guardar os nossos repositórios de
+            código. É uma rede social para programadores.
+          </p>
+        </section>
 
-          <section class="text-left">
-            <h2>Criar conta no github.com </h2>
-            <p>
-              github.com é um site onde podemos guardar os nossos repositórios de código. É uma rede social para programadores.
-            </p>
-          </section>
+        <section class="text-left">
+          <h2>Problema</h2>
+          Adicionem o vosso user.name e o user.email SE não tiverem já valores
+          para eles.
+        </section>
 
-          <section class="text-left">
-            <h2>Problema</h2>
-            Adicionem o vosso user.name e o user.email SE não tiverem já valores para eles.
-          </section>
+        <section class="text-left">
+          <h2>git config</h2>
 
-          <section class="text-left">
-            <h2>git config</h2>
-
-            <pre>
+          <pre>
               <code>
                 git config --global user.name "Valerio Vaz"
               </code>
             </pre>
 
-            <p>
-              define o nome do utilizador
-            </p>
+          <p>define o nome do utilizador</p>
 
-            <pre>
+          <pre>
               <code>
                 git config --global user.email "valerio@wpbox.io"
               </code>
             </pre>
 
-            <p>
-              define o email do utilizador
-            </p>
-          </section>
+          <p>define o email do utilizador</p>
+        </section>
 
+        <section class="text-left">
+          <h2>git</h2>
 
-
-          <section class="text-left">
-            <h2>git</h2>
-
-            <pre>
+          <pre>
               <code>
                 git init
               </code>
             </pre>
 
-            <p>
-              inicia um repositório git
-            </p>
+          <p>inicia um repositório git</p>
 
-            <p>
-              Se fizermos ls -lah, vamos ver uma pasta chamada .git, que é onde o git guarda toda a informação sobre o repositório.
-            </p>
-          </section>
+          <p>
+            Se fizermos ls -lah, vamos ver uma pasta chamada .git, que é onde o
+            git guarda toda a informação sobre o repositório.
+          </p>
+        </section>
 
-          <section class="text-left">
-            <p>
-              Se iniciarmos um repositorio numa pasta, mas fizemos um erro ou mudámos de ideias, basta apagar a pasta .git para apagar o repositório.
-            </p>
-          </section>
+        <section class="text-left">
+          <p>
+            Se iniciarmos um repositorio numa pasta, mas fizemos um erro ou
+            mudámos de ideias, basta apagar a pasta .git para apagar o
+            repositório.
+          </p>
+        </section>
 
-          <section class="text-left">
-            <h2>Problema</h2>
-            <p>
-              Validem que criaram um repositório git, listando os ficheiros e diretórios no git state directory. (.git)
-            </p>
-          </section>
+        <section class="text-left">
+          <h2>Problema</h2>
+          <p>
+            Validem que criaram um repositório git, listando os ficheiros e
+            diretórios no git state directory. (.git)
+          </p>
+        </section>
 
-          <section class="text-left">
-            <pre>
+        <section class="text-left">
+          <pre>
               <code>
                 ls -lah .git
               </code>
             </pre>
 
-            <pre>
+          <pre>
               <code>
                   find .git
               </code>
             </pre>
-          </section>
+        </section>
 
-          <section class="text-left">
-            <h2>Os comandos básicos</h2>
+        <section class="text-left">
+          <h2>Os comandos básicos</h2>
 
-            <p>
-              Os próximos comandos que vamos ver, são 80% dos comandos que vamos usar no dia a dia. 80% do git é fácil, os outros 20% são mais complicados.
-            </p>
+          <p>
+            Os próximos comandos que vamos ver, são 80% dos comandos que vamos
+            usar no dia a dia. 80% do git é fácil, os outros 20% são mais
+            complicados.
+          </p>
 
-            <ul>
-              <li>git add</li>
-              <li>git status</li>
-              <li>git commit -m "mensagem"</li>
+          <ul>
+            <li>git add</li>
+            <li>git status</li>
+            <li>git commit -m "mensagem"</li>
+          </ul>
+        </section>
 
-            </ul>
-          </section>
+        <section class="text-left">
+          <h2>git add</h2>
 
-
-
-
-
-          <section class="text-left">
-            <h2>git add</h2>
-
-            <pre>
+          <pre>
               <code>
                 git add index.html
               </code>
             </pre>
 
-            <p>
-              adiciona o ficheiro index.html ao stage
-            </p>
+          <p>adiciona o ficheiro index.html ao stage</p>
 
-            <pre>
+          <pre>
               <code>
                 git add .
               </code>
             </pre>
 
-            <p>
-              adiciona todos os ficheiros ao stage
-            </p>
-          </section>
+          <p>adiciona todos os ficheiros ao stage</p>
+        </section>
 
-          <section class="text-left">
-            <h2>git status</h2>
+        <section class="text-left">
+          <h2>git status</h2>
 
-            <pre>
+          <pre>
               <code>
                 git status
               </code>
             </pre>
 
-            <p>
-              vê o estado do repositório
-            </p>
-          </section>
+          <p>vê o estado do repositório</p>
+        </section>
 
-          <section class="text-left">
-            <h2>git diff</h2>
+        <section class="text-left">
+          <h2>git diff</h2>
 
-            <pre>
+          <pre>
               <code>
                 git diff
               </code>
             </pre>
 
-            <p>
-              vê as diferenças entre o stage e o último commit
-            </p>
-            </section>
+          <p>vê as diferenças entre o stage e o último commit</p>
+        </section>
 
-          <section class="text-left">
-            <h2>git commit</h2>
+        <section class="text-left">
+          <h2>git commit</h2>
 
-            <pre>
+          <pre>
               <code>
                 git commit -m "first commit"
               </code>
             </pre>
 
-            <p>
-              faz um commit com a mensagem "first commit"
-            </p>
-          </section>
+          <p>faz um commit com a mensagem "first commit"</p>
+        </section>
 
-          <section class="text-left">
-            <h2>Problema</h2>
+        <section class="text-left">
+          <h2>Problema</h2>
 
-            <ul>
-              <li>No nosso repositório vamos criar um ficheiro chamado hello.md</li>
-              <li>verifica o status do git para ver se está untracked</li>
-              <li>Adiciona o hello.md ao staging area</li>
-              <li>Verifica o status do git para ver que o ficheiro agora está tracked</li>
-              <li>Faz um commit com a mensagem "add hello.md"</li>
-              <li>Verifica o status do git para confirmar que não há nada untracked ou no staging area</li>
-            </ul>
-          </section>
+          <ul>
+            <li>
+              No nosso repositório vamos criar um ficheiro chamado hello.md
+            </li>
+            <li>verifica o status do git para ver se está untracked</li>
+            <li>Adiciona o hello.md ao staging area</li>
+            <li>
+              Verifica o status do git para ver que o ficheiro agora está
+              tracked
+            </li>
+            <li>Faz um commit com a mensagem "add hello.md"</li>
+            <li>
+              Verifica o status do git para confirmar que não há nada untracked
+              ou no staging area
+            </li>
+          </ul>
+        </section>
 
-          <section class="text-left">
-            <h2>git log</h2>
+        <section class="text-left">
+          <h2>git log</h2>
 
-            <pre>
+          <pre>
               <code>
                 git log
               </code>
             </pre>
 
-            <p>
-              vê o histórico de commits
-            </p>
-          </section>
+          <p>vê o histórico de commits</p>
+        </section>
 
-          <section class="text-left">
-            <p>
-              vamos ao man do git log para ver as opções que podemos usar com o comando. Procurem por --graph ou --decorate
-            </p>
+        <section class="text-left">
+          <p>
+            vamos ao man do git log para ver as opções que podemos usar com o
+            comando. Procurem por --graph ou --decorate
+          </p>
 
-            <p>
-              <a href="https://explainshell.com/explain?cmd=git+log+--graph+--decorate" target="_blank">explainshell.com</a>
-            </p>
-          </section>
+          <p>
+            <a
+              href="https://explainshell.com/explain?cmd=git+log+--graph+--decorate"
+              target="_blank"
+              >explainshell.com</a
+            >
+          </p>
+        </section>
 
-          <section class="text-left">
-            <h2>git checkout</h2>
+        <section class="text-left">
+          <h2>git checkout</h2>
 
-            <pre>
+          <pre>
               <code>
                 git checkout -b feature
               </code>
             </pre>
 
-            <p>
-              cria um branch chamado feature
-            </p>
+          <p>cria um branch chamado feature</p>
 
-            <pre>
+          <pre>
               <code>
                 git checkout master
               </code>
             </pre>
 
-            <p>
-              muda para o branch master
-            </p>
-          </section>
+          <p>muda para o branch master</p>
+        </section>
 
-          <section class="text-left">
+        <section class="text-left">
+          <p>
+            ohshitgit.com é um site que mostra como resolver problemas comuns no
+            git.
+          </p>
 
-            <p>
-              ohshitgit.com é um site que mostra como resolver problemas comuns no git.
-            </p>
+          <p>
+            gitignore.io é um site que gera um ficheiro .gitignore com base nos
+            ficheiros que queremos ignorar.
+          </p>
 
-            <p>
-              gitignore.io é um site que gera um ficheiro .gitignore com base nos ficheiros que queremos ignorar.
-            </p>
+          <p>
+            gitmoji.dev é um site que mostra os emojis que podemos usar nos
+            nossos commits.
+          </p>
+        </section>
 
-            <p>
-              gitmoji.dev é um site que mostra os emojis que podemos usar nos nossos commits.
-            </p>
+        <section class="text-left">
+          <h2>voltando ao github.com</h2>
+        </section>
 
-          </section>
+        <section class="text-left">github.com/vvaz/</section>
 
+        <section class="text-left">
+          <ul>
+            <li class="fragment">Fork</li>
+            <li class="fragment">Star</li>
+            <li class="fragment">Watch</li>
+            <li class="fragment">Pin</li>
+          </ul>
+        </section>
 
-          <section class="text-left">
-            <h2>voltando ao github.com </h2>
-          </section>
+        <section class="text-left">
+          <p>
+            Vamos criar um repositório no github.com e vamos fazer o "push" do
+            nosso repositório local para o repositório remoto.
+          </p>
 
-          <section class="text-left">
-            github.com/vvaz/
-          </section>
+          <p>
+            Para isso, vamos ao github.com e clicamos no botão "New" para criar
+            um novo repositório.
+          </p>
 
-          <section class="text-left">
+          <p>
+            Vamos chamar o repositório "workshop-git" e vamos adicionar uma
+            descrição.
+          </p>
+        </section>
 
-            <ul>
-              <li class="fragment">Fork</li>
-              <li class="fragment">Star</li>
-              <li class="fragment">Watch</li>
-              <li class="fragment">Pin</li>
-            </ul>
+        <section class="text-left">
+          <p>
+            Depois de criar o repositório, vamos copiar o URL do repositório.
+          </p>
 
-          </section>
+          <p>
+            Vamos voltar à linha de comandos e vamos correr o seguinte comando:
+          </p>
 
-          <section class="text-left">
-            <p>
-              Vamos criar um repositório no github.com e vamos fazer o "push" do nosso repositório local para o repositório remoto.
-            </p>
-
-            <p>
-              Para isso, vamos ao github.com e clicamos no botão "New" para criar um novo repositório.
-            </p>
-
-            <p>
-              Vamos chamar o repositório "workshop-git" e vamos adicionar uma descrição.
-            </p>
-          </section>
-
-          <section class="text-left">
-            <p>
-              Depois de criar o repositório, vamos copiar o URL do repositório.
-            </p>
-
-            <p>
-              Vamos voltar à linha de comandos e vamos correr o seguinte comando:
-            </p>
-
-            <pre>
+          <pre>
               <code>
                 git remote add origin xxxxxx
               </code>
             </pre>
 
-            <p>
-              onde xxxxxx é o URL do repositório.
-            </p>
-          </section>
+          <p>onde xxxxxx é o URL do repositório.</p>
+        </section>
 
-          <section class="text-left">
-            <p>
-              Vamos fazer o "push" do nosso repositório local para o repositório remoto.
-            </p>
+        <section class="text-left">
+          <p>
+            Vamos fazer o "push" do nosso repositório local para o repositório
+            remoto.
+          </p>
 
-            <pre>
+          <pre>
               <code>
                 git push origin master
               </code>
             </pre>
 
-            <p>
-              onde origin é o nome do repositório remoto e master é o nome do branch.
-            </p>
-          </section>
+          <p>
+            onde origin é o nome do repositório remoto e master é o nome do
+            branch.
+          </p>
+        </section>
 
-          <section class="text-left">
-            <p>
-              No nosso primeiro repositório, vamos criar um ficheiro chamado cidades.md e vamos adicionar a quatro cidades que gostamos, alguns factos e alguns links.
-            </p>
+        <section class="text-left">
+          <p>
+            No nosso primeiro repositório, vamos criar um ficheiro chamado
+            cidades.md e vamos adicionar a quatro cidades que gostamos, alguns
+            factos e alguns links.
+          </p>
 
-            <ul>
-              <li>Nome da cidade</li>
-              <li>População</li>
-              <li>Factos</li>
-              <li>Links</li>
-              <li>imagem</li>
-            </ul>
-          </section>
+          <ul>
+            <li>Nome da cidade</li>
+            <li>População</li>
+            <li>Factos</li>
+            <li>Links</li>
+            <li>imagem</li>
+          </ul>
+        </section>
 
-          <section class="text-left">
-            <h2>Ficheiros .md (Markdown)</h2>
+        <section class="text-left">
+          <h2>Ficheiros .md (Markdown)</h2>
 
-            <p>
-              Markdown é uma linguagem de marcação que é muito usada para escrever documentação.
-            </p>
+          <p>
+            Markdown é uma linguagem de marcação que é muito usada para escrever
+            documentação.
+          </p>
 
-            <p>
-              Podemos usar o <a href="https://www.markdownguide.org/cheat-sheet/">markdownguide.org</a> para ver a sintaxe do markdown.
-            </p>
-          </section>
+          <p>
+            Podemos usar o
+            <a href="https://www.markdownguide.org/cheat-sheet/"
+              >markdownguide.org</a
+            >
+            para ver a sintaxe do markdown.
+          </p>
+        </section>
 
-          <section class="text-left">
-            <p>
-              Porque fizemos um ficheiro .md? Porque o github.com usa o readme.md como a página principal do repositório.
-            </p>
-            <p>
-              Ao sabermos criar um ficheiro .md, podemos adicionar documentação ao nosso repositório, informar os outros sobre o que o nosso repositório faz, e como o usar.
-            </p>
-          </section>
+        <section class="text-left">
+          <p>
+            Porque fizemos um ficheiro .md? Porque o github.com usa o readme.md
+            como a página principal do repositório.
+          </p>
+          <p>
+            Ao sabermos criar um ficheiro .md, podemos adicionar documentação ao
+            nosso repositório, informar os outros sobre o que o nosso
+            repositório faz, e como o usar.
+          </p>
+        </section>
 
-          <section class="text-left">
-            <h2>Segunda parte do exercício</h2>
-            <p>
-              Vamos adicionar um ficheiro readme.md ao nosso repositório, e vamos adicionar alguma informação. Podem adicionar links para os vossos perfis nas redes sociais ou ligações para outras páginas.
-            </p>
-          </section>
+        <section class="text-left">
+          <h2>Segunda parte do exercício</h2>
+          <p>
+            Vamos adicionar um ficheiro readme.md ao nosso repositório, e vamos
+            adicionar alguma informação. Podem adicionar links para os vossos
+            perfis nas redes sociais ou ligações para outras páginas.
+          </p>
+        </section>
 
+        <section class="text-left">https://choosealicense.com/</section>
 
-          <section class="text-left">
-            https://choosealicense.com/
-          </section>
+        <section class="text-left">
+          <h2>Exercício</h2>
+          <p>
+            Vamos adicionar um ficheiro license.md ao nosso repositório, e vamos
+            adicionar uma licença ao nosso repositório.
+          </p>
+        </section>
 
-          <section class="text-left">
-            <h2>Exercício</h2>
-            <p>
-              Vamos adicionar um ficheiro license.md ao nosso repositório, e vamos adicionar uma licença ao nosso repositório.
-            </p>
-          </section>
+        <section class="text-left">
+          <h2>git pull</h2>
 
-          <section class="text-left">
-            <h2>git pull</h2>
-
-            <pre>
+          <pre>
               <code>
                 git pull origin master
               </code>
             </pre>
 
-            <p>
-              faz um pull do repositório remoto para o repositório local
-            </p>
-          </section>
+          <p>faz um pull do repositório remoto para o repositório local</p>
+        </section>
 
-          <section class="text-left">
-            <h2>git clone</h2>
+        <section class="text-left">
+          <h2>git clone</h2>
 
-            <pre>
+          <pre>
               <code>
-                git clone <REPO_URL>
+                git clone REPO_URL
               </code>
             </pre>
 
-            <p>
-              clona um repositório remoto para o repositório local
-            </p>
-          </section>
+          <p>clona um repositório remoto para o repositório local</p>
+        </section>
 
-          <section class="text-left">
-            <h2>git branch</h2>
+        <section class="text-left">
+          <h2>git branch</h2>
 
-            <pre>
+          <pre>
               <code>
                 git branch
               </code>
             </pre>
 
-            <p>
-              vê todos os branches
-            </p>
+          <p>vê todos os branches</p>
 
-            <pre>
+          <pre>
               <code>
                 git branch feature
               </code>
             </pre>
 
-            <p>
-              cria um branch chamado feature
-            </p>
-          </section>
+          <p>cria um branch chamado feature</p>
+        </section>
 
-          <section class="text-lef">
-            <p> commit early, commit often </p>
-          </section>
+        <section class="text-lef">
+          <p>commit early, commit often</p>
+        </section>
 
-          <section class="text-left">
-            <h2>Problema</h2>
-            <p>
-              Vamos agora mudar de branch e vamos dividir as 4 cidades em 4 ficheiros diferentes. No final fazemos commit dessa branch para o github.com
-            </p>
-            <p>
-              Localmente podemos trocar de branch para ver as diferenças entre os ficheiros.
-            </p>
+        <section class="text-left">
+          <h2>Problema</h2>
+          <p>
+            Vamos agora mudar de branch e vamos dividir as 4 cidades em 4
+            ficheiros diferentes. No final fazemos commit dessa branch para o
+            github.com
+          </p>
+          <p>
+            Localmente podemos trocar de branch para ver as diferenças entre os
+            ficheiros.
+          </p>
 
-            <pre>
+          <pre>
               <code>
                 git checkout nome-da-nova-branch
               </code>
             </pre>
-
-          </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        </section>
       </div>
     </div>
 
