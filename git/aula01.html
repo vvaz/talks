@@ -108,6 +108,17 @@
         </section>
 
         <section class="text-left">
+          <p>
+            Para termos todos a mesma experiência com o Git, vamos dar reset a uma possível definição que tenham na vossa máquina
+          </p>
+
+          <pre><code>
+            git config --global --unset --init.defaultBranch
+            git config --global --unset rerere.enabled
+          </code></pre>
+        </section>
+
+        <section class="text-left">
           <p class="fragment">
             Durante a formação e a vossa carreira, vão usar a linha de comandos muitas vezes. No entanto, para quem prefere uma interface gráfica, existem várias opções disponíveis.
           </p>
@@ -217,12 +228,12 @@
         <section class="text-left">
           <pre>
             <code>
-              echo "<h1>Hello mom</h1>" > index.html
+              echo "Hello mom" > index.html
             </code>
           </pre>
 
           <p>
-            escreve a string "<h1>Hello mom</h1>" no ficheiro index.html
+            escreve a string "Hello mom" no ficheiro index.html
           </p>
 
           <p style="font-size: 0.9rem;">
@@ -424,6 +435,54 @@
           </section>
 
           <section class="text-left">
+            <ul>
+              <li>As configurações do git seguem um padrão section.key</li>
+              <li>--global é para todas as pastas, --local é para a pasta atual</li>
+              <li>Para adicionar um key value, podem usar git config --add --global key "value" </li>
+              <li>user.name e user.email são keys usadas para associar uma commit à vossa pessoa</li>
+              <li>Podem ver qualquer valor da git config executando git config --get key</li>
+            </ul>
+          </section>
+
+          <section class="text-left">
+            <h2>Criar conta no github.com </h2>
+            <p>
+              github.com é um site onde podemos guardar os nossos repositórios de código. É uma rede social para programadores.
+            </p>
+          </section>
+
+          <section class="text-left">
+            <h2>Problema</h2>
+            Adicionem o vosso user.name e o user.email SE não tiverem já valores para eles.
+          </section>
+
+          <section class="text-left">
+            <h2>git config</h2>
+
+            <pre>
+              <code>
+                git config --global user.name "Valerio Vaz"
+              </code>
+            </pre>
+
+            <p>
+              define o nome do utilizador
+            </p>
+
+            <pre>
+              <code>
+                git config --global user.email "valerio@wpbox.io"
+              </code>
+            </pre>
+
+            <p>
+              define o email do utilizador
+            </p>
+          </section>
+
+
+
+          <section class="text-left">
             <h2>git</h2>
 
             <pre>
@@ -440,6 +499,52 @@
               Se fizermos ls -lah, vamos ver uma pasta chamada .git, que é onde o git guarda toda a informação sobre o repositório.
             </p>
           </section>
+
+          <section class="text-left">
+            <p>
+              Se iniciarmos um repositorio numa pasta, mas fizemos um erro ou mudámos de ideias, basta apagar a pasta .git para apagar o repositório.
+            </p>
+          </section>
+
+          <section class="text-left">
+            <h2>Problema</h2>
+            <p>
+              Validem que criaram um repositório git, listando os ficheiros e diretórios no git state directory. (.git)
+            </p>
+          </section>
+
+          <section class="text-left">
+            <pre>
+              <code>
+                ls -lah .git
+              </code>
+            </pre>
+
+            <pre>
+              <code>
+                  find .git
+              </code>
+            </pre>
+          </section>
+
+          <section class="text-left">
+            <h2>Os comandos básicos</h2>
+
+            <p>
+              Os próximos comandos que vamos ver, são 80% dos comandos que vamos usar no dia a dia. 80% do git é fácil, os outros 20% são mais complicados.
+            </p>
+
+            <ul>
+              <li>git add</li>
+              <li>git status</li>
+              <li>git commit -m "mensagem"</li>
+
+            </ul>
+          </section>
+
+
+
+
 
           <section class="text-left">
             <h2>git add</h2>
@@ -563,10 +668,7 @@
 
 
           <section class="text-left">
-            <h2>Criar conta no github.com </h2>
-            <p>
-              github.com é um site onde podemos guardar os nossos repositórios de código. É uma rede social para programadores.
-            </p>
+            <h2>voltando ao github.com </h2>
           </section>
 
           <section class="text-left">
@@ -738,6 +840,10 @@
             <p>
               cria um branch chamado feature
             </p>
+          </section>
+
+          <section class="text-lef">
+            <p> commit early, commit often </p>
           </section>
 
 
