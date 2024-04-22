@@ -613,6 +613,19 @@
           </section>
 
           <section class="text-left">
+            <h2>Problema</h2>
+
+            <ul>
+              <li>No nosso repositório vamos criar um ficheiro chamado hello.md</li>
+              <li>verifica o status do git para ver se está untracked</li>
+              <li>Adiciona o hello.md ao staging area</li>
+              <li>Verifica o status do git para ver que o ficheiro agora está tracked</li>
+              <li>Faz um commit com a mensagem "add hello.md"</li>
+              <li>Verifica o status do git para confirmar que não há nada untracked ou no staging area</li>
+            </ul>
+          </section>
+
+          <section class="text-left">
             <h2>git log</h2>
 
             <pre>
@@ -623,6 +636,16 @@
 
             <p>
               vê o histórico de commits
+            </p>
+          </section>
+
+          <section class="text-left">
+            <p>
+              vamos ao man do git log para ver as opções que podemos usar com o comando. Procurem por --graph ou --decorate
+            </p>
+
+            <p>
+              <a href="https://explainshell.com/explain?cmd=git+log+--graph+--decorate" target="_blank">explainshell.com</a>
             </p>
           </section>
 
@@ -738,7 +761,7 @@
 
           <section class="text-left">
             <p>
-              No nosso primeiro repositório, vamos criar um ficheiro chamado cidade.md e vamos adicionar a nossa cidade favorita, alguns factos e alguns links.
+              No nosso primeiro repositório, vamos criar um ficheiro chamado cidades.md e vamos adicionar a quatro cidades que gostamos, alguns factos e alguns links.
             </p>
 
             <ul>
@@ -846,6 +869,22 @@
             <p> commit early, commit often </p>
           </section>
 
+          <section class="text-left">
+            <h2>Problema</h2>
+            <p>
+              Vamos agora mudar de branch e vamos dividir as 4 cidades em 4 ficheiros diferentes. No final fazemos commit dessa branch para o github.com
+            </p>
+            <p>
+              Localmente podemos trocar de branch para ver as diferenças entre os ficheiros.
+            </p>
+
+            <pre>
+              <code>
+                git checkout nome-da-nova-branch
+              </code>
+            </pre>
+
+          </section>
 
 
 
