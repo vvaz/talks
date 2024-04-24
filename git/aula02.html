@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Git - Aula 1</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="stylesheet" href="./css/tailwind.min.css" />
+    <link rel="stylesheet" href="../revealjs/dist/reveal.css" />
+    <link rel="stylesheet" href="../revealjs/dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="../revealjs/plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-background-color="#644EA0">
+          talks.valeriovaz.dev/git/aula01.html
+        </section>
+
+        <section class="text-left">
+          <h1>Git - Aula 2</h1>
+        </section>
+
+        <section class="text-left">
+          <h2>Revisão</h2>
+          <p>
+            Na aula passada vimos o que é o git e como usar comandos dentro do
+            terminal
+          </p>
+        </section>
+
+        <section class="text-left">
+          <h2>Criar conta no github.com</h2>
+          <p>
+            github.com é um site onde podemos guardar os nossos repositórios de
+            código. É uma rede social para programadores.
+          </p>
+        </section>
+
+        <section class="text-left">
+          Windows users: verifiquem que têm o git bash instalado. (iniciar > git
+          bash)
+        </section>
+
+        <section class="text-left">
+          <h2>Criar uma chave SSH</h2>
+
+          <a
+            href="https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account"
+          >
+            docs.github.com
+          </a>
+        </section>
+
+        <section class="text-left">
+          <h2>Os comandos básicos</h2>
+
+          <p>
+            Os próximos comandos que vamos ver, são 80% dos comandos que vamos
+            usar no dia a dia. 80% do git é fácil, os outros 20% são mais
+            complicados.
+          </p>
+
+          <ul>
+            <li>git add</li>
+            <li>git status</li>
+            <li>git commit -m "mensagem"</li>
+          </ul>
+        </section>
+
+        <section class="text-left">
+          <h2>git add</h2>
+
+          <pre>
+              <code>
+                git add ficheiro.md
+              </code>
+            </pre>
+
+          <p>adiciona o ficheiro ficheiro.md ao stage</p>
+
+          <pre>
+              <code>
+                git add .
+              </code>
+            </pre>
+
+          <p>adiciona todos os ficheiros ao stage</p>
+        </section>
+
+        <section class="text-left">
+          <h2>git status</h2>
+
+          <pre>
+              <code>
+                git status
+              </code>
+            </pre>
+
+          <p>vê o estado do repositório</p>
+        </section>
+
+        <section class="text-left">
+          <h2>git diff</h2>
+
+          <pre>
+              <code>
+                git diff
+              </code>
+            </pre>
+
+          <p>vê as diferenças entre o stage e o último commit</p>
+        </section>
+
+        <section class="text-left">
+          <h2>git commit</h2>
+
+          <pre>
+              <code>
+                git commit -m "first commit"
+              </code>
+            </pre>
+
+          <p>faz um commit com a mensagem "first commit"</p>
+        </section>
+
+        <section class="text-left">
+          <h2>Problema</h2>
+
+          <ul>
+            <li>
+              No nosso repositório vamos criar um ficheiro chamado hello.md
+            </li>
+            <li>verifica o status do git para ver se está untracked</li>
+            <li>Adiciona o hello.md ao staging area</li>
+            <li>
+              Verifica o status do git para ver que o ficheiro agora está
+              tracked
+            </li>
+            <li>Faz um commit com a mensagem "adicionar hello.md"</li>
+            <li>
+              Verifica o status do git para confirmar que não há nada untracked
+              ou no staging area
+            </li>
+          </ul>
+        </section>
+
+        <section class="text-left">
+          <h2>git log</h2>
+
+          <pre>
+              <code>
+                git log
+              </code>
+            </pre>
+
+          <p>vê o histórico de commits</p>
+        </section>
+
+        <section class="text-left">
+          <p>
+            Podemos usar as flag --graph ou --decorate com o git log para ver o
+            histórico de commits de uma forma mais visual.
+          </p>
+
+          <p>
+            <a
+              href="https://explainshell.com/explain?cmd=git+log+--graph+--decorate"
+              target="_blank"
+              >explainshell.com</a
+            >
+          </p>
+        </section>
+
+        <section class="text-left">
+          <p>
+            ohshitgit.com é um site que mostra como resolver problemas comuns no
+            git.
+          </p>
+
+          <p>
+            gitignore.io é um site que gera um ficheiro .gitignore com base nos
+            ficheiros que queremos ignorar.
+          </p>
+
+          <p>
+            gitmoji.dev é um site que mostra os emojis que podemos usar nos
+            nossos commits.
+          </p>
+        </section>
+
+        <section class="text-left">
+          <h2>voltando ao github.com</h2>
+        </section>
+
+        <section class="text-left">github.com/vvaz/</section>
+
+        <section class="text-left">
+          <ul>
+            <li class="fragment">Fork</li>
+            <li class="fragment">Star</li>
+            <li class="fragment">Watch</li>
+            <li class="fragment">Pin</li>
+          </ul>
+        </section>
+
+        <section class="text-left">
+          <p>
+            Vamos criar um repositório no github.com e vamos fazer o "push" do
+            nosso repositório local para o repositório remoto.
+          </p>
+
+          <p>
+            Para isso, vamos ao github.com e clicamos no botão "New" para criar
+            um novo repositório.
+          </p>
+
+          <p>
+            Vamos chamar o repositório "workshop-git-cidades" e vamos adicionar
+            uma descrição.
+          </p>
+        </section>
+
+        <section class="text-left">
+          <h2>git clone</h2>
+
+          <pre>
+              <code>
+                git clone REPO_URL
+              </code>
+            </pre>
+
+          <p>clona um repositório remoto para o repositório local</p>
+        </section>
+
+        <section class="text-left">
+          <p>
+            Depois de criar o repositório, vamos copiar o URL do repositório.
+          </p>
+
+          <p>
+            Vamos voltar à linha de comandos e vamos correr o seguinte comando:
+          </p>
+
+          <pre>
+              <code>
+                git clone xxxxxx
+              </code>
+            </pre>
+
+          <p>onde xxxxxx é o URL do repositório.</p>
+        </section>
+
+        <section class="text-left">
+          <p>
+            No nosso primeiro repositório, vamos criar um ficheiro chamado
+            cidades.md e vamos adicionar quatro cidades que gostamos nesse
+            ficheiro, alguns factos e alguns links.
+          </p>
+
+          <ul>
+            <li>Nome da cidade</li>
+            <li>População</li>
+            <li>Factos</li>
+            <li>Links</li>
+            <li>imagem</li>
+          </ul>
+        </section>
+
+        <section class="text-left">
+          <h2>Ficheiros .md (Markdown)</h2>
+
+          <p>
+            Markdown é uma linguagem de marcação que é muito usada para escrever
+            documentação.
+          </p>
+
+          <p>
+            Podemos usar o
+            <a href="https://www.markdownguide.org/cheat-sheet/"
+              >markdownguide.org</a
+            >
+            para ver a sintaxe do markdown.
+          </p>
+        </section>
+
+        <section class="text-left">
+          <p>
+            Porque fizemos um ficheiro .md? Porque o github.com usa o readme.md
+            como a página principal do repositório.
+          </p>
+          <p>
+            Ao sabermos criar um ficheiro .md, podemos adicionar documentação ao
+            nosso repositório, informar os outros sobre o que o nosso
+            repositório faz, e como o usar.
+          </p>
+        </section>
+
+        <section class="text-left">
+          <h2>Segunda parte do exercício</h2>
+          <p>
+            Vamos adicionar um ficheiro readme.md ao nosso repositório, e vamos
+            adicionar alguma informação. Podem adicionar links para os vossos
+            perfis nas redes sociais ou ligações para outras páginas.
+          </p>
+        </section>
+
+        <section class="text-left">https://choosealicense.com/</section>
+
+        <section class="text-left">
+          <h2>Exercício</h2>
+          <p>
+            Vamos adicionar um ficheiro license.md ao nosso repositório, e vamos
+            adicionar uma licença ao nosso repositório.
+          </p>
+        </section>
+
+        <section class="text-left">
+          <h2>git pull</h2>
+
+          <pre>
+              <code>
+                git pull origin master
+              </code>
+            </pre>
+
+          <p>faz um pull do repositório remoto para o repositório local</p>
+        </section>
+
+        <section class="text-left">
+          <h2>git branch</h2>
+
+          <pre>
+              <code>
+                git branch
+              </code>
+            </pre>
+
+          <p>vê todos os branches</p>
+
+          <pre>
+              <code>
+                git branch feature
+              </code>
+            </pre>
+
+          <p>cria um branch chamado feature</p>
+        </section>
+
+        <section class="text-lef">
+          <p>commit early, commit often</p>
+        </section>
+
+        <section class="text-left">
+          <h2>Problema</h2>
+          <p>
+            Vamos agora mudar de branch e vamos dividir as 4 cidades em 4
+            ficheiros diferentes. No final fazemos commit dessa branch para o
+            github.com
+          </p>
+          <p>
+            Localmente podemos trocar de branch para ver as diferenças entre os
+            ficheiros.
+          </p>
+
+          <pre>
+              <code>
+                git checkout nome-da-nova-branch
+              </code>
+            </pre>
+        </section>
+
+        <section class="text-left">
+          <h2>Novo exercício</h2>
+
+          <ul>
+            <li>
+              Criar um novo repositório no github.com para um livro de receitas
+            </li>
+            <li>Clonar esse repositório para o ambiente local</li>
+            <li>Adicionar algumas receitas em ficheiros diferentes</li>
+            <li>Fazer commit e push main branch</li>
+            <li>Criar uma branch nova com modificações a cada receita</li>
+            <li>Fazer commit e push dessa branch</li>
+            <li>
+              Alterar no github.com as receitas, adicionando fotografias das
+              receitas no formato markdown
+            </li>
+            <li>Fazer pull das alterações para o ambiente local</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="../revealjs/dist/reveal.js"></script>
+    <script src="../revealjs/plugin/highlight/highlight.js"></script>
+    <script>
+      Reveal.initialize({
+        center: true,
+        hash: true,
+        plugins: [RevealHighlight],
+      });
+    </script>
+  </body>
+</html>
