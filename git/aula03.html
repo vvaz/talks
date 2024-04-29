@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Git - Aula 3</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="stylesheet" href="./css/tailwind.min.css" />
+    <link rel="stylesheet" href="../revealjs/dist/reveal.css" />
+    <link rel="stylesheet" href="../revealjs/dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="../revealjs/plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-background-color="#644EA0">
+          talks.valeriovaz.dev/git/aula01.html
+        </section>
+
+        <section class="text-left">
+          <h1>Git - Aula 3</h1>
+        </section>
+
+        <section class="text-left">
+          <h2>Novo exercício</h2>
+
+          <ul>
+            <li>
+              Criar um novo repositório no github.com para um livro de receitas
+            </li>
+            <li>Adicionar a equipa Flag ao repositório</li>
+            <li>Clonar esse repositório para o ambiente local</li>
+            <li>Adicionar algumas receitas em ficheiros diferentes</li>
+            <li>Fazer commit e push main branch</li>
+            <li>Criar uma branch nova com modificações a cada receita</li>
+            <li>Fazer commit e push dessa branch</li>
+            <li>
+              Alterar no github.com as receitas, adicionando fotografias das
+              receitas no formato markdown
+            </li>
+            <li>Fazer pull das alterações para o ambiente local.</li>
+          </ul>
+        </section>
+
+        <section class="text-left">
+          <h2>Extra</h2>
+          <ul>
+            <li>
+              Clonar um repositório de um colega, fazer uma branch nova e
+              adicionar umas modificações a uma receita.
+            </li>
+            <li>Fazer push.</li>
+            <li>Tentar criar conflitos nos repositórios dos colegas</li>
+          </ul>
+        </section>
+
+        <section class="text-left">
+          <h2>git merge</h2>
+
+          <p>
+            O comando git merge é usado para juntar duas ou mais branches. O
+            merge é um comando não destrutivo, ou seja, não altera o histórico
+            das branches.
+          </p>
+
+          <pre>
+            <code class="language-b">
+              git merge branch
+          </pre>
+        </section>
+
+        <section class="text-left">
+
+          <h2>git revert</h2>
+
+
+          <p>
+            O comando git revert é usado para desfazer um commit. O revert é um
+            comando não destrutivo, ou seja, não altera o histórico das branches.
+          </p>
+        </section>
+
+        <section class="text-left">
+          <h2>Projeto final</h2>
+
+          O Gabriel criou este repositório: https://github.com/FLAG-FullStack-8491/FLAG-FullStack?tab=readme-ov-file onde todos devem ter acesso. Cada um de nós deve:
+
+          <ul>
+            <li>Clonar o repositório para o seu computador</li>
+            <li>Criar uma branch nova com o seu nome</li>
+            <li>Adicionar uma pasta nova chamada "exercícios"</li>
+            <li>Adicionar dois ficheiros em formato markdown da sua banda e filme preferido (em commits diferentes)</li>
+            <li>O meu trabalho irá ser tentar gerir o repositório, criando conflits, criando novas commits, aceitando merges, etc...</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="../revealjs/dist/reveal.js"></script>
+    <script src="../revealjs/plugin/highlight/highlight.js"></script>
+    <script>
+      Reveal.initialize({
+        center: true,
+        hash: true,
+        plugins: [RevealHighlight],
+      });
+    </script>
+  </body>
+</html>
