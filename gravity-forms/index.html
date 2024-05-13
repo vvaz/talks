@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Workshop Gravity Forms</title>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="stylesheet" href="./css/tailwind.min.css" />
+    <link rel="stylesheet" href="../revealjs/dist/reveal.css" />
+    <link rel="stylesheet" href="../revealjs/dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="../revealjs/plugin/highlight/monokai.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-background-color="#644EA0">
+          talks.valeriovaz.dev/gravity-forms/
+        </section>
+
+        <section class="text-left">
+          Valério Vaz | @vvaz | valerio@getquick.io
+        </section>
+
+        <section class="text-left">
+          <h2>O que podemos fazer / vender com o Gravity Forms?</h2>
+        </section>
+
+        <section class="text-left">
+          <p>Existem outras várias opções:</p>
+          <ul>
+            <li>Ninja Forms</li>
+            <li>Formidable Forms</li>
+            <li>WPForms</li>
+          </ul>
+        </section>
+
+        <section class="text-left">
+          <ul>
+            <li class="fragment">Ecosistema</li>
+            <li>Workflows</li>
+            <li>Implementações</li>
+          </ul>
+        </section>
+
+        <section class="text-left">
+          <p>A implementação básica de Gravity Forms</p>
+
+          <p class="small">gravityforms.local</p>
+        </section>
+
+        <section class="text-left">
+          <ul>
+            <li>Exporta dados para CSV</li>
+            <li>Funciona como plataforma de pagamentos</li>
+            <li>Integrações com softwares externos como o Slack e Zapier</li>
+            <li>Cria posts e páginas</li>
+            <li>Questionários</li>
+            <li>Regista utilizadores no site</li>
+            <li>...</li>
+          </ul>
+        </section>
+
+        <section class="text-left">
+          <h2>Ecosistema</h2>
+
+          <ul>
+            <li>GravityKit - <a href="https://www.gravitykit.com/">gravitykit.com</a></li>
+            <li>Gravity Flow - <a href="https://gravityflow.io/">gravityflow.io</a> </li>
+            <li>GravityWiz - <a href="https://gravitywiz.com/">gravitywiz.com</a></li>
+            <li>GravityPDF</li>
+          </ul>
+        </section>
+
+        <section class="text-left">
+          <p>Existem várias maneiras de preencher os formulários automáticamente com campos pré-definidos.</p>
+          <ul>
+            <li>https://docs.gravityforms.com/using-dynamic-population/</li>
+            <li>API</li>
+            <li>Shortcodes</li>
+            <li>Query Strings no URL</li>
+          </ul>
+        </section>
+
+        <section class="text-left">
+          <h2>Fields de administração</h2>
+          <p>Campos que recolhem dados, mas os utilizadores não os veem.</p>
+          <p>Exemplos: Podemos colocar um "hidden field" para fazer tracking de onde o utilizador chegou ao form atual.</p>
+        </section>
+
+        <section class="text-left">
+          <h2>Conditional Logic</h2>
+
+          <p>Mostrar ou esconder campos baseado em respostas anteriores.</p>
+
+          <p>A lógica condicional também funciona com os admin fields.</p>
+        </section>
+
+        <section class="text-left">
+          <p>Os campos de lógica condicional, podem também guiar os utilizadores que estão a responder ao vosso formulário, a não cometerem erros</p>
+
+          <p>Podem ser usados para esconder campos até que seja realmente necessário a resposta do utilizador.</p>
+
+          <a href="https://signup.tipme.to">Tipme</a>
+        </section>
+
+        <section class="text-left">
+
+          <h2>Cenários mais complexos onde podemos usar o Gravity Forms</h2>
+
+          <ul>
+            <li>Registo de eventos</li>
+            <li>Registos de vários passos e várias decisões</li>
+            <li>Integração de APIs</li>
+          </ul>
+
+        </section>
+
+        <section class="text-left">
+          <h2>Registo de Eventos</h2>
+
+          <ul class="fragment">
+            <li>Categorias de inscrição com vários preços</li>
+            <li>Menores de idade têm de carregar aprovação de encarregado de educação</li>
+            <li>Maiores de 18 têm de ter possibilidade de adicionar crianças para as refeições servidas durante o evento</li>
+            <li>Participantes podem escolher alojamento e influencia no preço final</li>
+            <li>Envio de notificação para admin e para inscrito</li>
+          </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+    <script src="../revealjs/dist/reveal.js"></script>
+    <script src="../revealjs/plugin/highlight/highlight.js"></script>
+    <script>
+      Reveal.initialize({
+        center: true,
+        hash: true,
+        plugins: [RevealHighlight],
+      });
+    </script>
+  </body>
+</html>
