@@ -1,0 +1,20 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.w-50 {
+    width: 50%;
+}
+.w-33 {
+    width: 33.333333%;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.tl {
+    text-align: left;
+}
