@@ -39,7 +39,7 @@
 								#site-brand {
 									color: red;
 								}
-							
+
 								h1.nav-head.nav-main.other-useful-class {
 									color: green;
 								}
@@ -56,7 +56,7 @@
 					<small>
 						<h2>Pseudoclasses</h2>
 						<small>(lê-se sudoclasses)</small>
-						
+
 						<p>
 							Às vezes, queremos mudar como os elementos aparecem baseado em certos eventos que acontecem no DOM. Uma dessas situações acontece quando queremos mudar a aparência de um elemento quando passamos com o rato por cima desse elemento.
 						</p>
@@ -180,7 +180,7 @@
 						<p>
 							Estabelece o eixo principal e a sua direção.
 						</p>
-						<img src="img/flex-direction.svg" alt="">
+						<img src="img/flex-direction.svg" alt="" style="width: 100%; height: auto;">
 					</small>
 
 					<pre>
@@ -227,7 +227,7 @@
 							}
 					 </code>
 				 </pre>
-				</section>	
+				</section>
 
 				<section class="text-left">
 					<p>align-items</p>
@@ -245,7 +245,7 @@
 							}
 					 </code>
 				 </pre>
-				</section>	
+				</section>
 
 				<section class="text-left">
 					<p>align-content</p>
@@ -264,7 +264,7 @@
 							}
 					 </code>
 				 </pre>
-				</section>	
+				</section>
 
 				<section class="text-left">
 					<p>gap, row-gap, column-gap</p>
@@ -288,7 +288,7 @@
 							}
 					 </code>
 				 </pre>
-				</section>	
+				</section>
 
 				<section class="text-left">
 					<h2>Propriedades dos filhos Flex</h2>
@@ -348,7 +348,7 @@
 					 </code>
 				 </pre>
 				</section>
-	
+
 				<section class="text-left">
 					<p>Para mais informação detalhada do flex, consultar <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">este artigo</a></p>.
 				</section>
@@ -379,7 +379,7 @@
 								-ms-transition: all 1s linear;
 								-o-transition: all 1s linear;
 								transition: all 1s linear;
-							}							
+							}
 					 </code>
 				 </pre>
 
@@ -387,7 +387,7 @@
 					<code class="hljs" data-trim contenteditable>
 						.myClass {
 							transition: all 1s linear;
-						}							
+						}
 				 	</code>
 			 		</pre>
 				</section>
@@ -442,7 +442,7 @@
 
 				<section class="text-left">
 					<h3>[effect]</h3>
-					
+
 					<ul>
 						<li>ease - transição que começa devagar, depois rápido e acaba devagar</li>
 						<li>linear - velocidade igual no inicio e no fim</li>
@@ -453,7 +453,7 @@
 					</ul>
 
 				</section>
-				
+
 
 				<section class="text-left">
 					<h3>Propriedades que podem ser animadas:</h3>
@@ -554,7 +554,7 @@
 							animation: [name] [duration] [timing-function] [delay] [iteration-count] [direction] [fill-mode] [play-state];
 						}
 							</code>
-						
+
 						</pre>
 				</section>
 
@@ -585,62 +585,62 @@
 						transition-delay: 0.5s;
 					 </code>
 					 </pre>
-	
+
 					 <pre>
 					 <code class="hljs" data-trim contenteditable>
 						transition: color 1s linear 0.5s;
 					 </code>
 					 </pre>
 				</section>
-	
+
 				<section class="text-left">
 					transition-property é usada para determinar que transições vamos utilizar
-	
+
 					<pre>
 					 <code class="hljs" data-trim contenteditable>
 						transition-property: color;
-	
+
 						transition-property: all;
 						 </code>
 					 </pre>
-					 
+
 					<pre>
 					 <code class="hljs" data-trim contenteditable>
 					 transition-property: all;
 						 </code>
 					 </pre>
-	
+
 				</section>
-	
-	
+
+
 				<section class="text-left">
 					Nem todas as propriedades podem ter transições.
 				</section>
-	
+
 				<section>
 					<p class="al">translation-duration define quanto tempo a transição irá durar</p>
 					<p class="al">
 						Podemos defenir o valor em segundos ou milisegundos
 					</p>
 				</section>
-	
+
 				<section class="text-left">
 					<pre>
 					 <code class="hljs" data-trim contenteditable>
 					 /* em segundos */
 					 transition-duration: 1s;
 					 transition-duration: 0.5s;
-	
+
 					 /* em milisegundos */
 					 transition-duration: 1000ms;
 					 transition-duration: 500ms;
 						 </code>
 					 </pre>
 				</section>
-	
+
 				<section class="text-left">
 					<p class="al">transition-timing-funtion: usada para definir a curva de aceleração relativa à duração da animação-</p>
-	
+
 					<pre>
 					 <code class="hljs" data-trim contenteditable>
 					 transition-timing-function: ease;
@@ -648,58 +648,58 @@
 						 </code>
 					 </pre>
 				</section>
-	
+
 				<section class="text-left">
 					<p class="al">transition-delay: usada para colocar um delay à animação, definido em segundos ou milisegundos-</p>
-	
+
 					<pre>
 					 <code class="hljs" data-trim contenteditable>
 					 transition-delay: 0.5s
 						 </code>
 					 </pre>
-	
+
 					 <p class="al">Se não for definido, não existirá delay</p>
 				</section>
-	
+
 				<section class="text-left">
 					ver exemplo 1
 				</section>
-	
+
 				<section class="text-left">
 					<p class="al">A transition só tem um ponto de partida e um ponto de chegada</p>
-	
+
 					<p class="al">Com os keyframes podemos criar animações mais complexas.</p>
 				</section>
-	
+
 				<section class="text-left">
 					<p class="al">
 						Para usar os @keyframes, precisamos de três coisas:
 					</p>
-	
+
 					<ol>
 						<li>Nome da animação</li>
 						<li>Breakpoints</li>
 						<li>Propriedades de CSS para serem animadas</li>
 					</ol>
 				</section>
-	
+
 				<section class="text-left">
 					<pre>
 					 <code class="hljs" data-trim contenteditable>
 						 @keyframes nome-animacao {
-	
+
 					 }
-	
+
 					 </code>
 					 </pre>
 				</section>
-	
-	
+
+
 				<section class="text-left">
 					<p class="al">Animações só podem ser aplicadas na mesma propriedade de inicio e fim</p>
 				</section>
-				
-	
+
+
 				<section class="text-left">
 					<p class="al">Esta animação está incorrecta e não vai funcionar:</p>
 					<pre>
@@ -712,17 +712,17 @@
 						bottom: 0px;
 						}
 					 }
-	
+
 					 </code>
 					 </pre>
 				</section>
-	
+
 				<section class="text-left">
 					<p class="al">Utiliza-se @keyframes para definit a animação</p>
-	
+
 					<p class="al">Utiliza-se a propriedade animation-name para aplicar a animação</p>
 				</section>
-	
+
 				<section class="text-left">
 					<code class="hljs" data-trim contenteditable>
 						 @keyframes nome-animacao {
@@ -733,33 +733,33 @@
 						top: 250px;
 						}
 					 }
-	
+
 					 </code>
 					 </pre>
-	
+
 					 <code class="hljs" data-trim contenteditable>
 						 .ball {
 						 animation-name: bounce;
 						 animation-duration: 1s;
 					 }
-	
+
 					 </code>
 					 </pre>
 				</section>
-	
+
 				<section class="text-left">
 					<p class="al">Propriedades da animação opcionais:</p>
-	
+
 					<code class="hljs" data-trim contenteditable>
 						 animation-timing-fuction: ease-out;
 						 animation-delay: 1s;
 					 </code>
 					 </pre>
 				</section>
-	
+
 				<section class="text-left">
 					<p class="al">Para repetir a animação, utilizamos o:</p>
-	
+
 					<code class="hljs" data-trim contenteditable>
 						 animation-iteration-count: 3;
 						 /* ou */
@@ -768,15 +768,15 @@
 					 </code>
 					 </pre>
 				</section>
-	
+
 				<section class="text-left">
 					ver exemplo 2
 				</section>
-	
+
 				<section class="text-left">
 					Exercícios 1, 2 e 2.1
 				</section>
-	
+
 				<section class="text-left">
 					Frameworks de animação - https://daneden.github.io/animate.css/
 				</section>

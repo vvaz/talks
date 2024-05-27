@@ -1,28 +1,26 @@
-.box { 
+.box {
     display: inline-block;
     padding: 40px;
-    
+
     background: blue;
-    margin-left: 0; 
-    transition: all 2s ease-out 1s; 
-  
+    margin-left: 0;
+    transition: all 2s ease-out 1s;
+
     /* mudando para linear a velocidade vai ser constante
-      transition: all 2s linear 1s; 
+      transition: all 2s linear 1s;
     */
-  } 
-  
-  .box:hover { 
-    background: black; 
+  }
+
+  .box:hover {
+    background: black;
     margin-left: 40px;
     color: white;
-    /*
-  
-    */
+ 5
   }
 
 
 
-  /* 
+  /*
 ================================
 A sample transition.
 Click on the large ball on the left to see the animation.
@@ -31,35 +29,25 @@ Click on the large ball on the left to see the animation.
     left: 150px;
     transition: left .5s ease-in;
   }
-  
-  /* 
-  ================================
-  Your code here! 
-  Make the small ball on the right roll to the right when the large one hits it.
-  
-  */
+
   .anim:active .ball-two {
-    /* Hint: manipulate margin-left to roll it, just like with the ball-one above. */
-  
-    /* Double hint: Don't forget about transition-delay! */
-  
     margin-left: 300px;
     transition: margin-left 1s ease-in 350ms;
-  
+
   }
-  
-  
-  /* 
+
+
+  /*
   ================================
   Necessary CSS Below-- no need to edit */
-  
+
   .ball-one {
     background: #ff97C0;
     border-radius: 50%;
     position: absolute; top: 0px; left: 00px;
     width: 200px; height: 200px;
   }
-  
+
   .ball-two {
     background: #0097C0;
     border-radius: 50%;
