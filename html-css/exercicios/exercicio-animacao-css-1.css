@@ -1,0 +1,76 @@
+body {
+  background-color: black;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.container {
+  width: 80%;
+  margin: 200px auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.box {
+  transition: all 250ms ease;
+}
+
+.box:hover {
+  transform: scale(1.2);
+  color: red;
+}
+
+.box:hover > div {
+  filter: grayscale(100%);
+}
+
+.bg1 {
+  background-image: url("https://picsum.photos/200/300?random=1");
+  min-width: 200px;
+  min-height: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: contain;
+}
+.bg2 {
+  background-image: url("https://picsum.photos/200/300?random=2");
+  min-width: 200px;
+  min-height: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: contain;
+}
+
+.bg3 {
+  background-image: url("https://picsum.photos/400/300?random=3");
+  min-width: 200px;
+  min-height: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: contain;
+}
+
+.bg4 {
+  background-image: url("https://picsum.photos/400/300?random=4");
+  min-width: 200px;
+  min-height: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: contain;
+}
