@@ -26,23 +26,36 @@
       </section>
 
       <section class="text-left">
-        <h2>SCSS</h2>
+        <h2>SASS</h2>
       </section>
 
       <section class="text-left">
-        <p>Porque é que não usamos uma linguagem que o browser já reconhece? (CSS)</p>
+        <p>
+          SASS representa Syntactically Awesome Style Sheets, e é um dos preprocessadores CSS mais populares. Estende o CSS adicionando características de linguagens de programação tradicionais, particularmente linguagens de programação orientadas a objetos.
+        </p>
       </section>
 
       <section class="text-left">
         <small>
-          <p>1. No encapsulation</p>
-          <p>Com o CSS estamos a trabalhar num espaço "Global". Não temos forma de nos proteger enquanto criamos as nossas declarações de CSS.</p>
-          <p>2. No variables</p>
-          <p>Se quisermos dar suporte à maior parte dos browsers não podemos usar variáveis.</p>
-          <p>3. Not composable</p>
-          <p>É muito dificil / às vezes impossível, ao estilizar um componente não reutilizar declarações</p>
-          <p>4. Bad modularity primitives</p>
-          <p>O CSS não foi desenhado para ser usado nas aplicações complexas que temos neste momento. Manter as coisas organizadas é um desafio.</p>
+          <div class="fragment">
+            <p>1. Encapsulation</p>
+            <p>Com o CSS estamos a trabalhar num espaço "Global". Não temos forma de nos proteger enquanto criamos as nossas declarações de CSS.</p>
+          </div>
+          <div class="fragment">
+            <p>2. Variables</p>
+            <p>Se quisermos dar suporte à maior parte dos browsers não podemos usar variáveis.</p>
+          </div>
+
+          <div class="fragment">
+            <p>3. Not composable</p>
+            <p>É muito dificil / às vezes impossível, ao estilizar um componente não reutilizar declarações</p>
+          </div>
+
+          <div class="fragment">
+            <p>4. Bad modularity primitives</p>
+            <p>O CSS não foi desenhado para ser usado nas aplicações complexas que temos neste momento. Manter as coisas organizadas é um desafio.</p>
+          </div>
+
         </small>
       </section>
 
@@ -68,6 +81,19 @@
         </small>
       </section>
 
+      <section class="text-left">
+        <h2>Funcionalidades do SASS</h2>
+        <p>Compatibilidade com CSS</p>
+        <p>
+          É extremamente compatível com CSS, o que significa que qualquer CSS válido é também válido em SASS. Isto é muito útil porque significa que podemos começar a usar SASS num projeto existente sem ter de reescrever todo o CSS.
+        </p>
+
+        <p>Funcionalidades múltiplas</p>
+        <p>
+          SASS tem muitas funcionalidades que o CSS não tem, como variáveis, nesting, mixins, funções, e muito mais. Isto torna o SASS muito mais poderoso do que o CSS.
+        </p>
+      </section>
+
 
 
       <section class="text-left">
@@ -84,6 +110,23 @@
       </section>
 
       <section class="text-left">
+        <p>SASS consiste em duas sintaxes. A mais antiga é indent based e a mais recente é SCSS (Sassy CSS)</p>
+      </section>
+
+      <section class="text-left">
+        <h2>Syntax</h2>
+        <p>style.sass - é indent based - não vamos usar</p>
+        <pre>
+          <code data-trim data-line-numbers contenteditable>
+            .class
+              .child-class
+                color: red
+            .second-class
+          </code>
+        </pre>
+      </section>
+
+      <section class="text-left">
         <h2>Syntax</h2>
         <p>style.scss</p>
         <pre>
@@ -92,33 +135,32 @@
               width: 100px;
               height: 100px;
               background: blue;
-            }        
+            }
           </code>
         </pre>
       </section>
 
       <section class="text-left">
-        <h2>Syntax</h2>
-        <p>style.sass - é indent based - não vamos usar</p>
-        <pre>
-          <code data-trim data-line-numbers contenteditable>
-            <div class="container">
-              <div class="sidebar">
-                Sidebar
-              </div>
-              <div class="main">
-                Conteúdo
-              </div>
-            </div>      
-          </code>
-        </pre>
+        <p>
+          Tudo o que podemos fazer com SCSS podemos fazer com CSS.
+        </p>
+        <p>
+          Permite documentar o código inline <a href="https://sass-lang.com/documentation/syntax/comments/">ver exemplo.</a>
+        </p>
       </section>
+
+      <section class="text-left">
+        Documentação em <a href="https://sass-lang.com/documentation">sass-lang.com</a>
+      </section>
+
+
+
 
       <section class="text-left">
         <small>
           <h2>Configurando o nosso VS Code</h2>
 
-          <p>Vamos instalar uma Extensão chamada Live Sass Compiler</p>
+          <p>Vamos instalar uma extensão chamada Live Sass Compiler</p>
         </small>
       </section>
 
@@ -135,11 +177,11 @@
               }],
             </code>
           </pre>
-        
+
       </section>
 
       <section class="text-left">
-        <p>Vamos criar os estilos necessários para o ecrã 1 deste <a href="https://www.figma.com/file/ATfYNFnp5GawAnIVn3bnjo/Untitled?node-id=0%3A1">Figma</a></p>
+        <p>Vamos criar os estilos necessários para o ecrã 1 deste <a href="https://www.figma.com/file/ATfYNFnp5GawAnIVn3bnjo/Untitled?node-id=0%3A1">Figma</a> apenas com declarações CSS</p>
       </section>
 
       <section class="text-left">
@@ -169,7 +211,7 @@
           </code>
         </pre>
 
-    
+
       </section>
 
       <section class="text-left">
@@ -199,14 +241,14 @@
             </code>
           </pre>
 
-        
+
       </section>
 
       <section class="text-left">
         <small>
           <h2>Nesting and Scoping</h2>
           <p>Parent Selector &</p>
-        
+
         </small>
           <pre>
             <code data-trim data-line-numbers contenteditable>
@@ -218,33 +260,22 @@
             </code>
           </pre>
 
-        
+
       </section>
 
       <section class="text-left">
-        <small>
-          <h2>Nesting and Scoping</h2>
-          <p>Parent Selector &</p>
-        </small>
-          <pre>
-            <code data-trim data-line-numbers contenteditable>
-              .container {
-                &.left {
-                  ...
-                }
-              }
-            </code>
-          </pre>
-
-        
+        <p>
+          Vamos agora transformar o nosso CSS do ecrã 1 do <a href="https://www.figma.com/file/ATfYNFnp5GawAnIVn3bnjo/Untitled?node-id=0%3A1">Figma</a> em SCSS
+        </p>
       </section>
+
 
       <section class="text-left">
         <small>
           <h2>Exercicio 1</h2>
           <p>Ver ecrã 2 do <a href="https://www.figma.com/file/ATfYNFnp5GawAnIVn3bnjo/Untitled?node-id=0%3A1">Figma</a></p>
           <ul>
-            <li>Fazer os botões com recurso a Bootstrap e SCSS</li>
+            <li>Fazer os botões com recurso a SCSS</li>
             <li>Transições para os vários estados devem ter animação</li>
           </ul>
         </small>
@@ -263,7 +294,7 @@
             </code>
           </pre>
 
-        
+
       </section>
 
       <section class="text-left">
@@ -292,6 +323,7 @@
         <small>
           <p>Os ficheiros com o underscore inicial chamam-se de partials.</p>
           <p>São desenhados para serem importados para o ficheiro principal e não vão gerar ficheiros CSS únicos</p>
+          <p>O preprocessor não vai ler ficheiros começados com "_"</p>
         </small>
       </section>
 
@@ -303,7 +335,7 @@
       </section>
 
       <section class="text-left">
-        
+
           <pre>
             <code data-trim data-line-numbers contenteditable>
               $error_color: #f00 !default;
@@ -316,7 +348,7 @@
               }
             </code>
           </pre>
-      
+
         <small>
           <p>o !default quer dizer "unless set elsewhere" - ou seja, usa este valor, a menos que seja definido noutro sitio</p>
           <p>
@@ -325,7 +357,7 @@
           <p>O darken() é uma função do Sass que requer um valor em percentagem para escurecer uma certa cor.</p>
         </small>
       </section>
-      
+
       <section class="text-left">
         <small>
           <h2>Variávels</h2>
@@ -365,7 +397,7 @@
             </code>
           </pre>
 
-        
+
       </section>
 
       <section class="text-left">
