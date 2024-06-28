@@ -1,0 +1,25 @@
+$bg-color-small: rgb(255, 3, 3); // Red
+$bg-color-medium: rgb(159, 248, 159); // Green
+$bg-color-large: rgb(3, 3, 255); // Blue
+
+@mixin responsive-bg-color($bg-color) {
+  background-color: $bg-color;
+  color: if(lightness($bg-color) > 60, black, white);
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  padding: 3rem;
+  font-size: 4rem;
+
+  @include responsive-bg-color($bg-color-small);
+
+  @media screen and (min-width: 768px) {
+    @include responsive-bg-color($bg-color-medium);
+  }
+
+  @media screen and (min-width: 1440px) {
+    @include responsive-bg-color($bg-color-large);
+  }
+}
