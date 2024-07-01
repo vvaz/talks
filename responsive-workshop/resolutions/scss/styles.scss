@@ -1,0 +1,225 @@
+$amarelo: #D99E05;
+$vermelho: #D90505;
+$verde: #0AD905;
+$azul: #0534D9;
+$azulmarinho: #0580D9;
+$verdemarinho: #036761;
+$lilaz: #9505D9;
+$pink: #D9055E;
+$branco: #fff;
+
+
+// breakpoints
+/*
+até 768
+até 1440
+mais de 1440
+*/
+
+
+@mixin color-text($bg-color){
+  color: if(lightness($bg-color) > 60, black, white)
+}
+
+
+$smartphone: 768px;
+$notebook: 1440px;
+$desktop: 1441px;
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #3FBAEE;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  .box {
+    padding: 3rem 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+  }
+
+
+
+  .col-a {
+    background-color: $amarelo;
+    width: 100%;
+
+    @include color-text($amarelo);
+
+
+    /* tablet */
+    @media screen and (min-width: $smartphone) and (max-width: $notebook) {
+      background-color: $branco;
+      width: 59%;
+      margin-right: 1%;
+      @include color-text($branco);
+    }
+
+    /* desktop */
+    @media screen and (min-width: $desktop) {
+      background-color: $amarelo;
+      width: 79%;
+      margin-right: 1%;
+      @include color-text($amarelo);
+    }
+
+  }
+
+  .col-b {
+    background-color: $azul;
+    width: 100%;
+    color: $branco;
+
+    /* tablet */
+    @media screen and (min-width: $smartphone) and (max-width: $notebook) {
+      width: 39%;
+      margin-left: 1%;
+      background-color: $vermelho;
+    }
+
+    /* desktop */
+    @media screen and (min-width: $desktop) {
+      background-color: $vermelho;
+      width: 19%;
+      margin-left: 1%;
+
+    }
+
+  }
+
+  .col-c {
+    background-color: $vermelho;
+    width: 100%;
+    color: $branco;
+
+    /* tablet */
+    @media screen and (min-width: $smartphone) and (max-width: $notebook) {
+      background-color: $lilaz;
+    }
+
+    /* desktop */
+    @media screen and (min-width: $desktop) {
+      background-color: $verde;
+    }
+
+  }
+
+  .col-d {
+    background-color: $azul;
+    width: 40%;
+    display: none;
+    color: $branco;
+
+
+    /* tablet */
+    @media screen and (min-width: $smartphone) and (max-width: $notebook) {
+      display: block;
+
+    }
+
+    /* desktop */
+    @media screen and (min-width: $desktop) {
+      display: block;
+      width: 30%;
+    }
+
+
+  }
+
+  .col-e {
+    background-color: $amarelo;
+    width: 100%;
+    color: $branco;
+
+    /* tablet */
+    @media screen and (min-width: $smartphone) and (max-width: $notebook) {
+      background-color: $verdemarinho;
+      width: 59%;
+      margin-left: 1%;
+    }
+
+    /* desktop */
+    @media screen and (min-width: $desktop) {
+      background-color: $azulmarinho;
+      width: 39%;
+      margin-left: 1%;
+    }
+
+  }
+  .col-f {
+    background-color: $azul;
+    width: 100%;
+    color: $branco;
+
+    /* tablet */
+    @media screen and (min-width: $smartphone) and (max-width: $notebook) {
+      width: 100%;
+      background-color: $lilaz;
+    }
+
+    /* desktop */
+    @media screen and (min-width: $desktop) {
+      width: 29%;
+      margin-left: 1%;
+      background-color: $lilaz;
+    }
+
+  }
+
+  .col-g {
+    background-color: $verde;
+    width: 100%;
+    color: $azul;
+
+    /* tablet */
+    @media screen and (min-width: $smartphone) and (max-width: $notebook) {
+      background-color: $amarelo;
+      color: $branco;
+      width: 49%;
+      margin-right: 1%;
+    }
+
+    /* desktop */
+    @media screen and (min-width: $desktop) {
+      background-color: $amarelo;
+      color: $branco;
+      width: 29%;
+      margin-right: 1%;
+    }
+
+
+  }
+  .col-h {
+    background-color: $pink;
+    width: 70%;
+    color: $branco;
+    display: none;
+
+
+    /* tablet */
+    @media screen and (min-width: $smartphone) and (max-width: $notebook) {
+      background-color: $pink;
+      display: block;
+      width: 49%;
+      margin-left: 1%;
+
+    }
+
+    /* desktop */
+    @media screen and (min-width: $desktop) {
+      background-color: $pink;
+      display: block;
+    }
+  }
+}
