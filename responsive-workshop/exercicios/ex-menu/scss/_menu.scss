@@ -120,9 +120,13 @@ overflow: hidden;
   .menu li{
       float: left;
   }
+  .menu a {
+    color: $orange;
+    font-weight: bold;
+  }
   .menu a:hover{
       background-color: transparent;
-      color:$gray;
+      color: $black;
 
   }
 

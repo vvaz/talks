@@ -142,9 +142,13 @@ body:has(.side-menu:checked) {
   .menu li {
     float: left;
   }
+  .menu a {
+    color: #dc3545;
+    font-weight: bold;
+  }
   .menu a:hover {
     background-color: transparent;
-    color: #85888C;
+    color: #36383F;
   }
   .hamb {
     display: none;
